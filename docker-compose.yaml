@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+        api-mock:
+            build: ./Learning.FootballPrediction.ApiMock
+            volumes:
+                - ./Learning.FootballPrediction.ApiMock/out:/app
+            ports:
+                - 4990:80

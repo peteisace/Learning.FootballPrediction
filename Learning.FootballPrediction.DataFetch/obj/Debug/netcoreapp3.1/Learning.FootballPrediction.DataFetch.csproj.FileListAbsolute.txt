@@ -1,0 +1,11 @@
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.deps.json
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.runtimeconfig.json
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.runtimeconfig.dev.json
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.pdb
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.csprojAssemblyReference.cache
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.AssemblyInfoInputs.cache
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.AssemblyInfo.cs
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.pdb

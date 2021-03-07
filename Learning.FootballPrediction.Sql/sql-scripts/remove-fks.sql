@@ -1,0 +1,9 @@
+ALTER TABLE dbo.match DROP CONSTRAINT FK_club_matchhome
+ALTER TABLE dbo.match DROP CONSTRAINT FK_club_matchaway
+ALTER TABLE dbo.match_events DROP CONSTRAINT FK_eventtype_matchevents
+ALTER TABLE dbo.match_events DROP CONSTRAINT FK_match_matchevents
+ALTER TABLE dbo.match_events DROP CONSTRAINT FK_player_matchevents
+ALTER TABLE dbo.match_squads DROP CONSTRAINT FK_matchsquads_match
+ALTER TABLE dbo.match_squads DROP CONSTRAINT FK_matchsquads_matchorg
+ALTER TABLE dbo.match_squads DROP CONSTRAINT FK_matchsquads_player
+ALTER TABLE dbo.match_squads DROP CONSTRAINT FK_matchsquads_position

@@ -1,0 +1,13 @@
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.deps.json
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.runtimeconfig.json
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.runtimeconfig.dev.json
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll
+/app/bin/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.pdb
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.csprojAssemblyReference.cache
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.csproj.CoreCompileInputs.cache
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.AssemblyInfoInputs.cache
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.AssemblyInfo.cs
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.pdb
+/app/obj/release/netcoreapp3.1/Learning.FootballPrediction.DataFetch.genruntimeconfig.cache

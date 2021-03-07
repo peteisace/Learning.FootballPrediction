@@ -1,0 +1,246 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: 'http://localhost:5000'
+paths:
+  /Match/save:
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                away:
+                  type: object
+                  properties:
+                    players:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          dateOfBirth:
+                            type: string
+                          position:
+                            type: string
+                    name:
+                      type: string
+                played:
+                  type: string
+                home:
+                  type: object
+                  properties:
+                    players:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          dateOfBirth:
+                            type: string
+                          position:
+                            type: string
+                    name:
+                      type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                    "played": "2020-03-09T15:00:00",
+                    "home": {
+                      "name": "Arsenal",
+                      "players": [
+                        {
+                          "name": "Jens Lehmann",
+                          "dateOfBirth": "1976-01-01",
+                          "position": "Goalkeeper"
+                        },{
+                          "name": "Bacary Sagna",
+                          "dateOfBirth": "1976-01-02",
+                          "position": "Right-back"
+                        },{
+                          "name": "Gael Clichy",
+                          "dateOfBirth": "1976-01-03",
+                          "position": "Left-back"
+                        },{
+                          "name": "Sol Campbell",
+                          "dateOfBirth": "1976-01-04",
+                          "position": "Centre-back"
+                        },{
+                          "name": "Thomas Vermalaen",
+                          "dateOfBirth": "1976-01-05",
+                          "position": "Centre-back"
+                        },{
+                          "name": "Freddie Ljunberg",
+                          "dateOfBirth": "1976-01-06",
+                          "position": "Right-wing"
+                        },{
+                          "name": "Robert Pires",
+                          "dateOfBirth": "1976-01-07",
+                          "position": "Left-wing",
+                          "activeInEvents": [
+                              {
+                                  "minute": 19,
+                                  "type": "GoalScored"
+                              }
+                          ]
+                        },{
+                          "name": "Patrick Viera",
+                          "dateOfBirth": "1976-01-08",
+                          "position": "Centre-Midfield"
+                        },{
+                          "name": "Cesc Fabregas",
+                          "dateOfBirth": "1976-01-09",
+                          "position": "Centre-Midfield"
+                        },{
+                          "name": "Dennis Bergkamp",
+                          "dateOfBirth": "1976-01-10",
+                          "position": "Forward"
+                        },{
+                          "name": "Thierry Henry",
+                          "dateOfBirth": "1976-01-11",
+                          "position": "Striker",
+                          "activeInEvents": [
+                              {
+                                  "minute": 49,
+                                  "type": "GoalScored"
+                              },
+                              {
+                                  "minute": 73,
+                                  "type": "GoalScored"
+                              }
+                          ]
+                        },{
+                          "name": "David Seaman",
+                          "dateOfBirth": "1976-01-12",
+                          "position": "Sub"
+                        },{
+                          "name": "Laurent Kosielny",
+                          "dateOfBirth": "1976-01-13",
+                          "position": "Sub"
+                        },{
+                          "name": "Granit Xhaka",
+                          "dateOfBirth": "1976-01-14",
+                          "position": "Sub"
+                        },{
+                          "name": "Samir Nasri",
+                          "dateOfBirth": "1976-01-15",
+                          "position": "Sub"
+                        },{
+                          "name": "Mesut Ozil",
+                          "dateOfBirth": "1976-01-16",
+                          "position": "Sub"
+                        },{
+                          "name": "Tomas Rosicky",
+                          "dateOfBirth": "1976-01-17",
+                          "position": "Sub"
+                        },{
+                          "name": "Emmanuel Adebayor",
+                          "dateOfBirth": "1976-01-18",
+                          "position": "Sub"
+                        }
+                      ]
+                    },
+                    "away": {
+                      "name": "Manchester United",
+                      "players": [
+                        {
+                          "name": "Peter Schmiechael",
+                          "dateOfBirth": "1977-02-01",
+                          "position": "Goalkeeper"
+                        },{
+                          "name": "Gary Neville",
+                          "dateOfBirth": "1977-02-02",
+                          "position": "Right-back"
+                        },{
+                          "name": "Patrice Evra",
+                          "dateOfBirth": "1977-02-03",
+                          "position": "Left-back"
+                        },{
+                          "name": "Nemanja Vidic",
+                          "dateOfBirth": "1977-02-04",
+                          "position": "Centre-back"
+                        },{
+                          "name": "Rio Ferdinand",
+                          "dateOfBirth": "1977-02-05",
+                          "position": "Centre-back"
+                        },{
+                          "name": "Cristiano Ronaldo",
+                          "dateOfBirth": "1977-02-06",
+                          "position": "Right-wing",
+                          "activeInEvents": [
+                              {
+                                  "minute": 31,
+                                  "type": "GoalScored"
+                              }
+                          ]
+                        },{
+                          "name": "Ryan Giggs",
+                          "dateOfBirth": "1977-02-07",
+                          "position": "Left-wing"
+                        },{
+                          "name": "Roy Keane",
+                          "dateOfBirth": "1977-02-08",
+                          "position": "Centre-Midfield"
+                        },{
+                          "name": "Paul Scholes",
+                          "dateOfBirth": "1977-02-09",
+                          "position": "Centre-Midfield"
+                        },{
+                          "name": "Eric Cantona",
+                          "dateOfBirth": "1977-02-09",
+                          "position": "Forward"
+                        },{
+                          "name": "Ruud Van Nistelrooy",
+                          "dateOfBirth": "1977-02-10",
+                          "position": "Striker"
+                        },{
+                          "name": "Fabien Barthez",
+                          "dateOfBirth": "1977-02-11",
+                          "position": "Sub"
+                        },{
+                          "name": "Jaap Stam",
+                          "dateOfBirth": "1977-02-12",
+                          "position": "Sub"
+                        },{
+                          "name": "David Beckham",
+                          "dateOfBirth": "1977-02-13",
+                          "position": "Sub"
+                        },{
+                          "name": "Michael Carrick",
+                          "dateOfBirth": "1977-02-14",
+                          "position": "Sub"
+                        },{
+                          "name": "Wayne Rooney",
+                          "dateOfBirth": "1977-02-15",
+                          "position": "Sub"
+                        },{
+                          "name": "Juan Sebastian Veron",
+                          "dateOfBirth": "1977-02-16",
+                          "position": "Sub"
+                        },{
+                          "name": "Owen Hargreaves",
+                          "dateOfBirth": "1977-02-17",
+                          "position": "Sub"
+                        },{
+                          "name": "Carlos Tevez",
+                          "dateOfBirth": "1977-02-18",
+                          "position": "Sub"
+                        }
+                      ]
+                    }
+                  }
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: 'http://localhost:5000'
+    servers:
+      - url: 'http://localhost:5000'
