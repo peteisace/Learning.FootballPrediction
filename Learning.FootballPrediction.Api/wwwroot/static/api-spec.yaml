@@ -83,7 +83,7 @@ paths:
                           "position": "Right-wing"
                         },{
                           "name": "Robert Pires",
-                          "dateOfBirth": "1976-01-07",
+                          "dateOfBirth": "1976-01-07",  
                           "position": "Left-wing",
                           "activeInEvents": [
                               {

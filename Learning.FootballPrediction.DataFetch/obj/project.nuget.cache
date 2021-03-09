@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "o6qo5D90Un8BhV+HmlFqUB6NfKp53PNKKmRkMtZLd3pRckA5fKQA7SmRya9OqGd5FunRUIdNSYtASeMoliCy2A==",
+  "dgSpecHash": "qC0dOk6+EvXyhV3VUw2lbExJXtrfygVB7MaHkGbCe8YO59jH2g3mZBhYUDyU63TSRDT8blTwLwwyMeYDptEiKg==",
   "success": true,
   "projectFilePath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/Learning.FootballPrediction.DataFetch.csproj",
   "expectedPackageFiles": [
     "/home/pete/.nuget/packages/microsoft.csharp/4.4.1/microsoft.csharp.4.4.1.nupkg.sha512",
+    "/home/pete/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/home/pete/.nuget/packages/system.commandline/2.0.0-beta1.20214.1/system.commandline.2.0.0-beta1.20214.1.nupkg.sha512",
     "/home/pete/.nuget/packages/system.commandline.dragonfruit/0.3.0-alpha.20214.1/system.commandline.dragonfruit.0.3.0-alpha.20214.1.nupkg.sha512",
     "/home/pete/.nuget/packages/system.commandline.rendering/0.3.0-alpha.20214.1/system.commandline.rendering.0.3.0-alpha.20214.1.nupkg.sha512",
+    "/home/pete/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/home/pete/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/home/pete/.nuget/packages/system.text.json/5.0.1/system.text.json.5.0.1.nupkg.sha512"
   ],

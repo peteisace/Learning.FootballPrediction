@@ -1,6 +1,5 @@
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/appsettings.json
-/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.Api
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.deps.json
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.runtimeconfig.json
@@ -54,3 +53,6 @@
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/NSwag.Core.dll
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/NSwag.Generation.dll
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/bin/Debug/netcoreapp3.1/NSwag.Generation.AspNetCore.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.csproj.CoreCompileInputs.cache
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/scopedcss/bundle/Learning.FootballPrediction.Api.styles.css
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.genruntimeconfig.cache

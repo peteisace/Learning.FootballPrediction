@@ -8,10 +8,10 @@ namespace Learning.FootballPrediction.DataFetch
     class Program
     {
         private const string URI = "http://localhost:4990/v2/competitions/{0}/Matches?season={1}&matchday={2}";
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var matchsource = new MatchSource(URI);
-            var c = matchsource.GetCompetition(MatchSourceOptions.Default);
+            var c = await matchsource.GetCompetitionAsync(MatchSourceOptions.Default);
             
             foreach(var m in c.Matches)
             {

@@ -30,7 +30,11 @@ namespace Learning.FootballPrediction.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers();   
+            services.AddCors(options => 
+            {
+                
+            });       
             services.AddSingleton<IClubRepository, ClubRepository>();
             services.AddSingleton<IMatchRepository, MatchRepository>();
             services.AddSingleton<IPlayerRepository, PlayerRepository>();
@@ -50,7 +54,7 @@ namespace Learning.FootballPrediction.Api
             }
 
             app.UseStaticFiles();
-
+            
             SwaggerBuilderExtensions.UseSwagger(app);
             app.UseOpenApi();
             app.UseSwaggerUi3();

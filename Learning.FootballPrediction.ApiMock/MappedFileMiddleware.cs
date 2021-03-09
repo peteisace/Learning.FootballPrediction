@@ -16,6 +16,7 @@ namespace Learning.FootballPrediction.ApiMock
         public async Task InvokeAsync(HttpContext context)
         {
             var url = Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(context.Request);
+            System.Console.WriteLine(url);
             var mapped = StaticMapper.GetFileLocation(url);
 
             if(mapped == null)
