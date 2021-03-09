@@ -4,61 +4,6 @@
     "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/Learning.FootballPrediction.DataFetch.csproj": {}
   },
   "projects": {
-    "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/Learning.FootballPrediction.Common.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/Learning.FootballPrediction.Common.csproj",
-        "projectName": "Learning.FootballPrediction.Common",
-        "projectPath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/Learning.FootballPrediction.Common.csproj",
-        "packagesPath": "/home/pete/.nuget/packages/",
-        "outputPath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/pete/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/Learning.FootballPrediction.DataFetch.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -80,11 +25,7 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/Learning.FootballPrediction.Common.csproj": {
-                "projectPath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Common/Learning.FootballPrediction.Common.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -97,10 +38,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
-            },
             "System.CommandLine": {
               "target": "Package",
               "version": "[2.0.0-beta1.20214.1, )"
@@ -108,10 +45,6 @@
             "System.CommandLine.DragonFruit": {
               "target": "Package",
               "version": "[0.3.0-alpha.20214.1, )"
-            },
-            "System.ComponentModel.Annotations": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
