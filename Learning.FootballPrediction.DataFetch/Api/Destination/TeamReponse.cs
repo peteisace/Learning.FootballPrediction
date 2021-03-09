@@ -1,6 +1,6 @@
-namespace Learning.FootballPrediction.DataFetch.Api.Source
+namespace Learning.FootballPrediction.DataFetch.Api.Destination
 {
-    public class PlayerResponse
+    public class TeamResponse
     {
         public int Id
         {
@@ -14,13 +14,13 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
             set;
         }
 
-        public string Position
+        public PlayerResponse[] Lineup
         {
             get;
             set;
         }
 
-        public int ShirtNumber
+        public PlayerResponse[] Bench
         {
             get;
             set;

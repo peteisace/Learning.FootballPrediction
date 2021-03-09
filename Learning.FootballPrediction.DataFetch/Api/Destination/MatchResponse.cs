@@ -1,6 +1,6 @@
 using System;
 
-namespace Learning.FootballPrediction.DataFetch.Api.Source
+namespace Learning.FootballPrediction.DataFetch.Api.Destination
 {
     public class MatchResponse
     {

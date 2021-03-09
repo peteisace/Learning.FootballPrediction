@@ -1,29 +1,36 @@
+using System.Text.Json.Serialization;
+
 namespace Learning.FootballPrediction.DataFetch.Api.Source
 {
-    public class TeamResponse
+    public class CompetitionInfo
     {
-        public int Id
+        [JsonPropertyName("id")]
+        public int ID
         {
             get;
             set;
         }
 
+        [JsonPropertyName("name")]
         public string Name
         {
             get;
             set;
         }
 
-        public PlayerResponse[] Lineup
+        [JsonPropertyName("code")]
+        public string Code
         {
             get;
             set;
         }
 
-        public PlayerResponse[] Bench
+        [JsonPropertyName("plan")]
+        public string Plan
         {
             get;
             set;
         }
+
     }
 }

@@ -9,3 +9,12 @@
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.AssemblyInfo.cs
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll
 /home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.pdb
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.xml
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/System.CommandLine.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/System.CommandLine.DragonFruit.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/System.CommandLine.Rendering.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.csproj.CoreCompileInputs.cache
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.csproj.CopyComplete
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.xml
+/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.DataFetch/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.genruntimeconfig.cache
