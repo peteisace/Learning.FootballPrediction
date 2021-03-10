@@ -10,14 +10,22 @@ namespace Learning.FootballPrediction.DataFetch
         private const string URI = "http://localhost:4990/v2/competitions/{0}/Matches?season={1}&matchday={2}";
         public static async Task Main(string[] args)
         {
-            var matchsource = new MatchSource(URI);
-            var c = await matchsource.GetCompetitionAsync(MatchSourceOptions.Default);
-            
-            foreach(var m in c.Matches)
+            var port = -1;
+            if(args.Length != 1 || !int.TryParse(args[0], out port))
             {
-                Console.WriteLine($"Score was {m.ScoreContainer.Result.Home}-{m.ScoreContainer.Result.Away} in the " + 
-                    $"match between {m.HomeTeam.Name} vs {m.AwayTeam.Name}");
+                Console.Out.WriteLine("Usage: DataFetch [PortNumber]");
+                port = 4991; 
             }
+
+            CreateHostBuilder(args).Build().Run();
         }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>()
+                    .UseUrls($"http://*:{port}");
+                });
     }
 }

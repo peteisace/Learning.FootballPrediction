@@ -1,0 +1,12 @@
+CREATE DATABASE fp;
+GO
+
+USE fp;
+GO
+
+CREATE LOGIN fp_api WITH PASSWORD 'M@chineLearning'
+DEFAULT DATABASE = fp;
+
+GRANT EXECUTE ON TO fp_api
+GO
+

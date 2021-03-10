@@ -1,9 +1,31 @@
 version: '3'
 
 services:
-        api-mock:
-            build: ./Learning.FootballPrediction.ApiMock
-            volumes:
-                - ./Learning.FootballPrediction.ApiMock/out:/app
-            ports:
-                - 4990:80
+  sqlserver:
+    image: fp_sql:latest
+    environment: 
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=sqlserver_P@ssword
+    ports:
+      - "1433:1433"
+    volumes:
+      - /opt/docker_data/sqlserver/fp/data:/var/opt/mssql/data
+      - /opt/docker_data/sqlserver/fp/logs:/var/opt/mssql/logs
+      - /opt/docker_data/sqlserver/fp/secrets:/var/opt/mssql/secrets
+  apimock:
+    image: fp_mockapi:latest
+    ports:
+      - "4990:4990"
+  api:
+    image: fp_api:latest
+    ports: 
+      - "4991:4991"
+    depends_on: 
+      - fp_sql
+  datafetch:
+    image: fp_datafetch:latest
+    depends_on:
+      - fp_api
+      - fp_mockapi
+
+        
