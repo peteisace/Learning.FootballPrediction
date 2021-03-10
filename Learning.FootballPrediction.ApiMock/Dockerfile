@@ -21,7 +21,7 @@
 # COPY --from=build-env /app/out ./
 # ENTRYPOINT [ "/app/Learning.FootballPrediction.ApiMock", "4990" ]
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
-COPY bin/Release/net5.0/publish/ App/
+COPY bin/release/net5.0/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "Learning.FootballPrediction.ApiMock.dll"]
 #ENTRYPOINT ["dotnet", "Learning.Football.Prediction.ApiMock.dll"]
