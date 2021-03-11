@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj": {}
+    "/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj": {}
   },
   "projects": {
-    "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj": {
+    "/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj",
+        "projectUniqueName": "/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj",
         "projectName": "Learning.FootballPrediction.Api",
-        "projectPath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj",
-        "packagesPath": "/home/pete/.nuget/packages/",
-        "outputPath": "/home/pete/code/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/",
+        "projectPath": "/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/Learning.FootballPrediction.Api.csproj",
+        "packagesPath": "/Users/peter/.nuget/packages/",
+        "outputPath": "/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pete/.nuget/NuGet/NuGet.Config"
+          "/Users/peter/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.StaticFiles": {
               "target": "Package",
@@ -52,7 +50,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
@@ -73,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
         }
       }
     }

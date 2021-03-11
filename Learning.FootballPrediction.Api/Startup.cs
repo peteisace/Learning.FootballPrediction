@@ -31,9 +31,10 @@ namespace Learning.FootballPrediction.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();   
+            services.AddMvc();
             services.AddCors(options => 
             {
-                
+            
             });       
             services.AddSingleton<IClubRepository, ClubRepository>();
             services.AddSingleton<IMatchRepository, MatchRepository>();
@@ -57,9 +58,9 @@ namespace Learning.FootballPrediction.Api
             
             SwaggerBuilderExtensions.UseSwagger(app);
             app.UseOpenApi();
-            app.UseSwaggerUi3();
+            app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Match API v1");
+                c.SwaggerEndpoint("v1/swagger.json", "Match API v1");
             });
 
             app.UseHttpsRedirection();

@@ -14,16 +14,23 @@ namespace Learning.FootballPrediction.Api
     public class Program
     {
         public static void Main(string[] args)
-        {            
-            CreateHostBuilder(args).Build().Run();
+        {   
+            var port = 4991;         
+            if(args.Length >= 1)
+            {
+                port = int.Parse(args[0]);
+            }
+
+            CreateHostBuilder(args, port).Build().Run();
         }        
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        public static IHostBuilder CreateHostBuilder(string[] args, int port) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseWebRoot("wwwroot");   
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                        .UseUrls($"http://*:{port}");
                 });
     }
 }
