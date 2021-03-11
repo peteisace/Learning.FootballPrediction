@@ -13,7 +13,7 @@ services:
       - /opt/docker_data/sqlserver/fp/logs:/var/opt/mssql/logs
       - /opt/docker_data/sqlserver/fp/secrets:/var/opt/mssql/secrets
   apimock:
-    image: fp_mockapi:latest
+    image: fp_apimock:latest
     ports:
       - "4990:4990"
   api:
@@ -21,11 +21,11 @@ services:
     ports: 
       - "4991:4991"
     depends_on: 
-      - fp_sql
+      - sqlserver
   datafetch:
     image: fp_datafetch:latest
     depends_on:
-      - fp_api
-      - fp_mockapi
+      - api
+      - apimock
 
         
