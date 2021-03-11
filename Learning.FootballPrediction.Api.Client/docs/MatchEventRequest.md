@@ -1,10 +1,10 @@
-# IO.Swagger.Model.SquadMember
+# IO.Swagger.Model.MatchEventRequest
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Player** | [****](.md) |  | [optional] 
-**Position** | [****](.md) |  | [optional] 
+**Minute** | **int?** |  | [optional] 
+**Type** | **EventType** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

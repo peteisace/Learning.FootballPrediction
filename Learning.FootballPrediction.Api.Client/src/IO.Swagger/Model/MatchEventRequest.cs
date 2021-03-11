@@ -24,29 +24,33 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// SquadMember
+    /// MatchEventRequest
     /// </summary>
     [DataContract]
-        public partial class SquadMember :  IEquatable<SquadMember>, IValidatableObject
+        public partial class MatchEventRequest :  IEquatable<MatchEventRequest>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SquadMember" /> class.
+        /// Initializes a new instance of the <see cref="MatchEventRequest" /> class.
         /// </summary>
-        public SquadMember()
+        /// <param name="minute">minute.</param>
+        /// <param name="type">type.</param>
+        public MatchEventRequest(int? minute = default(int?), EventType type = default(EventType))
         {
+            this.Minute = minute;
+            this.Type = type;
         }
         
         /// <summary>
-        /// Gets or Sets Player
+        /// Gets or Sets Minute
         /// </summary>
-        [DataMember(Name="player", EmitDefaultValue=false)]
-        public  Player { get; private set; }
+        [DataMember(Name="minute", EmitDefaultValue=false)]
+        public int? Minute { get; set; }
 
         /// <summary>
-        /// Gets or Sets Position
+        /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name="position", EmitDefaultValue=false)]
-        public  Position { get; private set; }
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public EventType Type { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -55,9 +59,9 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class SquadMember {\n");
-            sb.Append("  Player: ").Append(Player).Append("\n");
-            sb.Append("  Position: ").Append(Position).Append("\n");
+            sb.Append("class MatchEventRequest {\n");
+            sb.Append("  Minute: ").Append(Minute).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -78,29 +82,29 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SquadMember);
+            return this.Equals(input as MatchEventRequest);
         }
 
         /// <summary>
-        /// Returns true if SquadMember instances are equal
+        /// Returns true if MatchEventRequest instances are equal
         /// </summary>
-        /// <param name="input">Instance of SquadMember to be compared</param>
+        /// <param name="input">Instance of MatchEventRequest to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SquadMember input)
+        public bool Equals(MatchEventRequest input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Player == input.Player ||
-                    (this.Player != null &&
-                    this.Player.Equals(input.Player))
+                    this.Minute == input.Minute ||
+                    (this.Minute != null &&
+                    this.Minute.Equals(input.Minute))
                 ) && 
                 (
-                    this.Position == input.Position ||
-                    (this.Position != null &&
-                    this.Position.Equals(input.Position))
+                    this.Type == input.Type ||
+                    (this.Type != null &&
+                    this.Type.Equals(input.Type))
                 );
         }
 
@@ -113,10 +117,10 @@ namespace IO.Swagger.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Player != null)
-                    hashCode = hashCode * 59 + this.Player.GetHashCode();
-                if (this.Position != null)
-                    hashCode = hashCode * 59 + this.Position.GetHashCode();
+                if (this.Minute != null)
+                    hashCode = hashCode * 59 + this.Minute.GetHashCode();
+                if (this.Type != null)
+                    hashCode = hashCode * 59 + this.Type.GetHashCode();
                 return hashCode;
             }
         }

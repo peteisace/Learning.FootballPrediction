@@ -24,33 +24,37 @@ using SwaggerDateConverter = IO.Swagger.Client.SwaggerDateConverter;
 namespace IO.Swagger.Model
 {
     /// <summary>
-    /// ClubRequest
+    /// MatchEvent
     /// </summary>
     [DataContract]
-        public partial class ClubRequest :  IEquatable<ClubRequest>, IValidatableObject
+        public partial class MatchEvent :  IEquatable<MatchEvent>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ClubRequest" /> class.
+        /// Initializes a new instance of the <see cref="MatchEvent" /> class.
         /// </summary>
-        /// <param name="name">name.</param>
-        /// <param name="players">players.</param>
-        public ClubRequest(string name = default(string), List<PlayerRequest> players = default(List<PlayerRequest>))
+        /// <param name="type">type.</param>
+        public MatchEvent(EventType type = default(EventType))
         {
-            this.Name = name;
-            this.Players = players;            
+            this.Type = type;
         }
         
         /// <summary>
-        /// Gets or Sets Name
+        /// Gets or Sets Minute
         /// </summary>
-        [DataMember(Name="name", EmitDefaultValue=false)]
-        public string Name { get; set; }
+        [DataMember(Name="minute", EmitDefaultValue=false)]
+        public int? Minute { get; private set; }
 
         /// <summary>
-        /// Gets or Sets Players
+        /// Gets or Sets Type
         /// </summary>
-        [DataMember(Name="players", EmitDefaultValue=false)]
-        public List<PlayerRequest> Players { get; set; }
+        [DataMember(Name="type", EmitDefaultValue=false)]
+        public EventType Type { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PlayerID
+        /// </summary>
+        [DataMember(Name="playerID", EmitDefaultValue=false)]
+        public int? PlayerID { get; private set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -59,9 +63,10 @@ namespace IO.Swagger.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ClubRequest {\n");
-            sb.Append("  Name: ").Append(Name).Append("\n");
-            sb.Append("  Players: ").Append(Players).Append("\n");
+            sb.Append("class MatchEvent {\n");
+            sb.Append("  Minute: ").Append(Minute).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  PlayerID: ").Append(PlayerID).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -82,30 +87,34 @@ namespace IO.Swagger.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ClubRequest);
+            return this.Equals(input as MatchEvent);
         }
 
         /// <summary>
-        /// Returns true if ClubRequest instances are equal
+        /// Returns true if MatchEvent instances are equal
         /// </summary>
-        /// <param name="input">Instance of ClubRequest to be compared</param>
+        /// <param name="input">Instance of MatchEvent to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ClubRequest input)
+        public bool Equals(MatchEvent input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Name == input.Name ||
-                    (this.Name != null &&
-                    this.Name.Equals(input.Name))
+                    this.Minute == input.Minute ||
+                    (this.Minute != null &&
+                    this.Minute.Equals(input.Minute))
                 ) && 
                 (
-                    this.Players == input.Players ||
-                    this.Players != null &&
-                    input.Players != null &&
-                    this.Players.SequenceEqual(input.Players)
+                    this.Type == input.Type ||
+                    (this.Type != null &&
+                    this.Type.Equals(input.Type))
+                ) && 
+                (
+                    this.PlayerID == input.PlayerID ||
+                    (this.PlayerID != null &&
+                    this.PlayerID.Equals(input.PlayerID))
                 );
         }
 
@@ -118,10 +127,12 @@ namespace IO.Swagger.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Name != null)
-                    hashCode = hashCode * 59 + this.Name.GetHashCode();
-                if (this.Players != null)
-                    hashCode = hashCode * 59 + this.Players.GetHashCode();
+                if (this.Minute != null)
+                    hashCode = hashCode * 59 + this.Minute.GetHashCode();
+                if (this.Type != null)
+                    hashCode = hashCode * 59 + this.Type.GetHashCode();
+                if (this.PlayerID != null)
+                    hashCode = hashCode * 59 + this.PlayerID.GetHashCode();
                 return hashCode;
             }
         }

@@ -32,8 +32,12 @@ namespace IO.Swagger.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Match" /> class.
         /// </summary>
-        public Match()
+        /// <param name="home">home.</param>
+        /// <param name="away">away.</param>
+        public Match(Club home = default(Club), Club away = default(Club))
         {
+            this.Home = home;
+            this.Away = away;
         }
         
         /// <summary>
@@ -46,13 +50,13 @@ namespace IO.Swagger.Model
         /// Gets or Sets Home
         /// </summary>
         [DataMember(Name="home", EmitDefaultValue=false)]
-        public  Home { get; private set; }
+        public Club Home { get; set; }
 
         /// <summary>
         /// Gets or Sets Away
         /// </summary>
         [DataMember(Name="away", EmitDefaultValue=false)]
-        public  Away { get; private set; }
+        public Club Away { get; set; }
 
         /// <summary>
         /// Gets or Sets Played

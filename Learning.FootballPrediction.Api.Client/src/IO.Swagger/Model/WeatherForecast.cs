@@ -72,7 +72,7 @@ namespace IO.Swagger.Model
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
-            var sb = new StringBuilder();            
+            var sb = new StringBuilder();
             sb.Append("class WeatherForecast {\n");
             sb.Append("  Date: ").Append(Date).Append("\n");
             sb.Append("  TemperatureC: ").Append(TemperatureC).Append("\n");
