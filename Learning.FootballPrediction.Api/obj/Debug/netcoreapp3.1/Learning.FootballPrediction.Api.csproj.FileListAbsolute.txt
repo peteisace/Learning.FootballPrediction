@@ -1,6 +1,0 @@
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.csprojAssemblyReference.cache
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.AssemblyInfoInputs.cache
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.AssemblyInfo.cs
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.csproj.CoreCompileInputs.cache
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.MvcApplicationPartsAssemblyInfo.cs
-/Users/peter/Documents/code/omise/dotnet/Learning.FootballPrediction/Learning.FootballPrediction.Api/obj/Debug/netcoreapp3.1/Learning.FootballPrediction.Api.MvcApplicationPartsAssemblyInfo.cache
