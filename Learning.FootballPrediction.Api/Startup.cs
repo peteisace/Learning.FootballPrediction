@@ -58,7 +58,7 @@ namespace Learning.FootballPrediction.Api
             
             SwaggerBuilderExtensions.UseSwagger(app);
             app.UseOpenApi();
-            app.UseSwagger();
+            Microsoft.AspNetCore.Builder.SwaggerBuilderExtensions.UseSwagger(app);
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("v1/swagger.json", "Match API v1");
             });

@@ -21,7 +21,7 @@ namespace Learning.FootballPrediction.Api
                 port = int.Parse(args[0]);
             }
 
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args, port).Build().Run();
         }        
 
         public static IHostBuilder CreateHostBuilder(string[] args, int port) =>
