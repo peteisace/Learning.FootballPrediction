@@ -36,7 +36,13 @@
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "options": {
+                "env": {
+                    "DOTNET_ENVIRONMENT": "Development",
+                    "ASPNETCORE_ENVIRONMENT": "Development"
+                }
+            }
         }
     ]
 }

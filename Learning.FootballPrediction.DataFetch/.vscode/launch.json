@@ -10,11 +10,20 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/Learning.FootballPrediction.DataFetch.dll",
+            "program": "${workspaceFolder}/bin/Debug/net5.0/Learning.FootballPrediction.DataFetch.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
+            "environment": [
+                { "name": "DOTNET_ENVIRONMENT", "value": "Development" },
+                { "name": "ASPNETCORE_ENVIRONMENT", "value": "Development" }
+            ],
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development",
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "envFile": "${workspaceFolder}/.env",
             "stopAtEntry": false
         },
         {
