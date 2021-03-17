@@ -26,6 +26,7 @@ namespace Learning.FootballPrediction.ApiMock
             }
 
             // Otherwise...
+            context.Response.ContentType = "application/json; charset=utf-8";
             string contents = await File.ReadAllTextAsync(mapped);
             await context.Response.WriteAsync(contents);
         }

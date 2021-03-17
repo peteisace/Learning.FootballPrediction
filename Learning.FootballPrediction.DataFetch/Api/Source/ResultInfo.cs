@@ -5,14 +5,14 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
     public class ResultInfo
     {
         [JsonPropertyName("homeTeam")]
-        public int Home
+        public int HomeTeam
         {
             get;
             set;
         }
 
         [JsonPropertyName("awayTeam")]
-        public int Away
+        public int AwayTeam
         {
             get;
             set;

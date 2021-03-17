@@ -35,7 +35,8 @@ namespace Learning.FootballPrediction.DataFetch
                 foreach(var m in matchesForDay.Matches)
                 {
                     // we need to get the match details.
-                    var matchDetails = await this._matchRepository.GetMatchDetailsAsync(m.ID);
+                    var matchContainer = await this._matchRepository.GetMatchDetailsAsync(m.ID);
+                    var matchDetails = matchContainer.Match;
 
                     // Now queue up the players.
                     var allPlayers = matchDetails.HomeTeam.Lineup
@@ -55,8 +56,6 @@ namespace Learning.FootballPrediction.DataFetch
                     var request = await mc.ToMatch(matchDetails, playerHash);
                 }
             }
-            // We will get year
-            await Task.Yield();
         }
 
         public async Task StopAsync(CancellationToken cancellationToken)

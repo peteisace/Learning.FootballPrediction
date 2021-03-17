@@ -28,13 +28,13 @@ namespace Learning.FootballPrediction.DataFetch.Repositories
             return response;
         }
 
-        public async Task<MatchResponse> GetMatchDetailsAsync(int matchId)
+        public async Task<MatchContainer> GetMatchDetailsAsync(int matchId)
         {
             var client = new RestClient(this._configuration.BaseUrl);
             // Get request
             IRestRequest request = new RestRequest(string.Format(this._configuration.Match, matchId), Method.GET);
             request = request.AddHeader("X-Auth-Token", this._configuration.ApiKey);
-            var response = await client.GetAsync<MatchResponse>(request);
+            var response = await client.GetAsync<MatchContainer>(request);
 
             return response;
         }

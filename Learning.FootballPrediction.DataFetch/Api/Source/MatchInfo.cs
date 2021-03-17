@@ -7,7 +7,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
         public MatchInfo()
         {
         }
-        
+
         [JsonPropertyName("id")]
         public int ID
         {
@@ -23,7 +23,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
         }
 
         [JsonPropertyName("score")]
-        public ResultContainer ScoreContainer
+        public ResultContainer Score
         {
             get;
             set;

@@ -7,6 +7,6 @@ namespace Learning.FootballPrediction.DataFetch.Contracts
     {
         Task<Competition> GetMatchSummariesAsync(int year, int matchDay);
 
-        Task<MatchResponse> GetMatchDetailsAsync(int matchId);
+        Task<MatchContainer> GetMatchDetailsAsync(int matchId);
     }
 }
