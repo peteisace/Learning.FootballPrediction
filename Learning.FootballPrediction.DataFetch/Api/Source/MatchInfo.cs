@@ -4,6 +4,10 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
 {
     public class MatchInfo
     {
+        public MatchInfo()
+        {
+        }
+        
         [JsonPropertyName("id")]
         public int ID
         {

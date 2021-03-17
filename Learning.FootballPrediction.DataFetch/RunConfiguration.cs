@@ -4,21 +4,13 @@ namespace Learning.FootballPrediction.DataFetch
 {
     public class RunConfiguration : IRunConfiguration
     {
-        public RunConfiguration(string[] commandLine)
+        public RunConfiguration(int noOfMatchdays, int startYear)
         {
-            
+            MatchDays = noOfMatchdays;
+            StartingSeason = startYear;
         }
-
-        public int MatchDays
-        {
-            get;
-            set;
-        }
-
-        public int StartingSeason
-        {
-            get;
-            set;
-        }
+        
+        public int MatchDays { get; }
+        public int StartingSeason { get; }
     }
 }

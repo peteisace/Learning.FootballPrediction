@@ -5,6 +5,6 @@ namespace Learning.FootballPrediction.DataFetch.Contracts
 {
     public interface IPlayerRepository
     {
-        Task<PlayerResponse> GetPlayerAsync(int id);
+        Task<PlayerDetailResponse> GetPlayerAsync(int id);
     }
 }

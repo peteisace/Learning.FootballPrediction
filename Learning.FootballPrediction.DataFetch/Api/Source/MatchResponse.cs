@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace Learning.FootballPrediction.DataFetch.Api.Source
@@ -49,13 +50,13 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
         }
 
         [JsonPropertyName("goals")]
-        public GoalResponse[] Goals
+        public List<GoalResponse> Goals
         {
             get;
             set;
         }
 
-        public SubstitutionResponse[] Substitutions
+        public List<SubstitutionResponse> Substitutions
         {
             get;
             set;

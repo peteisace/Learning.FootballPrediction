@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace Learning.FootballPrediction.DataFetch.Api.Source
@@ -19,13 +20,13 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
         }
 
         [JsonPropertyName("lineup")]
-        public PlayerResponse[] Lineup
+        public List<PlayerResponse> Lineup
         {
             get;
             set;
         }
 
-        public PlayerResponse[] Bench
+        public List<PlayerResponse> Bench
         {
             get;
             set;

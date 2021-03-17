@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace Learning.FootballPrediction.DataFetch.Api.Source
@@ -12,7 +13,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
         }
 
         [JsonPropertyName("matches")]
-        public MatchInfo[] Matches
+        public List<MatchInfo> Matches
         {
             get;
             set;

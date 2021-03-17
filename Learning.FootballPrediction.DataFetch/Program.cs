@@ -13,8 +13,9 @@ namespace Learning.FootballPrediction.DataFetch
 {
     class Program
     {
-        private const string URI = "http://localhost:4990/v2/competitions/{0}/Matches?season={1}&matchday={2}";
-        public static async Task Main(string[] args)
+        /// <param name="noOfMatchdays">An option whose value states the number of matches for this EPL season</param>
+        /// <param name="startYear">An option whose value states the starting season year that we look at matches</param>
+        public static async Task Main(int noOfMatchdays = 38, int startYear = 2019)
         {
             MatchConfig mConfiguration = null;
             RunConfiguration rConfiguration = null;
@@ -22,14 +23,8 @@ namespace Learning.FootballPrediction.DataFetch
             var hostBuilder = new HostBuilder()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .ConfigureHostConfiguration(configBuilder => {
-                    if(args != null)
-                    {
-                        args = new string[0];
-                    }
-                    
-                    configBuilder.AddCommandLine(args);
                     configBuilder.AddEnvironmentVariables();
-                    rConfiguration = new RunConfiguration(args);
+                    rConfiguration = new RunConfiguration(noOfMatchdays, startYear);
                 })
                 .ConfigureAppConfiguration((hostingContext, cfg) => {
                     cfg.AddEnvironmentVariables();
@@ -51,13 +46,19 @@ namespace Learning.FootballPrediction.DataFetch
                     services.AddHostedService<Worker>();
 
                     // Add basic dependency injection services.
-                    AddServices(services, mConfiguration, null);
+                    AddServices(services, mConfiguration, rConfiguration);
                 });
 
             // Build the host parameters. 
             var host = hostBuilder.Build();
             await host.RunAsync();
-        }        
+        }
+        /*
+        public static async Task Main(string[] args)
+        {
+            
+        }      
+        */  
 
         private static void AddServices(IServiceCollection services, MatchConfig configuration, RunConfiguration runtime)
         {

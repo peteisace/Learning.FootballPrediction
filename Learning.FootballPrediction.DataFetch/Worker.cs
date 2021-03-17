@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
 using System.Collections;
+using System.Collections.Generic;
+using Learning.FootballPrediction.DataFetch.Api.Source;
 
 namespace Learning.FootballPrediction.DataFetch
 {
@@ -24,14 +26,13 @@ namespace Learning.FootballPrediction.DataFetch
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             // Now we go round our competition.
-            var year = 2020;
             for(var i = 1; i <= this._runParameters.MatchDays; i++)
             {
                 // Using the match repository, grab it.
-                var matchesForDay = await this._matchRepository.GetMatchSummariesAsync(year, i);
+                var matchesForDay = await this._matchRepository.GetMatchSummariesAsync(this._runParameters.StartingSeason, i);
 
                 // Now we need to suck up the players.
-                foreach(var m in matchesForDay)
+                foreach(var m in matchesForDay.Matches)
                 {
                     // we need to get the match details.
                     var matchDetails = await this._matchRepository.GetMatchDetailsAsync(m.ID);
@@ -43,11 +44,15 @@ namespace Learning.FootballPrediction.DataFetch
                         .Union(matchDetails.AwayTeam.Bench);
 
                     // Using all of the players - create hash.
-                    var playerHash = new Hashtable();
+                    var playerHash = new Dictionary<int, PlayerResponse>();
                     foreach(var p in allPlayers)
                     {
-                        playerHash.Add(p.Id, p.Name);
+                        playerHash.Add(p.Id, p);
                     }
+
+                    // Now convert it
+                    var mc = new MatchConverter(this._playerRepository);
+                    var request = await mc.ToMatch(matchDetails, playerHash);
                 }
             }
             // We will get year
