@@ -12,6 +12,13 @@ namespace Learning.FootballPrediction.DataFetch.Api.Source
             set;
         }
 
+        [JsonPropertyName("name")]
+        public string Name
+        {
+            get;
+            set;
+        }
+
         [JsonPropertyName("firstName")]
         public string FirstName
         {

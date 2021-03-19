@@ -32,6 +32,12 @@ namespace Learning.FootballPrediction.DataFetch
             set;
         }
 
+        public string DestinationBase
+        {
+            get;
+            set;
+        }
+
         public void SetBaseUrl(string baseUrl, string apiKey)
         {
             /*
@@ -41,6 +47,11 @@ namespace Learning.FootballPrediction.DataFetch
             */
             this.BaseUrl = baseUrl;
             this.ApiKey = apiKey;
+        }
+
+        public void SetDestination(string destinationBase)
+        {
+            this.DestinationBase = destinationBase;
         }
     }
 }

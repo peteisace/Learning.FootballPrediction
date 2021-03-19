@@ -15,7 +15,7 @@ namespace Learning.FootballPrediction.DataFetch
     {
         /// <param name="noOfMatchdays">An option whose value states the number of matches for this EPL season</param>
         /// <param name="startYear">An option whose value states the starting season year that we look at matches</param>
-        public static async Task Main(int noOfMatchdays = 38, int startYear = 2019)
+        public static async Task Main(int noOfMatchdays = 38, int startYear = 2018)
         {
             MatchConfig mConfiguration = null;
             RunConfiguration rConfiguration = null;
@@ -38,9 +38,11 @@ namespace Learning.FootballPrediction.DataFetch
                     // Build it so we can use services.
                     var baseUrl = builtConfig.GetValue<string>("BaseConfiguration:BaseUrl");
                     var apikey = builtConfig.GetValue<string>("BaseConfiguration:ApiKey");
+                    var dUrl = builtConfig.GetValue<string>("BaseConfiguration:FpApi");
                     var section = builtConfig.GetSection(nameof(MatchConfig));
                     mConfiguration = section.Get<MatchConfig>();
                     mConfiguration.SetBaseUrl(baseUrl, apikey);
+                    mConfiguration.SetDestination(dUrl);
                 })
                 .ConfigureServices((context, services) => {
                     services.AddHostedService<Worker>();

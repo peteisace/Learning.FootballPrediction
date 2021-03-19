@@ -4,6 +4,7 @@ using Learning.FootballPrediction.DataFetch.Api.Source;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Learning.FootballPrediction.DataFetch.Contracts;
+using System;
 
 namespace Learning.FootballPrediction.DataFetch
 {
@@ -38,8 +39,10 @@ namespace Learning.FootballPrediction.DataFetch
                 var lookup = await PlayerCache.Instance.Lookup(p);
                 var detailed = lookup.Response;
 
+                Console.WriteLine($"Lookup resonse is {lookup.Found} for player {p.Id}");
+
                 PlayerRequest request = new PlayerRequest(
-                    string.Concat(detailed.FirstName, " ", detailed.LastName),
+                    detailed.Name,
                     detailed.DateOfBirth,
                     p.Position,
                     new List<MatchEventRequest>()
@@ -48,11 +51,18 @@ namespace Learning.FootballPrediction.DataFetch
                 // Add it to our list.  
                 playersForTeam.Add(p.Id, request);
 
+                if(string.IsNullOrEmpty(request.Name))
+                {
+                    throw new ArgumentNullException($"Player found with no name! ID is {p.Id}");
+                }
+
                 if(!lookup.Found)
                 {
-                    // Sleep so we don't overload.
-                    await Task.Delay(1000);
+                    Console.WriteLine($"Fetched player {lookup.Response.Name}");
                 }
+
+                // Sleep so we don't overload.
+                await Task.Delay(3000); 
             }
 
             // Now go through the goals.

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using Learning.FootballPrediction.DataFetch.Api.Source;
+using IO.Swagger.Api;
+using System.Text.Json;
 
 namespace Learning.FootballPrediction.DataFetch
 {
@@ -16,12 +18,14 @@ namespace Learning.FootballPrediction.DataFetch
         private IMatchInfoRepository _matchRepository;
         private IPlayerRepository _playerRepository;
         private IRunConfiguration _runParameters;
+        private IMatchConfiguration _mConfig;
 
-        public Worker(IMatchInfoRepository matchRepository, IPlayerRepository playerRepository, IRunConfiguration runParameters)
+        public Worker(IMatchInfoRepository matchRepository, IPlayerRepository playerRepository, IRunConfiguration runParameters, IMatchConfiguration mConfig)
         {
             this._matchRepository = matchRepository;
             this._playerRepository = playerRepository;
             this._runParameters = runParameters;
+            this._mConfig = mConfig;
         }
         public async Task StartAsync(CancellationToken cancellationToken)
         {
@@ -54,6 +58,9 @@ namespace Learning.FootballPrediction.DataFetch
                     // Now convert it
                     var mc = new MatchConverter(this._playerRepository);
                     var request = await mc.ToMatch(matchDetails, playerHash);
+
+                    var api = new MatchApi(this._mConfig.DestinationBase);
+                    var response = await api.MatchSavePostAsync(body: request);
                 }
             }
         }

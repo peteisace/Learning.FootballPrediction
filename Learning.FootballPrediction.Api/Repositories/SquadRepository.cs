@@ -50,6 +50,7 @@ namespace Learning.FootballPrediction.Api.Repositories
 
         protected async override Task<Player> SaveDetailed(PlayerRequest model)
         {
+            System.Console.WriteLine($"Currently saving player: ({model.Name}) - born: {model.DateOfBirth}");
             Player p = null;
             var newId = (int)await DBExecutor.ExecuteScalar(
                 this.ConnectionString, 

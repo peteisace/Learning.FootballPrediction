@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.FootballPrediction.DataFetch", "Learning.FootballPrediction.DataFetch\Learning.FootballPrediction.DataFetch.csproj", "{293D0EA4-AE32-4D73-A03E-C0CD793F7093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.FootballPrediction.RapidApi.Mock", "Learning.FootballPrediction.RapidApi.Mock\Learning.FootballPrediction.RapidApi.Mock.csproj", "{CD442265-992B-418C-8119-2E4C814F6808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{293D0EA4-AE32-4D73-A03E-C0CD793F7093}.Release|x64.Build.0 = Release|Any CPU
 		{293D0EA4-AE32-4D73-A03E-C0CD793F7093}.Release|x86.ActiveCfg = Release|Any CPU
 		{293D0EA4-AE32-4D73-A03E-C0CD793F7093}.Release|x86.Build.0 = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|x64.Build.0 = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|x64.ActiveCfg = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|x64.Build.0 = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD442265-992B-418C-8119-2E4C814F6808}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

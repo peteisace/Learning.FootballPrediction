@@ -4,12 +4,15 @@ GO
 USE fp;
 GO
 
--- CREATE LOGIN fp_api WITH PASSWORD M@chineLearning
--- DEFAULT DATABASE = fp;
--- GO
+CREATE LOGIN fp_api WITH PASSWORD='M@chineLearning',
+DEFAULT_DATABASE = fp;
+GO
 
--- GRANT EXECUTE ON TO fp_api
--- GO
+CREATE USER fp_api FOR LOGIN fp_api
+GO
+
+GRANT EXECUTE TO fp_api
+GO
 
 IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME  = 'match_events')
 BEGIN
@@ -121,10 +124,12 @@ CREATE TABLE fp.dbo.match_squads (
 
 CREATE TABLE fp.dbo.match_events (
 	id int IDENTITY(1,1) NOT NULL,
+	match_id int NOT NULL,
 	event_type tinyint NOT NULL,
 	[minute] tinyint NULL,
 	player_id int NOT NULL,
 	CONSTRAINT PK__match_ev__3213E83F71AB147D PRIMARY KEY (id),
+	CONSTRAINT FK_match_matchevents FOREIGN KEY (match_id) REFERENCES fp.dbo.match(id),
 	CONSTRAINT FK_eventtype_matchevents FOREIGN KEY (event_type) REFERENCES fp.dbo.event_type(id),
 	CONSTRAINT FK_player_matchevents FOREIGN KEY (player_id) REFERENCES fp.dbo.player(id)
 ) 
@@ -148,4 +153,230 @@ GO
 insert into dbo.event_type VALUES(6, 'Substitute On')
 GO
 insert into dbo.event_type VALUES(7, 'Substitute Off')
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[club_selectByName]
+(
+    @Name VARCHAR(50)
+)
+AS
+BEGIN
+    SELECT      id
+                , name
+    FROM        dbo.club
+    WHERE       name = @Name
+    
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[squadMember_insert]
+(
+    @MatchId INT
+    , @MatchRole TINYINT
+    , @PlayerId INT
+    , @PositionId TINYINT
+)
+AS
+BEGIN
+    INSERT INTO dbo.match_squads
+    (
+        match_id
+        , club_type
+        , player_id
+        , start_positionid
+    )
+    VALUES
+    (
+        @MatchId
+        , @MatchRole
+        , @PlayerId
+        , @PositionId
+    )
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS match_squad_id
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[player_insert]
+(
+    @FullName VARCHAR(100)
+    , @DateOfBirth DATETIME
+    , @NameHash INT
+)
+AS
+BEGIN
+    INSERT INTO dbo.player
+    (
+        full_name
+        , date_of_birth
+        , name_hash
+    )
+    VALUES
+    (
+        @FullName
+        , @DateOfBirth
+        , @NameHash
+    )
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS player_id
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[match_insert]
+(
+    @Played DATETIME
+    , @HomeTeamId INT
+    , @AwayTeamId INT
+)
+AS
+BEGIN
+    INSERT INTO dbo.[match]
+    (
+        played
+        , home_teamid
+        , away_teamid
+    )
+    VALUES
+    (
+        @Played
+        , @HomeTeamId
+        , @AwayTeamId
+    )
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS match_id
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[matchevent_insert]
+(
+    @MatchId INT
+    , @EventType TINYINT
+    , @PlayerId INT
+    , @Minute TINYINT
+)
+AS
+BEGIN
+    INSERT INTO dbo.match_events
+    (
+        match_id
+        , event_type
+        , player_id
+        , [minute]
+    )
+    VALUES
+    (
+        @MatchId
+        , @EventType
+        , @PlayerId
+        , @Minute
+    )
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[player_select]
+(
+    @PlayerId INT
+)
+AS
+BEGIN
+    SELECT      id
+    ,           full_name
+    ,           date_of_birth
+    FROM        dbo.player
+    WHERE       id = @PlayerId
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[position_insert]
+(
+    @Name VARCHAR(50)
+)
+AS
+BEGIN
+    INSERT INTO dbo.[position]
+    (
+        name
+    )
+    VALUES
+    (
+        @Name
+    )
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS position_id
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[position_selectByName]
+(
+    @Name VARCHAR(50)
+)
+AS
+BEGIN
+    SELECT      id
+                , name
+    FROM        dbo.[position]
+    WHERE       name = @Name
+
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[club_insert]
+(
+    @Name VARCHAR(50)
+)
+AS
+BEGIN
+    INSERT INTO dbo.club
+    (
+        name
+    )
+    VALUES
+    (
+        @Name
+    )
+
+    SELECT CAST(SCOPE_IDENTITY() AS INT) AS club_id
+
+END
 GO
