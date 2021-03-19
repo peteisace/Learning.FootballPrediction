@@ -43,8 +43,10 @@ namespace Learning.FootballPrediction.RapidApi.Mock
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Learning.FootballPrediction.RapidApi.Mock v1"));
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
+            app.AddTokenAuthenticationMiddleware();
+            app.UseJsonContentByUrl();
 
             app.UseRouting();
 

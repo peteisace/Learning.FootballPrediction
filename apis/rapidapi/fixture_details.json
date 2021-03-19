@@ -1,1 +1,438 @@
-{"api":{"results":1,"fixtures":[{"fixture_id":194198,"league_id":701,"league":{"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb.svg"},"event_date":"2010-08-14T14:00:00+00:00","event_timestamp":1281794400,"firstHalfStart":null,"secondHalfStart":null,"round":"Regular Season - 38","status":"Match Finished","statusShort":"FT","elapsed":90,"venue":"Villa Park (Birmingham)","referee":null,"homeTeam":{"team_id":66,"team_name":"Aston Villa","logo":"https:\/\/media.api-sports.io\/football\/teams\/66.png"},"awayTeam":{"team_id":48,"team_name":"West Ham","logo":"https:\/\/media.api-sports.io\/football\/teams\/48.png"},"goalsHomeTeam":3,"goalsAwayTeam":0,"score":{"halftime":"2-0","fulltime":"3-0","extratime":null,"penalty":null},"events":[{"elapsed":15,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":19238,"player":"S. Downing","assist_id":null,"assist":null,"type":"Goal","detail":"Normal Goal","comments":null},{"elapsed":40,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":114846,"player":"S. Petrov","assist_id":null,"assist":null,"type":"Goal","detail":"Normal Goal","comments":null},{"elapsed":45,"elapsed_plus":null,"team_id":48,"teamName":"West Ham","player_id":115930,"player":"R. Kov\u00e1c","assist_id":115939,"assist":"F. Piquionne","type":"subst","detail":"F. Piquionne","comments":null},{"elapsed":45,"elapsed_plus":null,"team_id":48,"teamName":"West Ham","player_id":115931,"player":"Boa Morte","assist_id":35926,"assist":"P. Barrera","type":"subst","detail":"P. Barrera","comments":null},{"elapsed":66,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":296,"player":"J. Milner","assist_id":null,"assist":null,"type":"Goal","detail":"Normal Goal","comments":null},{"elapsed":72,"elapsed_plus":null,"team_id":48,"teamName":"West Ham","player_id":18844,"player":"J. Tomkins","assist_id":30968,"assist":"A. Diamanti","type":"subst","detail":"A. Diamanti","comments":null},{"elapsed":85,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":296,"player":"J. Milner","assist_id":87798,"assist":"N. Reo-Coker","type":"subst","detail":"N. Reo-Coker","comments":null},{"elapsed":86,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":894,"player":"A. Young","assist_id":19283,"assist":"A. Weimann","type":"subst","detail":"A. Weimann","comments":null},{"elapsed":89,"elapsed_plus":null,"team_id":66,"teamName":"Aston Villa","player_id":18777,"player":"M. Albrighton","assist_id":19387,"assist":"B. Bannan","type":"subst","detail":"B. Bannan","comments":null}],"lineups":{"Aston Villa":{"coach":null,"coach_id":null,"formation":null,"startXI":[{"team_id":66,"player_id":114766,"player":"B. Friedel","number":1,"pos":null},{"team_id":66,"player_id":114850,"player":"L. Young","number":2,"pos":null},{"team_id":66,"player_id":114757,"player":"R. Dunne","number":5,"pos":null},{"team_id":66,"player_id":82340,"player":"S. Warnock","number":3,"pos":null},{"team_id":66,"player_id":18891,"player":"C. Clark","number":21,"pos":null},{"team_id":66,"player_id":19238,"player":"S. Downing","number":6,"pos":null},{"team_id":66,"player_id":114846,"player":"S. Petrov","number":19,"pos":null},{"team_id":66,"player_id":894,"player":"A. Young","number":7,"pos":null},{"team_id":66,"player_id":296,"player":"J. Milner","number":8,"pos":null},{"team_id":66,"player_id":18777,"player":"M. Albrighton","number":12,"pos":null},{"team_id":66,"player_id":115943,"player":"J. Carew","number":10,"pos":null}],"substitutes":[{"team_id":66,"player_id":87798,"player":"N. Reo-Coker","number":20,"pos":null},{"team_id":66,"player_id":19283,"player":"A. Weimann","number":42,"pos":null},{"team_id":66,"player_id":19387,"player":"B. Bannan","number":25,"pos":null},{"team_id":66,"player_id":50869,"player":"B. Guzan","number":22,"pos":null},{"team_id":66,"player_id":114851,"player":"E. Heskey","number":18,"pos":null},{"team_id":66,"player_id":114893,"player":"H. Beye","number":23,"pos":null},{"team_id":66,"player_id":19413,"player":"E. Lichaj","number":30,"pos":null}]},"West Ham":{"coach":null,"coach_id":null,"formation":null,"startXI":[{"team_id":48,"player_id":2277,"player":"R. Green","number":1,"pos":null},{"team_id":48,"player_id":115930,"player":"R. Kov\u00e1c","number":14,"pos":null},{"team_id":48,"player_id":113751,"player":"H. Ilunga","number":23,"pos":null},{"team_id":48,"player_id":114763,"player":"M. Upson","number":15,"pos":null},{"team_id":48,"player_id":90497,"player":"W. Reid","number":2,"pos":null},{"team_id":48,"player_id":18844,"player":"J. Tomkins","number":5,"pos":null},{"team_id":48,"player_id":115931,"player":"Boa Morte","number":13,"pos":null},{"team_id":48,"player_id":90565,"player":"J. Faubert","number":20,"pos":null},{"team_id":48,"player_id":83032,"player":"S. Parker","number":8,"pos":null},{"team_id":48,"player_id":18826,"player":"M. Noble","number":16,"pos":null},{"team_id":48,"player_id":114758,"player":"C. Cole","number":9,"pos":null}],"substitutes":[{"team_id":48,"player_id":115939,"player":"F. Piquionne","number":30,"pos":null},{"team_id":48,"player_id":35926,"player":"P. Barrera","number":12,"pos":null},{"team_id":48,"player_id":30968,"player":"A. Diamanti","number":32,"pos":null},{"team_id":48,"player_id":114777,"player":"D. Gabbidon","number":4,"pos":null},{"team_id":48,"player_id":44837,"player":"J. Spector","number":18,"pos":null},{"team_id":48,"player_id":19751,"player":"M. Stech","number":29,"pos":null},{"team_id":48,"player_id":19748,"player":"F. Sears","number":19,"pos":null}]}},"statistics":null,"players":null}]}}
+{
+    "api": {
+        "results": 1,
+        "fixtures": [
+            {
+                "fixture_id": 194198,
+                "league_id": 701,
+                "league": {
+                    "name": "Premier League",
+                    "country": "England",
+                    "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                    "flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+                },
+                "event_date": "2010-08-14T14:00:00+00:00",
+                "event_timestamp": 1281794400,
+                "firstHalfStart": null,
+                "secondHalfStart": null,
+                "round": "Regular Season - 38",
+                "status": "Match Finished",
+                "statusShort": "FT",
+                "elapsed": 90,
+                "venue": "Villa Park (Birmingham)",
+                "referee": null,
+                "homeTeam": {
+                    "team_id": 66,
+                    "team_name": "Aston Villa",
+                    "logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+                },
+                "awayTeam": {
+                    "team_id": 48,
+                    "team_name": "West Ham",
+                    "logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+                },
+                "goalsHomeTeam": 3,
+                "goalsAwayTeam": 0,
+                "score": {
+                    "halftime": "2-0",
+                    "fulltime": "3-0",
+                    "extratime": null,
+                    "penalty": null
+                },
+                "events": [
+                    {
+                        "elapsed": 15,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 19238,
+                        "player": "S. Downing",
+                        "assist_id": null,
+                        "assist": null,
+                        "type": "Goal",
+                        "detail": "Normal Goal",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 40,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 114846,
+                        "player": "S. Petrov",
+                        "assist_id": null,
+                        "assist": null,
+                        "type": "Goal",
+                        "detail": "Normal Goal",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 45,
+                        "elapsed_plus": null,
+                        "team_id": 48,
+                        "teamName": "West Ham",
+                        "player_id": 115930,
+                        "player": "R. Kov\u00e1c",
+                        "assist_id": 115939,
+                        "assist": "F. Piquionne",
+                        "type": "subst",
+                        "detail": "F. Piquionne",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 45,
+                        "elapsed_plus": null,
+                        "team_id": 48,
+                        "teamName": "West Ham",
+                        "player_id": 115931,
+                        "player": "Boa Morte",
+                        "assist_id": 35926,
+                        "assist": "P. Barrera",
+                        "type": "subst",
+                        "detail": "P. Barrera",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 66,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 296,
+                        "player": "J. Milner",
+                        "assist_id": null,
+                        "assist": null,
+                        "type": "Goal",
+                        "detail": "Normal Goal",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 72,
+                        "elapsed_plus": null,
+                        "team_id": 48,
+                        "teamName": "West Ham",
+                        "player_id": 18844,
+                        "player": "J. Tomkins",
+                        "assist_id": 30968,
+                        "assist": "A. Diamanti",
+                        "type": "subst",
+                        "detail": "A. Diamanti",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 85,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 296,
+                        "player": "J. Milner",
+                        "assist_id": 87798,
+                        "assist": "N. Reo-Coker",
+                        "type": "subst",
+                        "detail": "N. Reo-Coker",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 86,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 894,
+                        "player": "A. Young",
+                        "assist_id": 19283,
+                        "assist": "A. Weimann",
+                        "type": "subst",
+                        "detail": "A. Weimann",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 89,
+                        "elapsed_plus": null,
+                        "team_id": 66,
+                        "teamName": "Aston Villa",
+                        "player_id": 18777,
+                        "player": "M. Albrighton",
+                        "assist_id": 19387,
+                        "assist": "B. Bannan",
+                        "type": "subst",
+                        "detail": "B. Bannan",
+                        "comments": null
+                    }
+                ],
+                "lineups": {
+                    "Aston Villa": {
+                        "coach": null,
+                        "coach_id": null,
+                        "formation": null,
+                        "startXI": [
+                            {
+                                "team_id": 66,
+                                "player_id": 114766,
+                                "player": "B. Friedel",
+                                "number": 1,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 114850,
+                                "player": "L. Young",
+                                "number": 2,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 114757,
+                                "player": "R. Dunne",
+                                "number": 5,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 82340,
+                                "player": "S. Warnock",
+                                "number": 3,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 18891,
+                                "player": "C. Clark",
+                                "number": 21,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 19238,
+                                "player": "S. Downing",
+                                "number": 6,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 114846,
+                                "player": "S. Petrov",
+                                "number": 19,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 894,
+                                "player": "A. Young",
+                                "number": 7,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 296,
+                                "player": "J. Milner",
+                                "number": 8,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 18777,
+                                "player": "M. Albrighton",
+                                "number": 12,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 115943,
+                                "player": "J. Carew",
+                                "number": 10,
+                                "pos": null
+                            }
+                        ],
+                        "substitutes": [
+                            {
+                                "team_id": 66,
+                                "player_id": 87798,
+                                "player": "N. Reo-Coker",
+                                "number": 20,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 19283,
+                                "player": "A. Weimann",
+                                "number": 42,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 19387,
+                                "player": "B. Bannan",
+                                "number": 25,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 50869,
+                                "player": "B. Guzan",
+                                "number": 22,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 114851,
+                                "player": "E. Heskey",
+                                "number": 18,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 114893,
+                                "player": "H. Beye",
+                                "number": 23,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 66,
+                                "player_id": 19413,
+                                "player": "E. Lichaj",
+                                "number": 30,
+                                "pos": null
+                            }
+                        ]
+                    },
+                    "West Ham": {
+                        "coach": null,
+                        "coach_id": null,
+                        "formation": null,
+                        "startXI": [
+                            {
+                                "team_id": 48,
+                                "player_id": 2277,
+                                "player": "R. Green",
+                                "number": 1,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 115930,
+                                "player": "R. Kov\u00e1c",
+                                "number": 14,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 113751,
+                                "player": "H. Ilunga",
+                                "number": 23,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 114763,
+                                "player": "M. Upson",
+                                "number": 15,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 90497,
+                                "player": "W. Reid",
+                                "number": 2,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 18844,
+                                "player": "J. Tomkins",
+                                "number": 5,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 115931,
+                                "player": "Boa Morte",
+                                "number": 13,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 90565,
+                                "player": "J. Faubert",
+                                "number": 20,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 83032,
+                                "player": "S. Parker",
+                                "number": 8,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 18826,
+                                "player": "M. Noble",
+                                "number": 16,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 114758,
+                                "player": "C. Cole",
+                                "number": 9,
+                                "pos": null
+                            }
+                        ],
+                        "substitutes": [
+                            {
+                                "team_id": 48,
+                                "player_id": 115939,
+                                "player": "F. Piquionne",
+                                "number": 30,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 35926,
+                                "player": "P. Barrera",
+                                "number": 12,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 30968,
+                                "player": "A. Diamanti",
+                                "number": 32,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 114777,
+                                "player": "D. Gabbidon",
+                                "number": 4,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 44837,
+                                "player": "J. Spector",
+                                "number": 18,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 19751,
+                                "player": "M. Stech",
+                                "number": 29,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 48,
+                                "player_id": 19748,
+                                "player": "F. Sears",
+                                "number": 19,
+                                "pos": null
+                            }
+                        ]
+                    }
+                },
+                "statistics": null,
+                "players": null
+            }
+        ]
+    }
+}
