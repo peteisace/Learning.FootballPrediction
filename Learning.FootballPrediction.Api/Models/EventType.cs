@@ -17,6 +17,8 @@ namespace Learning.FootballPrediction.Api.Models
 
         SubOn = 6,
 
-        SubOff = 7
+        SubOff = 7,
+
+        Assist = 8
     }
 }

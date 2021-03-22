@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Learning.FootballPrediction.DataFetch.Api.Source;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
 
 namespace Learning.FootballPrediction.DataFetch
 {
     public class PlayerCache
     {
-        public delegate Task<PlayerDetailResponse> PlayerLookupHandler(int id);
+        public delegate Task<PlayerDetailResult> PlayerLookupHandler(int id);
         private List<WeakReference<PlayerLookupHandler>> _subs = new List<WeakReference<PlayerLookupHandler>>();
-        private Dictionary<int, PlayerDetailResponse> _cache = new Dictionary<int, PlayerDetailResponse>();
+        private Dictionary<int, PlayerDetails> _cache = new Dictionary<int, PlayerDetails>();
 
         private static PlayerCache _instance = new PlayerCache();
 
@@ -22,29 +22,40 @@ namespace Learning.FootballPrediction.DataFetch
             get { return _instance; }
         }
 
-        public async Task<PlayerLookupResult> Lookup(PlayerResponse incoming)
+        public async Task<PlayerLookupResult> Lookup(SquadInfo incoming, int leagueId)
         {
             var k = string.Concat(
-                incoming.Id
+                incoming.PlayerId
             );
 
-            PlayerDetailResponse returned = null;
+            PlayerDetails returned = null;
 
-            if(!this._cache.ContainsKey(incoming.Id))
+            if(!this._cache.ContainsKey(incoming.PlayerId))
             {
                 foreach(var s in this._subs)
                 {
                     PlayerLookupHandler target = null;
                     if(s.TryGetTarget(out target))
                     {
-                        returned = await target.Invoke(incoming.Id);
+                        var list = await target.Invoke(incoming.PlayerId);
+                        // Process the list.
+                        foreach(var p in list.Api.Players)
+                        {
+                            if(p.LeagueId == leagueId && !this._cache.ContainsKey(p.PlayerId))
+                            {
+                                // Add it to the cache.  
+                                this._cache.Add(p.PlayerId, p);
+                            }
+                        }
+
+                        this._cache.Add(incoming.PlayerId, returned);
                         return new PlayerLookupResult(false, returned);
                     }
                 }
             }
 
             // Send it back.
-            return new PlayerLookupResult(true, this._cache.GetValueOrDefault(incoming.Id, null));
+            return new PlayerLookupResult(true, this._cache.GetValueOrDefault(incoming.PlayerId, null));
         }
 
         public bool RegisterHandler(PlayerLookupHandler handler)

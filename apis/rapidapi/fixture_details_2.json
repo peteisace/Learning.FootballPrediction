@@ -1,1 +1,399 @@
-{"api":{"results":1,"fixtures":[{"fixture_id":194199,"league_id":701,"league":{"name":"Premier League","country":"England","logo":"https:\/\/media.api-sports.io\/football\/leagues\/39.png","flag":"https:\/\/media.api-sports.io\/flags\/gb.svg"},"event_date":"2010-08-14T14:00:00+00:00","event_timestamp":1281794400,"firstHalfStart":null,"secondHalfStart":null,"round":"Regular Season - 38","status":"Match Finished","statusShort":"FT","elapsed":90,"venue":"Ewood Park (Blackburn)","referee":null,"homeTeam":{"team_id":67,"team_name":"Blackburn","logo":"https:\/\/media.api-sports.io\/football\/teams\/67.png"},"awayTeam":{"team_id":45,"team_name":"Everton","logo":"https:\/\/media.api-sports.io\/football\/teams\/45.png"},"goalsHomeTeam":1,"goalsAwayTeam":0,"score":{"halftime":"1-0","fulltime":"1-0","extratime":null,"penalty":null},"events":[{"elapsed":9,"elapsed_plus":null,"team_id":67,"teamName":"Blackburn","player_id":114859,"player":"D. Dunn","assist_id":780,"assist":"S. N'Zonzi","type":"subst","detail":"S. N'Zonzi","comments":null},{"elapsed":14,"elapsed_plus":null,"team_id":67,"teamName":"Blackburn","player_id":57,"player":"N. Kalinic","assist_id":null,"assist":null,"type":"Goal","detail":"Normal Goal","comments":null},{"elapsed":59,"elapsed_plus":null,"team_id":45,"teamName":"Everton","player_id":114746,"player":"L. Osman","assist_id":17411,"assist":"J. Beckford","type":"subst","detail":"J. Beckford","comments":null},{"elapsed":60,"elapsed_plus":null,"team_id":67,"teamName":"Blackburn","player_id":57,"player":"N. Kalinic","assist_id":19511,"assist":"M. Diouf","type":"subst","detail":"M. Diouf","comments":null},{"elapsed":73,"elapsed_plus":null,"team_id":45,"teamName":"Everton","player_id":114820,"player":"L. Saha","assist_id":104625,"assist":"D. Bilyaletdinov","type":"subst","detail":"D. Bilyaletdinov","comments":null},{"elapsed":78,"elapsed_plus":null,"team_id":45,"teamName":"Everton","player_id":12753,"player":"M. Fellaini","assist_id":19481,"assist":"J. Rodwell","type":"subst","detail":"J. Rodwell","comments":null}],"lineups":{"Blackburn":{"coach":null,"coach_id":null,"formation":null,"startXI":[{"team_id":67,"player_id":90517,"player":"P. Robinson","number":1,"pos":null},{"team_id":67,"player_id":114861,"player":"M\u00edchel Salgado","number":27,"pos":null},{"team_id":67,"player_id":113658,"player":"G. Givet","number":5,"pos":null},{"team_id":67,"player_id":82016,"player":"C. Samba","number":4,"pos":null},{"team_id":67,"player_id":19319,"player":"M. Olsson","number":3,"pos":null},{"team_id":67,"player_id":114809,"player":"R. Nelsen","number":6,"pos":null},{"team_id":67,"player_id":888,"player":"P. Jones","number":28,"pos":null},{"team_id":67,"player_id":39358,"player":"M. Pedersen","number":12,"pos":null},{"team_id":67,"player_id":114859,"player":"D. Dunn","number":8,"pos":null},{"team_id":67,"player_id":115962,"player":"El-Hadji Diouf","number":10,"pos":null},{"team_id":67,"player_id":57,"player":"N. Kalinic","number":9,"pos":null}],"substitutes":[{"team_id":67,"player_id":780,"player":"S. N'Zonzi","number":15,"pos":null},{"team_id":67,"player_id":19511,"player":"M. Diouf","number":41,"pos":null},{"team_id":67,"player_id":104259,"player":"B. Emerton","number":7,"pos":null},{"team_id":67,"player_id":19007,"player":"D. Hoilett","number":23,"pos":null},{"team_id":67,"player_id":114877,"player":"K. Andrews","number":17,"pos":null},{"team_id":67,"player_id":19171,"player":"M. Bunn","number":13,"pos":null},{"team_id":67,"player_id":115967,"player":"P. Chimbonda","number":39,"pos":null}]},"Everton":{"coach":null,"coach_id":null,"formation":null,"startXI":[{"team_id":45,"player_id":51298,"player":"T. Howard","number":24,"pos":null},{"team_id":45,"player_id":18759,"player":"P. Jagielka","number":6,"pos":null},{"team_id":45,"player_id":18757,"player":"L. Baines","number":3,"pos":null},{"team_id":45,"player_id":114747,"player":"S. Distin","number":15,"pos":null},{"team_id":45,"player_id":77105,"player":"T. Cahill","number":17,"pos":null},{"team_id":45,"player_id":90513,"player":"S. Pienaar","number":20,"pos":null},{"team_id":45,"player_id":114801,"player":"P. Neville","number":18,"pos":null},{"team_id":45,"player_id":114745,"player":"Mikel Arteta","number":10,"pos":null},{"team_id":45,"player_id":114746,"player":"L. Osman","number":21,"pos":null},{"team_id":45,"player_id":12753,"player":"M. Fellaini","number":25,"pos":null},{"team_id":45,"player_id":114820,"player":"L. Saha","number":8,"pos":null}],"substitutes":[{"team_id":45,"player_id":17411,"player":"J. Beckford","number":16,"pos":null},{"team_id":45,"player_id":104625,"player":"D. Bilyaletdinov","number":7,"pos":null},{"team_id":45,"player_id":19481,"player":"J. Rodwell","number":26,"pos":null},{"team_id":45,"player_id":114786,"player":"J. Heitinga","number":5,"pos":null},{"team_id":45,"player_id":44963,"player":"J. Mucha","number":1,"pos":null},{"team_id":45,"player_id":61920,"player":"M. Gueye","number":19,"pos":null},{"team_id":45,"player_id":114755,"player":"T. Hibbert","number":2,"pos":null}]}},"statistics":null,"players":null}]}}
+{
+    "api": {
+        "results": 1,
+        "fixtures": [
+            {
+                "fixture_id": 194199,
+                "league_id": 701,
+                "league": {
+                    "name": "Premier League",
+                    "country": "England",
+                    "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                    "flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+                },
+                "event_date": "2010-08-14T14:00:00+00:00",
+                "event_timestamp": 1281794400,
+                "firstHalfStart": null,
+                "secondHalfStart": null,
+                "round": "Regular Season - 38",
+                "status": "Match Finished",
+                "statusShort": "FT",
+                "elapsed": 90,
+                "venue": "Ewood Park (Blackburn)",
+                "referee": null,
+                "homeTeam": {
+                    "team_id": 67,
+                    "team_name": "Blackburn",
+                    "logo": "https:\/\/media.api-sports.io\/football\/teams\/67.png"
+                },
+                "awayTeam": {
+                    "team_id": 45,
+                    "team_name": "Everton",
+                    "logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+                },
+                "goalsHomeTeam": 1,
+                "goalsAwayTeam": 0,
+                "score": {
+                    "halftime": "1-0",
+                    "fulltime": "1-0",
+                    "extratime": null,
+                    "penalty": null
+                },
+                "events": [
+                    {
+                        "elapsed": 9,
+                        "elapsed_plus": null,
+                        "team_id": 67,
+                        "teamName": "Blackburn",
+                        "player_id": 114859,
+                        "player": "D. Dunn",
+                        "assist_id": 780,
+                        "assist": "S. N'Zonzi",
+                        "type": "subst",
+                        "detail": "S. N'Zonzi",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 14,
+                        "elapsed_plus": null,
+                        "team_id": 67,
+                        "teamName": "Blackburn",
+                        "player_id": 57,
+                        "player": "N. Kalinic",
+                        "assist_id": null,
+                        "assist": null,
+                        "type": "Goal",
+                        "detail": "Normal Goal",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 59,
+                        "elapsed_plus": null,
+                        "team_id": 45,
+                        "teamName": "Everton",
+                        "player_id": 114746,
+                        "player": "L. Osman",
+                        "assist_id": 17411,
+                        "assist": "J. Beckford",
+                        "type": "subst",
+                        "detail": "J. Beckford",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 60,
+                        "elapsed_plus": null,
+                        "team_id": 67,
+                        "teamName": "Blackburn",
+                        "player_id": 57,
+                        "player": "N. Kalinic",
+                        "assist_id": 19511,
+                        "assist": "M. Diouf",
+                        "type": "subst",
+                        "detail": "M. Diouf",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 73,
+                        "elapsed_plus": null,
+                        "team_id": 45,
+                        "teamName": "Everton",
+                        "player_id": 114820,
+                        "player": "L. Saha",
+                        "assist_id": 104625,
+                        "assist": "D. Bilyaletdinov",
+                        "type": "subst",
+                        "detail": "D. Bilyaletdinov",
+                        "comments": null
+                    },
+                    {
+                        "elapsed": 78,
+                        "elapsed_plus": null,
+                        "team_id": 45,
+                        "teamName": "Everton",
+                        "player_id": 12753,
+                        "player": "M. Fellaini",
+                        "assist_id": 19481,
+                        "assist": "J. Rodwell",
+                        "type": "subst",
+                        "detail": "J. Rodwell",
+                        "comments": null
+                    }
+                ],
+                "lineups": {
+                    "Blackburn": {
+                        "coach": null,
+                        "coach_id": null,
+                        "formation": null,
+                        "startXI": [
+                            {
+                                "team_id": 67,
+                                "player_id": 90517,
+                                "player": "P. Robinson",
+                                "number": 1,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 114861,
+                                "player": "M\u00edchel Salgado",
+                                "number": 27,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 113658,
+                                "player": "G. Givet",
+                                "number": 5,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 82016,
+                                "player": "C. Samba",
+                                "number": 4,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 19319,
+                                "player": "M. Olsson",
+                                "number": 3,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 114809,
+                                "player": "R. Nelsen",
+                                "number": 6,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 888,
+                                "player": "P. Jones",
+                                "number": 28,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 39358,
+                                "player": "M. Pedersen",
+                                "number": 12,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 114859,
+                                "player": "D. Dunn",
+                                "number": 8,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 115962,
+                                "player": "El-Hadji Diouf",
+                                "number": 10,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 57,
+                                "player": "N. Kalinic",
+                                "number": 9,
+                                "pos": null
+                            }
+                        ],
+                        "substitutes": [
+                            {
+                                "team_id": 67,
+                                "player_id": 780,
+                                "player": "S. N'Zonzi",
+                                "number": 15,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 19511,
+                                "player": "M. Diouf",
+                                "number": 41,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 104259,
+                                "player": "B. Emerton",
+                                "number": 7,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 19007,
+                                "player": "D. Hoilett",
+                                "number": 23,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 114877,
+                                "player": "K. Andrews",
+                                "number": 17,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 19171,
+                                "player": "M. Bunn",
+                                "number": 13,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 67,
+                                "player_id": 115967,
+                                "player": "P. Chimbonda",
+                                "number": 39,
+                                "pos": null
+                            }
+                        ]
+                    },
+                    "Everton": {
+                        "coach": null,
+                        "coach_id": null,
+                        "formation": null,
+                        "startXI": [
+                            {
+                                "team_id": 45,
+                                "player_id": 51298,
+                                "player": "T. Howard",
+                                "number": 24,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 18759,
+                                "player": "P. Jagielka",
+                                "number": 6,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 18757,
+                                "player": "L. Baines",
+                                "number": 3,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114747,
+                                "player": "S. Distin",
+                                "number": 15,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 77105,
+                                "player": "T. Cahill",
+                                "number": 17,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 90513,
+                                "player": "S. Pienaar",
+                                "number": 20,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114801,
+                                "player": "P. Neville",
+                                "number": 18,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114745,
+                                "player": "Mikel Arteta",
+                                "number": 10,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114746,
+                                "player": "L. Osman",
+                                "number": 21,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 12753,
+                                "player": "M. Fellaini",
+                                "number": 25,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114820,
+                                "player": "L. Saha",
+                                "number": 8,
+                                "pos": null
+                            }
+                        ],
+                        "substitutes": [
+                            {
+                                "team_id": 45,
+                                "player_id": 17411,
+                                "player": "J. Beckford",
+                                "number": 16,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 104625,
+                                "player": "D. Bilyaletdinov",
+                                "number": 7,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 19481,
+                                "player": "J. Rodwell",
+                                "number": 26,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114786,
+                                "player": "J. Heitinga",
+                                "number": 5,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 44963,
+                                "player": "J. Mucha",
+                                "number": 1,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 61920,
+                                "player": "M. Gueye",
+                                "number": 19,
+                                "pos": null
+                            },
+                            {
+                                "team_id": 45,
+                                "player_id": 114755,
+                                "player": "T. Hibbert",
+                                "number": 2,
+                                "pos": null
+                            }
+                        ]
+                    }
+                },
+                "statistics": null,
+                "players": null
+            }
+        ]
+    }
+}

@@ -1,95 +1,87 @@
 using IO.Swagger.Model;
-using System.Linq;
-using Learning.FootballPrediction.DataFetch.Api.Source;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Learning.FootballPrediction.DataFetch.Contracts;
-using System;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
+using System.Linq;
+using MatchEvent = Learning.FootballPrediction.DataFetch.Api.Rapid.MatchEvent;
 
 namespace Learning.FootballPrediction.DataFetch
 {
     public class MatchConverter
     {
         private IPlayerRepository _players;
-        public MatchConverter(IPlayerRepository players)
+
+        private int _season;
+
+        public MatchConverter(IPlayerRepository players, int season)
         {
             this._players = players;
             PlayerCache.Instance.RegisterHandler(this.PlayerDetailRequest);
+            this._season = season;
         }
 
-        public async Task<MatchRequest> ToMatch(MatchResponse matchDetails, Dictionary<int, PlayerResponse> playerHash)
+        public async Task<MatchRequest> ToMatch(FixtureDetails fixture)
         {
-             // Create the container.
+             // Create the basic container.
             var m = new MatchRequest();
-            m.Played = matchDetails.UtcDate;
+            m.Played = fixture.EventDate;
 
-            var clubRequest = await this.CreateClub(matchDetails.HomeTeam, matchDetails.Goals);  
-            m.Home = clubRequest;
-            clubRequest = await this.CreateClub(matchDetails.AwayTeam, matchDetails.Goals);
-            m.Away = clubRequest;
+            // Set up the team information.
+            var home = fixture.Lineups[fixture.HomeTeam.Name];
+            var away = fixture.Lineups[fixture.AwayTeam.Name];
+            
+            // Create club, players with events.
+            m.Home = await this.CreateClub(fixture.HomeTeam, home, fixture.Events.Where(p => p.TeamId == fixture.HomeTeam.TeamId).ToList(), fixture.LeagueId);
+            m.Away = await this.CreateClub(fixture.AwayTeam, away, fixture.Events.Where(p => p.TeamId == fixture.AwayTeam.TeamId).ToList(), fixture.LeagueId);
 
             return m;
         }
 
-        private async Task<ClubRequest> CreateClub(TeamResponse team, List<GoalResponse> goals)
+        private async Task<ClubRequest> CreateClub(TeamInfo team, TeamSquadDetails squad, List<MatchEvent> events, int leagueId)
         {
-            Dictionary<int, PlayerRequest> playersForTeam = new Dictionary<int, PlayerRequest>();
-            foreach(var p in team.Lineup.Union(team.Bench))
+            List<PlayerRequest> players = new List<PlayerRequest>();
+            Dictionary<int, PlayerRequest> requestPlayers = new Dictionary<int, PlayerRequest>();
+
+            foreach(var p in squad.StartXi.Union(squad.Substitutes))
             {
-                var lookup = await PlayerCache.Instance.Lookup(p);
-                var detailed = lookup.Response;
+                // Get from playercache.
+                var detailsResponse = await PlayerCache.Instance.Lookup(p, leagueId);
+                var pDetails = detailsResponse.Response;
 
-                Console.WriteLine($"Lookup resonse is {lookup.Found} for player {p.Id}");
+                // Create player request
+                var player = new PlayerRequest() { 
+                    Name = pDetails.PlayerName,
+                    DateOfBirth = pDetails.BirthDate,
+                    Position = pDetails.Position,
+                    ActiveInEvents = new List<MatchEventRequest>()
+                };
 
-                PlayerRequest request = new PlayerRequest(
-                    detailed.Name,
-                    detailed.DateOfBirth,
-                    p.Position,
-                    new List<MatchEventRequest>()
-                );
-
-                // Add it to our list.  
-                playersForTeam.Add(p.Id, request);
-
-                if(string.IsNullOrEmpty(request.Name))
-                {
-                    throw new ArgumentNullException($"Player found with no name! ID is {p.Id}");
-                }
-
-                if(!lookup.Found)
-                {
-                    Console.WriteLine($"Fetched player {lookup.Response.Name}");
-                }
-
-                // Sleep so we don't overload.
-                await Task.Delay(3000); 
+                // Temporarily store lookup.
+                requestPlayers.Add(p.PlayerId, player);
             }
 
-            // Now go through the goals.
-            foreach(var g in goals.Where(p => p.Team.Id == team.Id))
-            {
-                var p = playersForTeam[g.Scorer.Id];
-                // List should be fine. 
+            // Go through the match events.
+            var matchEvents = EventConverter.Convert(events.ToArray());
 
-                // Add the event
-                p.ActiveInEvents.Add(new MatchEventRequest(
-                    g.Minute,
-                    EventType.GoalScored
-                ));
+            // Match 'em up.
+            foreach(var kvp in matchEvents)
+            {
+                var pRequest = requestPlayers[kvp.Key];
+                pRequest.ActiveInEvents = kvp.Value;
             }
 
-            // Create the team.
-            var cr = new ClubRequest(
-                team.Name,
-                playersForTeam.Values.ToList()
-            );
+            // Create the club
+            var c = new ClubRequest();
+            c.Name = team.Name;
+            c.Players = requestPlayers.Values.ToList();
 
-            return cr;
+            return c;
         }
 
-        private async Task<PlayerDetailResponse> PlayerDetailRequest(int playerId)
+        private async Task<PlayerDetailResult> PlayerDetailRequest(int playerId)
         {
-            var response = await this._players.GetPlayerAsync(playerId);
+            var response = await this._players.GetPlayerAsync(playerId, this._season);
             return response;
         }
     }    

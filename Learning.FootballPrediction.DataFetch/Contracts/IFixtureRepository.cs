@@ -1,6 +1,6 @@
 namespace Learning.FootballPrediction.DataFetch.Contracts
 {
-    internal interface IFixtureRepository
+    public interface IFixtureRepository
     {
     }
 }

@@ -1,13 +1,13 @@
-using Learning.FootballPrediction.DataFetch.Api.Source;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
 
 namespace Learning.FootballPrediction.DataFetch
 {
     public class PlayerLookupResult
     {
         private bool _found;
-        private PlayerDetailResponse _response;
+        private PlayerDetails _response;
 
-        public PlayerLookupResult(bool found, PlayerDetailResponse response)
+        public PlayerLookupResult(bool found, PlayerDetails response)
         {
             this._found = found;
             this._response = response;
@@ -15,6 +15,6 @@ namespace Learning.FootballPrediction.DataFetch
 
         public bool Found => this._found;
 
-        public PlayerDetailResponse Response => this._response;
+        public PlayerDetails Response => this._response;
     }
 }

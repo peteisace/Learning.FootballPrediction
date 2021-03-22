@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
@@ -20,7 +21,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
         }
 
         [JsonPropertyName("event_date")]
-        public int EventDate
+        public DateTime EventDate
         {
             get;
             set;

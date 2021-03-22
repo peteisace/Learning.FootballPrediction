@@ -1,12 +1,10 @@
 using System.Threading.Tasks;
-using Learning.FootballPrediction.DataFetch.Api.Source;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
 
 namespace Learning.FootballPrediction.DataFetch.Contracts
 {
     public interface IMatchInfoRepository
     {
-        Task<Competition> GetMatchSummariesAsync(int year, int matchDay);
-
-        Task<MatchContainer> GetMatchDetailsAsync(int matchId);
+        Task<FixtureDetailsResult> GetMatchDetailsAsync(int matchId);
     }
 }

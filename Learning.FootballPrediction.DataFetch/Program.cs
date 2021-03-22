@@ -67,6 +67,9 @@ namespace Learning.FootballPrediction.DataFetch
             services.AddSingleton<IMatchConfiguration>(configuration);
             services.AddSingleton<IMatchInfoRepository, MatchRepository>();
             services.AddSingleton<IPlayerRepository, PlayerRepository>();
+            services.AddSingleton<ILeagueRepository, LeagueRepository>();
+            services.AddSingleton<IFixtureRepository, FixtureRepository>();
+            services.AddSingleton<IPlayerDetailRepository, PlayerDetailRepository>();
             services.AddSingleton<IRunConfiguration>(runtime);
         }
     }

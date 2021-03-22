@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using Learning.FootballPrediction.DataFetch.Api.Source;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
 
 namespace Learning.FootballPrediction.DataFetch.Contracts
 {
     public interface IPlayerRepository
     {
-        Task<PlayerDetailResponse> GetPlayerAsync(int id);
+        Task<PlayerDetailResult> GetPlayerAsync(int id, int season);
     }
 }

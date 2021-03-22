@@ -32,6 +32,13 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
             set;
         }
 
+        [JsonPropertyName("assist_id")]
+        public int? AssistId
+        {
+            get;
+            set;
+        }
+
         [JsonPropertyName("type")]
         public MatchEventType Type
         {

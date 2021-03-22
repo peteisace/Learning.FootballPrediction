@@ -1,27 +1,21 @@
 using System.Threading.Tasks;
-using Learning.FootballPrediction.DataFetch.Api.Source;
+using Learning.FootballPrediction.DataFetch.Api.Rapid;
 using Learning.FootballPrediction.DataFetch.Contracts;
 using RestSharp;
 
 namespace Learning.FootballPrediction.DataFetch.Repositories
 {
-    public class PlayerRepository : IPlayerRepository
+    public class PlayerRepository : HttpRepositoryBase, IPlayerRepository
     {
-        private IMatchConfiguration _configuration;
-
-        public PlayerRepository(IMatchConfiguration configuration)
+        public PlayerRepository(IMatchConfiguration configuration) : base(configuration)
         {
-            this._configuration = configuration;
         }
 
-        public async Task<PlayerDetailResponse> GetPlayerAsync(int id)
+        public async Task<PlayerDetailResult> GetPlayerAsync(int id, int season)
         {
-            RestClient client = new RestClient(this._configuration.BaseUrl);
-            IRestRequest request = new RestRequest(string.Format(this._configuration.Player, id), Method.GET);
-            request = request.AddHeader("X-Auth-Token", this._configuration.ApiKey);
-            // Get the result
-            var p = await client.GetAsync<PlayerDetailResponse>(request);
-            return p;
+            var seasonString = string.Concat(season, "-", season + 1);
+            var response = await this.FetchOverHttp<PlayerDetailResult>(this.Configuration.Player, Method.GET, id, season);
+            return response;
         }
     }
 }

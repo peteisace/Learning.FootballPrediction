@@ -1,3 +1,4 @@
+using System;
 using System.Text.Json.Serialization;
 
 namespace Learning.FootballPrediction.DataFetch.Api.Rapid
@@ -40,7 +41,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
         }
 
         [JsonPropertyName("birth_date")]
-        public string BirthDate
+        public DateTime BirthDate
         {
             get;
             set;

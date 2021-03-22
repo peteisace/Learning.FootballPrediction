@@ -2,6 +2,11 @@ namespace Learning.FootballPrediction.DataFetch
 {
     public interface IMatchConfiguration
     {
+        string League
+        {
+            get;
+        }
+        
         string Competition 
         {
             get;

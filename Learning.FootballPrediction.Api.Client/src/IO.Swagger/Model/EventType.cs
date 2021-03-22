@@ -63,5 +63,11 @@ namespace IO.Swagger.Model
         /// Enum SubOff for value: SubOff
         /// </summary>
         [EnumMember(Value = "SubOff")]
-        SubOff = 7    }
+        SubOff = 7,
+        /// <summary>
+        /// Enum SubOff for value: SubOff
+        /// </summary>
+        [EnumMember(Value = "Assist")] 
+        Assist = 8
+    }
 }
