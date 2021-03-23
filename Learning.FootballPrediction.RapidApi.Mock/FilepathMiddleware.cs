@@ -9,7 +9,7 @@ namespace Learning.FootballPrediction.RapidApi.Mock
     {
         private RequestDelegate _next;
         private const string GROUP_NAME = "filepath";
-        private readonly string PATTERN = $"v2/(?<{GROUP_NAME}>\\w+)";
+        private readonly string PATTERN = $"v2/(\\w+/)+(?<{GROUP_NAME}>\\w+)";
 
         public FilepathMiddleware(RequestDelegate next)
         {

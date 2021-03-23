@@ -154,6 +154,8 @@ insert into dbo.event_type VALUES(6, 'Substitute On')
 GO
 insert into dbo.event_type VALUES(7, 'Substitute Off')
 GO
+insert into dbo.event_type VALUES(8, 'Assist')
+GO
 
 SET ANSI_NULLS ON
 GO
