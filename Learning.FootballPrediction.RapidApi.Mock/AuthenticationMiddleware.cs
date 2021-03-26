@@ -21,7 +21,7 @@ namespace Learning.FootballPrediction.RapidApi.Mock
         public async Task Invoke(HttpContext context)
         {
             // Grab out of headers.
-            if(context.Request.Headers.ContainsKey(API_HEADER) && context.Request.Headers.ContainsKey(API_HOST))
+            if(context.Request.Headers.ContainsKey(API_HEADER) && context.Request.Headers.ContainsKey(HOST_HEADER))
             {
                 StringValues headerValues;
                 // we have the headers, check the values.

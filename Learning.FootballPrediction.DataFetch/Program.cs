@@ -28,7 +28,7 @@ namespace Learning.FootballPrediction.DataFetch
                 })
                 .ConfigureAppConfiguration((hostingContext, cfg) => {
                     cfg.AddEnvironmentVariables();
-                    var hostingEnvironment = Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT");
+                    var hostingEnvironment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
                     // get environment
                     var env = hostingContext.HostingEnvironment;
                     cfg.AddJsonFile("appSettings.json");
@@ -38,6 +38,7 @@ namespace Learning.FootballPrediction.DataFetch
                     // Build it so we can use services.
                     var baseUrl = builtConfig.GetValue<string>("BaseConfiguration:BaseUrl");
                     var apikey = builtConfig.GetValue<string>("BaseConfiguration:ApiKey");
+                    var apiHost = builtConfig.GetValue<string>("BaseConfiguration:ApiHost");
                     var dUrl = builtConfig.GetValue<string>("BaseConfiguration:FpApi");
                     var section = builtConfig.GetSection(nameof(MatchConfig));
                     mConfiguration = section.Get<MatchConfig>();

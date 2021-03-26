@@ -18,9 +18,20 @@ namespace Learning.FootballPrediction.RapidApi.Mock
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((hostingContext, cfg) => {
+                    cfg.AddEnvironmentVariables();
+                    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+                    cfg.AddJsonFile("appsettings.json");
+                    cfg.AddJsonFile($"appsettings.{env}.json");
+                    cfg.Build();
+                })
+                .ConfigureServices((host, services) => {
+                    
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                        .UseUrls("http://*:4992");
                 });
     }
 }

@@ -8,8 +8,11 @@ namespace Learning.FootballPrediction.RapidApi.Mock
     public class FilepathMiddleware
     {
         private RequestDelegate _next;
+
+        private const string SUBJECT_NAME = "subject";
         private const string GROUP_NAME = "filepath";
-        private readonly string PATTERN = $"v2/(\\w+/)+(?<{GROUP_NAME}>\\w+)";
+        //  
+        private readonly string PATTERN = $"v2/(?<{SUBJECT_NAME}>\\w+)?/(?<{GROUP_NAME}>\\w+)(/\\w+(\\-\\w+)?)*";
 
         public FilepathMiddleware(RequestDelegate next)
         {
@@ -27,16 +30,19 @@ namespace Learning.FootballPrediction.RapidApi.Mock
                 {
                     foreach(Match m in matches)
                     {
-                        foreach(Group g in m.Groups)
+                        var subject = m.Groups[SUBJECT_NAME];
+                        var group = m.Groups[GROUP_NAME];
+
+                        var p = $"json/{subject?.Value}_{group?.Value}.json";
+                        
+                        if(File.Exists(p))
                         {
-                            var path = $"~/json/{g.Value}.json";
-                            if(g.Name == GROUP_NAME && File.Exists(path))
-                            {
-                                // Try and read our value
-                                var contents = File.ReadAllText(path);
-                                context.Response.ContentType = "appliction/json";
-                                await context.Response.WriteAsync(contents);
-                            }
+                            // Try and read our value
+                            var contents = File.ReadAllText(p);
+                            context.Response.ContentType = "application/json; charset=utf-8";
+                            context.Response.ContentLength = contents.Length;
+                            await context.Response.WriteAsync(contents);
+                            return;
                         }
                     }
                 }

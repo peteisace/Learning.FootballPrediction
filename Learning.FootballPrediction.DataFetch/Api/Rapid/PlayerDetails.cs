@@ -41,7 +41,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
         }
 
         [JsonPropertyName("birth_date")]
-        public DateTime BirthDate
+        public string BirthDate
         {
             get;
             set;
@@ -82,8 +82,8 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
             set;
         }
 
-        [JsonPropertyName("leagueId")]
-        public int LeagueId
+        [JsonPropertyName("league_id")]
+        public int? LeagueId
         {
             get;
             set;

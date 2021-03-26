@@ -41,14 +41,15 @@ namespace Learning.FootballPrediction.DataFetch
                         // Process the list.
                         foreach(var p in list.Api.Players)
                         {
-                            if(p.LeagueId == leagueId && !this._cache.ContainsKey(p.PlayerId))
+                            if(p.LeagueId.HasValue && p.LeagueId.Value == leagueId && !this._cache.ContainsKey(p.PlayerId))
                             {
                                 // Add it to the cache.  
                                 this._cache.Add(p.PlayerId, p);
                             }
                         }
 
-                        this._cache.Add(incoming.PlayerId, returned);
+                        // Returned
+                        returned = this._cache.GetValueOrDefault(incoming.PlayerId);
                         return new PlayerLookupResult(false, returned);
                     }
                 }

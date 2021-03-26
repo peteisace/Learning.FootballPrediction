@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Learning.FootballPrediction.RapidApi.Mock.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,12 +27,23 @@ namespace Learning.FootballPrediction.RapidApi.Mock
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Learning.FootballPrediction.RapidApi.Mock", Version = "v1" });
             });
+
+            AddServices(services);
+        }
+
+        private void AddServices(IServiceCollection services)
+        {
+            var section = this.Configuration.GetSection(nameof(UrlConfiguration));
+            if(section != null)
+            {
+                var config = section.Get<UrlConfiguration>();
+                services.AddSingleton<IUrlConfiguration>(config);
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

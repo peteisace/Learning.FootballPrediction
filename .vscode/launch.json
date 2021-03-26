@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
@@ -10,9 +11,14 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
+            //"program": "${workspaceFolder}/Learning.FootballPrediction.RapidApi.Mock/bin/Debug/net5.0/Learning.FootballPrediction.RapidApi.Mock.dll",
             "program": "${workspaceFolder}/Learning.FootballPrediction.DataFetch/bin/Debug/net5.0/Learning.FootballPrediction.DataFetch.dll",
             "args": [],
+            //"cwd": "${workspaceFolder}/Learning.FootballPrediction.RapidApi.Mock",
             "cwd": "${workspaceFolder}/Learning.FootballPrediction.DataFetch",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

@@ -34,14 +34,14 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
             set;
         }
 
-        [JsonPropertyName("home_team")]
+        [JsonPropertyName("homeTeam")]
         public TeamInfo HomeTeam
         {
             get;
             set;
         }
 
-        [JsonPropertyName("away_team")]
+        [JsonPropertyName("awayTeam")]
         public TeamInfo AwayTeam
         {
             get;

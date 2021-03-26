@@ -5,6 +5,9 @@ using Learning.FootballPrediction.DataFetch.Contracts;
 using Learning.FootballPrediction.DataFetch.Api.Rapid;
 using System.Linq;
 using MatchEvent = Learning.FootballPrediction.DataFetch.Api.Rapid.MatchEvent;
+using System;
+using System.Globalization;
+using System.Text;
 
 namespace Learning.FootballPrediction.DataFetch
 {
@@ -47,12 +50,34 @@ namespace Learning.FootballPrediction.DataFetch
             {
                 // Get from playercache.
                 var detailsResponse = await PlayerCache.Instance.Lookup(p, leagueId);
+
+                if(detailsResponse.Response == null)
+                {
+                    continue;
+                }
+
                 var pDetails = detailsResponse.Response;
+                var formatDate = pDetails.BirthDate.Split('/');
+                var sb = new StringBuilder();
+
+                foreach(var part in formatDate)
+                {
+                    var formatted = part;
+                    if(part.Length < 2)
+                    {
+                        formatted = part.PadLeft(2, '0');
+                    }
+
+                    sb.Append(formatted);
+                    sb.Append("/");
+                }
+
+                sb = sb.Remove(sb.Length - 1, 1);
 
                 // Create player request
                 var player = new PlayerRequest() { 
                     Name = pDetails.PlayerName,
-                    DateOfBirth = pDetails.BirthDate,
+                    DateOfBirth = DateTime.ParseExact(sb.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture),
                     Position = pDetails.Position,
                     ActiveInEvents = new List<MatchEventRequest>()
                 };

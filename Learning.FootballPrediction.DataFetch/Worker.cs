@@ -53,6 +53,8 @@ namespace Learning.FootballPrediction.DataFetch
                     var matchDetails = await this._matchRepository.GetMatchDetailsAsync(fixture.FixtureId);
 
                     // And turn it into a match request.
+                    var converter = new MatchConverter(this._playerRepository, league.Season);
+                    var mr = await converter.ToMatch(matchDetails.Api.Fixtures[0]);
                 }
             }
 

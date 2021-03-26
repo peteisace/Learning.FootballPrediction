@@ -4,7 +4,7 @@ namespace Learning.FootballPrediction.DataFetch
     {
         public string League
         {
-            get;
+            get;    
             set;
         }
         
@@ -29,35 +29,33 @@ namespace Learning.FootballPrediction.DataFetch
         public string ApiKey
         {
             get;
-            set;
+            private set;
         }
 
         public string BaseUrl
         {
             get;
-            set;
+            private set;
         }
 
-        public string DestinationBase
+        public string ApiHost
         {
             get;
-            set;
+            private set;
         }
 
         public void SetBaseUrl(string baseUrl, string apiKey)
         {
-            /*
-            this.Competition = string.Concat(baseUrl, this.Competition);
-            this.Match = string.Concat(baseUrl, this.Match);
-            this.Player = string.Concat(baseUrl, this.Player);
-            */
+         
             this.BaseUrl = baseUrl;
-            this.ApiKey = apiKey;
+            this.ApiKey = apiKey;            
+
         }
 
         public void SetDestination(string destinationBase)
         {
-            this.DestinationBase = destinationBase;
+            this.ApiHost = destinationBase;
         }
+        
     }
 }

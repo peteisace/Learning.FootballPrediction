@@ -31,7 +31,7 @@ namespace Learning.FootballPrediction.DataFetch
         {
             get;
         }
-        string DestinationBase 
+        string ApiHost 
         { 
             get; 
         }
