@@ -8,6 +8,10 @@ namespace Learning.FootballPrediction.Api.Models
         private string _position;
 
         private DateTime _dob;
+        private byte _height;
+        private byte _weight;
+        private MeasurementType _heightType;
+        private MeasurementType _weightType;
 
         private MatchEventRequest[] _activeEvents = new MatchEventRequest[0];
 
@@ -28,6 +32,30 @@ namespace Learning.FootballPrediction.Api.Models
             get => this._position;
             set => this._position = value;
         }        
+
+        public byte Height
+        {
+            get => this._height;
+            set => this._height = value;
+        }
+        
+        public MeasurementType HeightType
+        {
+            get => this._heightType;
+            set => this._heightType = value;
+        }
+
+        public byte Weight 
+        {
+            get => this._weight;
+            set => this._weight = value;
+        }
+
+        public MeasurementType WeightType 
+        {
+            get => this._weightType;
+            set => this._weightType = value;
+        }
 
         public MatchEventRequest[] ActiveInEvents 
         {

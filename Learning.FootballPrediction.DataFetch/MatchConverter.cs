@@ -48,36 +48,19 @@ namespace Learning.FootballPrediction.DataFetch
 
             foreach(var p in squad.StartXi.Union(squad.Substitutes))
             {
+                Console.WriteLine(
+                    "Now trying to get player {0} for club {1}",
+                    p.Player,
+                    team.Name);
+
                 // Get from playercache.
-                var detailsResponse = await PlayerCache.Instance.Lookup(p, leagueId);
-
-                if(detailsResponse.Response == null)
-                {
-                    continue;
-                }
-
+                var detailsResponse = await PlayerCache.Instance.Lookup(p, team.TeamId, leagueId);
                 var pDetails = detailsResponse.Response;
-                var formatDate = pDetails.BirthDate.Split('/');
-                var sb = new StringBuilder();
-
-                foreach(var part in formatDate)
-                {
-                    var formatted = part;
-                    if(part.Length < 2)
-                    {
-                        formatted = part.PadLeft(2, '0');
-                    }
-
-                    sb.Append(formatted);
-                    sb.Append("/");
-                }
-
-                sb = sb.Remove(sb.Length - 1, 1);
 
                 // Create player request
                 var player = new PlayerRequest() { 
                     Name = pDetails.PlayerName,
-                    DateOfBirth = DateTime.ParseExact(sb.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture),
+                    DateOfBirth = ConvertIsoDatetime(pDetails.BirthDate),
                     Position = pDetails.Position,
                     ActiveInEvents = new List<MatchEventRequest>()
                 };
@@ -104,9 +87,36 @@ namespace Learning.FootballPrediction.DataFetch
             return c;
         }
 
-        private async Task<PlayerDetailResult> PlayerDetailRequest(int playerId)
+        private static DateTime ConvertIsoDatetime(string standard)
         {
-            var response = await this._players.GetPlayerAsync(playerId, this._season);
+            var formatDate = standard.Split('/');
+            var sb = new StringBuilder();
+
+            foreach(var part in formatDate)
+            {
+                var formatted = part;
+                if(part.Length < 2)
+                {
+                    formatted = part.PadLeft(2, '0');
+                }
+
+                sb.Append(formatted);
+                sb.Append("/");
+            }
+
+            sb = sb.Remove(sb.Length - 1, 1);
+            var sRepresentation = sb.ToString();
+
+            return DateTime.ParseExact(
+                sRepresentation, 
+                "dd/MM/yyyy", 
+                CultureInfo.InvariantCulture);
+        }
+
+        private async Task<PlayerDetailResult> PlayerDetailRequest(int playerId, int teamId)
+        {
+            Console.WriteLine("Trying to fetch ID {0} for team ID {1}", playerId, teamId);
+            var response = await this._players.GetPlayerAsync(teamId, this._season);
             return response;
         }
     }    

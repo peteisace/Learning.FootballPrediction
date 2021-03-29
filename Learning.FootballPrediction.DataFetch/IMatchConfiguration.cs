@@ -35,5 +35,10 @@ namespace Learning.FootballPrediction.DataFetch
         { 
             get; 
         }
+
+        string DestinationBase
+        {
+            get;
+        }
     }
 }

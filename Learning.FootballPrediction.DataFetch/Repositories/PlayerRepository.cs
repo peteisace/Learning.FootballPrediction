@@ -14,7 +14,7 @@ namespace Learning.FootballPrediction.DataFetch.Repositories
         public async Task<PlayerDetailResult> GetPlayerAsync(int id, int season)
         {
             var seasonString = string.Concat(season, "-", season + 1);
-            var response = await this.FetchOverHttp<PlayerDetailResult>(this.Configuration.Player, Method.GET, id, season);
+            var response = await this.FetchOverHttp<PlayerDetailResult>(this.Configuration.Player, Method.GET, id, seasonString);
             return response;
         }
     }

@@ -59,6 +59,18 @@ BEGIN
 	DROP TABLE dbo.match_org 
 END
 
+IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME = 'measurement_type')
+BEGIN
+    DROP TABLE dbo.measurement_type
+END
+
+CREATE TABLE fp.dbo.measurement_type (
+    id tinyint NOT NULL,
+    abbreviation varchar(4) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    description varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    CONSTRAINT PK__measurement_type PRIMARY KEY (id) 
+)
+
 CREATE TABLE fp.dbo.match_org (
 	id tinyint NOT NULL,
 	desciption varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -94,8 +106,16 @@ CREATE TABLE fp.dbo.player (
 	id int IDENTITY(1,1) NOT NULL,
 	full_name varchar(40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 	date_of_birth datetime NOT NULL,
+    nationality_id int NULL,
+    height tinyint NULL,
+    height_measurement_type TINYINT NULL,
+    weight tinyint NULL,
+    weight_measurement_type tinyint NULL,
 	name_hash int NOT NULL,
-	CONSTRAINT PK__player__3213E83FEB6FF950 PRIMARY KEY (id)
+	CONSTRAINT PK__player__3213E83FEB6FF950 PRIMARY KEY (id),
+    CONSTRAINT FK_player_nationaity FOREIGN KEY (nationality_id) REFERENCES fp.dbo.nationality(id),
+    CONSTRAINT FK_player_height_measurement_type FOREIGN KEY (height_measurement_type) REFERENCES fp.dbo.measurement_type(id),
+    CONSTRAINT FK_player_weight_measurement_type FOREIGN KEY (weight_measurement_type) REFERENCES fp.dbo.measurement_type(id)
 ) 
 CREATE UNIQUE INDEX player_UK_namehash_dob ON dbo.player (name_hash, date_of_birth)  
 CREATE INDEX player_IX_namehash ON dbo.player (name_hash)  
@@ -115,6 +135,7 @@ CREATE TABLE fp.dbo.match_squads (
 	player_id int NOT NULL,
 	club_type tinyint NOT NULL,
 	start_positionid tinyint NOT NULL,
+    minutes_played tinyint NULL,
 	CONSTRAINT PK_match_squads PRIMARY KEY (match_id,player_id),
 	CONSTRAINT FK_matchsquads_match FOREIGN KEY (match_id) REFERENCES fp.dbo.[match](id),
 	CONSTRAINT FK_matchsquads_matchorg FOREIGN KEY (club_type) REFERENCES fp.dbo.match_org(id),
@@ -155,6 +176,10 @@ GO
 insert into dbo.event_type VALUES(7, 'Substitute Off')
 GO
 insert into dbo.event_type VALUES(8, 'Assist')
+GO
+insert into dbo.measurement_type VALUES(1, 'cm', 'Centimetres')
+GO
+insert into dbo.measurement_type VALUES(2, 'kg', 'Kilogrammes')
 GO
 
 SET ANSI_NULLS ON

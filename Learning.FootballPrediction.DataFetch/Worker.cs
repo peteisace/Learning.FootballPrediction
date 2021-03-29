@@ -55,6 +55,10 @@ namespace Learning.FootballPrediction.DataFetch
                     // And turn it into a match request.
                     var converter = new MatchConverter(this._playerRepository, league.Season);
                     var mr = await converter.ToMatch(matchDetails.Api.Fixtures[0]);
+
+                    // Go execute it.
+                    MatchApi mApi = new MatchApi(this._mConfig.DestinationBase);
+                    var result = await mApi.MatchSavePostAsync(mr);
                 }
             }
 

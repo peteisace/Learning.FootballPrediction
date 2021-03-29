@@ -13,6 +13,7 @@ namespace Learning.FootballPrediction.Api.Repositories
         public ClubRepository(IConfiguration configuration)
         {
             this._connectionString = configuration.GetConnectionString("default");
+            System.Console.WriteLine("Value of connectionstring is {0}", this._connectionString);
         }
 
         public async Task<Club> GetClubByName(string name)

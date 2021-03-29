@@ -44,17 +44,23 @@ namespace Learning.FootballPrediction.DataFetch
             private set;
         }
 
-        public void SetBaseUrl(string baseUrl, string apiKey)
+        public string DestinationBase
+        {
+            get;
+            set;
+        }
+
+        public void SetBaseUrl(string baseUrl, string apiKey, string apiHost)
         {
          
             this.BaseUrl = baseUrl;
             this.ApiKey = apiKey;            
-
+            this.ApiHost = apiHost;
         }
 
         public void SetDestination(string destinationBase)
         {
-            this.ApiHost = destinationBase;
+            this.DestinationBase = destinationBase;
         }
         
     }

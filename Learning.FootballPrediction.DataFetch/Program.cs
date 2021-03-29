@@ -40,10 +40,11 @@ namespace Learning.FootballPrediction.DataFetch
                     var apikey = builtConfig.GetValue<string>("BaseConfiguration:ApiKey");
                     var apiHost = builtConfig.GetValue<string>("BaseConfiguration:ApiHost");
                     var dUrl = builtConfig.GetValue<string>("BaseConfiguration:FpApi");
+                    var destination = builtConfig.GetValue<string>("BaseConfiguration:DestinationBase");
                     var section = builtConfig.GetSection(nameof(MatchConfig));
                     mConfiguration = section.Get<MatchConfig>();
-                    mConfiguration.SetBaseUrl(baseUrl, apikey);
-                    mConfiguration.SetDestination(dUrl);
+                    mConfiguration.SetBaseUrl(baseUrl, apikey, dUrl);
+                    mConfiguration.SetDestination(destination);
                 })
                 .ConfigureServices((context, services) => {
                     services.AddHostedService<Worker>();

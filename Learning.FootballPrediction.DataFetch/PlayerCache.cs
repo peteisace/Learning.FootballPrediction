@@ -7,7 +7,7 @@ namespace Learning.FootballPrediction.DataFetch
 {
     public class PlayerCache
     {
-        public delegate Task<PlayerDetailResult> PlayerLookupHandler(int id);
+        public delegate Task<PlayerDetailResult> PlayerLookupHandler(int id, int teamId);
         private List<WeakReference<PlayerLookupHandler>> _subs = new List<WeakReference<PlayerLookupHandler>>();
         private Dictionary<int, PlayerDetails> _cache = new Dictionary<int, PlayerDetails>();
 
@@ -22,7 +22,7 @@ namespace Learning.FootballPrediction.DataFetch
             get { return _instance; }
         }
 
-        public async Task<PlayerLookupResult> Lookup(SquadInfo incoming, int leagueId)
+        public async Task<PlayerLookupResult> Lookup(SquadInfo incoming, int teamId, int leagueId)
         {
             var k = string.Concat(
                 incoming.PlayerId
@@ -37,14 +37,25 @@ namespace Learning.FootballPrediction.DataFetch
                     PlayerLookupHandler target = null;
                     if(s.TryGetTarget(out target))
                     {
-                        var list = await target.Invoke(incoming.PlayerId);
+                        var list = await target.Invoke(incoming.PlayerId, teamId);
                         // Process the list.
                         foreach(var p in list.Api.Players)
                         {
+                            Console.Write("Found {0}({2}), with league ID {1}. ",
+                                p.PlayerName,
+                                p.LeagueId,
+                                p.PlayerId);
+
                             if(p.LeagueId.HasValue && p.LeagueId.Value == leagueId && !this._cache.ContainsKey(p.PlayerId))
                             {
                                 // Add it to the cache.  
                                 this._cache.Add(p.PlayerId, p);
+                                Console.WriteLine("And saved him in cache.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("And ignored him, cache.ContainsKey == {0}",
+                                    this._cache.ContainsKey(p.PlayerId));
                             }
                         }
 

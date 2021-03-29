@@ -3,29 +3,30 @@ version: '3'
 services:
   sqlserver:
     image: fp_sql:latest
+    networks:
+      - fp_gateway
     environment: 
       - ACCEPT_EULA=Y
       - SA_PASSWORD=sqlserver_P@ssword
     ports:
       - "1433:1433"
-    volumes:
-      - /opt/docker_data/sqlserver/fp/data:/var/opt/mssql/data
-      - /opt/docker_data/sqlserver/fp/logs:/var/opt/mssql/logs
-      - /opt/docker_data/sqlserver/fp/secrets:/var/opt/mssql/secrets
   apimock:
-    image: fp_apimock:latest
+    image: fp_mockapi:latest
     ports:
-      - "4990:4990"
+      - "4992:4992"
   api:
     image: fp_api:latest
+    networks:
+      - fp_gateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
     ports: 
       - "4991:4991"
     depends_on: 
       - sqlserver
-  datafetch:
-    image: fp_datafetch:latest
-    depends_on:
-      - api
-      - apimock
+
+networks:
+  fp_gateway: {}
+ 
 
         

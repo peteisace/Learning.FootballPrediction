@@ -26,8 +26,15 @@ namespace Learning.FootballPrediction.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args, int port) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((hostingContext, cfg) => {
+                    cfg.AddEnvironmentVariables();
+                    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+                    cfg.AddJsonFile("appsettings.json");
+                    cfg.AddJsonFile($"appsettings.{env}.json", optional: true);
+                    cfg.Build();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
-                {
+                {                
                     webBuilder.UseWebRoot("wwwroot");   
                     webBuilder.UseStartup<Startup>()
                         .UseUrls($"http://*:{port}");
