@@ -19,14 +19,14 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
             set;
         }
 
-        [JsonPropertyName("first_name")]
+        [JsonPropertyName("firstname")]
         public string FirstName
         {
             get;
             set;
         }
 
-        [JsonPropertyName("last_name")]
+        [JsonPropertyName("lastname")]
         public string LastName
         {
             get;

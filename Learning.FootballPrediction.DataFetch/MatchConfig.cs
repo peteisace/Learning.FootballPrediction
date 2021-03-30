@@ -26,6 +26,12 @@ namespace Learning.FootballPrediction.DataFetch
             set;
         }
 
+        public string Ratings
+        {
+            get;
+            set;
+        }
+
         public string ApiKey
         {
             get;

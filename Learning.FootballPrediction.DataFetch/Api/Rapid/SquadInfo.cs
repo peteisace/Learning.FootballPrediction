@@ -31,5 +31,12 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
             get;
             set;
         }        
+
+        [JsonPropertyName("pos")]
+        public string Position
+        {
+            get;
+            set;
+        }
     }
 }

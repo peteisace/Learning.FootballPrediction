@@ -56,8 +56,16 @@ namespace Learning.FootballPrediction.DataFetch
                     var converter = new MatchConverter(this._playerRepository, league.Season);
                     var mr = await converter.ToMatch(matchDetails.Api.Fixtures[0]);
 
+                    // Serialize it to a string.  
+                    var serialized = JsonSerializer.Serialize<IO.Swagger.Model.MatchRequest>(mr);
+                    Console.WriteLine(serialized);
+                
                     // Go execute it.
                     MatchApi mApi = new MatchApi(this._mConfig.DestinationBase);
+                    var newtonsoft = mApi.Configuration.ApiClient.Serialize(mr);
+                    Console.WriteLine(newtonsoft);
+
+                    //mApi.Configuration.AddDefaultHeader("Content-Type", "application/json");
                     var result = await mApi.MatchSavePostAsync(mr);
                 }
             }
