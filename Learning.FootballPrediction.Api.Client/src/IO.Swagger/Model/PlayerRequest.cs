@@ -35,13 +35,23 @@ namespace IO.Swagger.Model
         /// <param name="name">name.</param>
         /// <param name="dateOfBirth">dateOfBirth.</param>
         /// <param name="position">position.</param>
+        /// <param name="height">height.</param>
+        /// <param name="heightType">heightType.</param>
+        /// <param name="weight">weight.</param>
+        /// <param name="weightType">weightType.</param>
         /// <param name="activeInEvents">activeInEvents.</param>
-        public PlayerRequest(string name = default(string), DateTime? dateOfBirth = default(DateTime?), string position = default(string), List<MatchEventRequest> activeInEvents = default(List<MatchEventRequest>))
+        /// <param name="rating">rating.</param>
+        public PlayerRequest(string name = default(string), DateTime? dateOfBirth = default(DateTime?), string position = default(string), int? height = default(int?), MeasurementType heightType = default(MeasurementType), int? weight = default(int?), MeasurementType weightType = default(MeasurementType), List<MatchEventRequest> activeInEvents = default(List<MatchEventRequest>), MatchRatings rating = default(MatchRatings))
         {
             this.Name = name;
             this.DateOfBirth = dateOfBirth;
             this.Position = position;
+            this.Height = height;
+            this.HeightType = heightType;
+            this.Weight = weight;
+            this.WeightType = weightType;
             this.ActiveInEvents = activeInEvents;
+            this.Rating = rating;
         }
         
         /// <summary>
@@ -63,10 +73,40 @@ namespace IO.Swagger.Model
         public string Position { get; set; }
 
         /// <summary>
+        /// Gets or Sets Height
+        /// </summary>
+        [DataMember(Name="height", EmitDefaultValue=false)]
+        public int? Height { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HeightType
+        /// </summary>
+        [DataMember(Name="heightType", EmitDefaultValue=false)]
+        public MeasurementType HeightType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Weight
+        /// </summary>
+        [DataMember(Name="weight", EmitDefaultValue=false)]
+        public int? Weight { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WeightType
+        /// </summary>
+        [DataMember(Name="weightType", EmitDefaultValue=false)]
+        public MeasurementType WeightType { get; set; }
+
+        /// <summary>
         /// Gets or Sets ActiveInEvents
         /// </summary>
         [DataMember(Name="activeInEvents", EmitDefaultValue=false)]
         public List<MatchEventRequest> ActiveInEvents { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Rating
+        /// </summary>
+        [DataMember(Name="rating", EmitDefaultValue=false)]
+        public MatchRatings Rating { get; set; }
 
         /// <summary>
         /// Gets or Sets NameHash
@@ -85,7 +125,12 @@ namespace IO.Swagger.Model
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  DateOfBirth: ").Append(DateOfBirth).Append("\n");
             sb.Append("  Position: ").Append(Position).Append("\n");
+            sb.Append("  Height: ").Append(Height).Append("\n");
+            sb.Append("  HeightType: ").Append(HeightType).Append("\n");
+            sb.Append("  Weight: ").Append(Weight).Append("\n");
+            sb.Append("  WeightType: ").Append(WeightType).Append("\n");
             sb.Append("  ActiveInEvents: ").Append(ActiveInEvents).Append("\n");
+            sb.Append("  Rating: ").Append(Rating).Append("\n");
             sb.Append("  NameHash: ").Append(NameHash).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -137,10 +182,35 @@ namespace IO.Swagger.Model
                     this.Position.Equals(input.Position))
                 ) && 
                 (
+                    this.Height == input.Height ||
+                    (this.Height != null &&
+                    this.Height.Equals(input.Height))
+                ) && 
+                (
+                    this.HeightType == input.HeightType ||
+                    (this.HeightType != null &&
+                    this.HeightType.Equals(input.HeightType))
+                ) && 
+                (
+                    this.Weight == input.Weight ||
+                    (this.Weight != null &&
+                    this.Weight.Equals(input.Weight))
+                ) && 
+                (
+                    this.WeightType == input.WeightType ||
+                    (this.WeightType != null &&
+                    this.WeightType.Equals(input.WeightType))
+                ) && 
+                (
                     this.ActiveInEvents == input.ActiveInEvents ||
                     this.ActiveInEvents != null &&
                     input.ActiveInEvents != null &&
                     this.ActiveInEvents.SequenceEqual(input.ActiveInEvents)
+                ) && 
+                (
+                    this.Rating == input.Rating ||
+                    (this.Rating != null &&
+                    this.Rating.Equals(input.Rating))
                 ) && 
                 (
                     this.NameHash == input.NameHash ||
@@ -164,8 +234,18 @@ namespace IO.Swagger.Model
                     hashCode = hashCode * 59 + this.DateOfBirth.GetHashCode();
                 if (this.Position != null)
                     hashCode = hashCode * 59 + this.Position.GetHashCode();
+                if (this.Height != null)
+                    hashCode = hashCode * 59 + this.Height.GetHashCode();
+                if (this.HeightType != null)
+                    hashCode = hashCode * 59 + this.HeightType.GetHashCode();
+                if (this.Weight != null)
+                    hashCode = hashCode * 59 + this.Weight.GetHashCode();
+                if (this.WeightType != null)
+                    hashCode = hashCode * 59 + this.WeightType.GetHashCode();
                 if (this.ActiveInEvents != null)
                     hashCode = hashCode * 59 + this.ActiveInEvents.GetHashCode();
+                if (this.Rating != null)
+                    hashCode = hashCode * 59 + this.Rating.GetHashCode();
                 if (this.NameHash != null)
                     hashCode = hashCode * 59 + this.NameHash.GetHashCode();
                 return hashCode;

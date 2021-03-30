@@ -26,7 +26,7 @@ namespace IO.Swagger.Model
     /// <summary>
     /// Defines EventType
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
+  //  [JsonConverter(typeof(StringEnumConverter))]
         public enum EventType
     {
         /// <summary>
@@ -65,9 +65,8 @@ namespace IO.Swagger.Model
         [EnumMember(Value = "SubOff")]
         SubOff = 7,
         /// <summary>
-        /// Enum SubOff for value: SubOff
+        /// Enum Assist for value: Assist
         /// </summary>
-        [EnumMember(Value = "Assist")] 
-        Assist = 8
-    }
+        [EnumMember(Value = "Assist")]
+        Assist = 8    }
 }

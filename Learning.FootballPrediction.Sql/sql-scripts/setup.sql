@@ -64,6 +64,11 @@ BEGIN
     DROP TABLE dbo.measurement_type
 END
 
+IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.VIEWS v WHERE v.TABLE_NAME = 'vw_match_results')
+BEGIN
+    DROP VIEW dbo.vw_match_results
+END
+
 CREATE TABLE fp.dbo.measurement_type (
     id tinyint NOT NULL,
     abbreviation varchar(4) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -154,6 +159,18 @@ CREATE TABLE fp.dbo.match_events (
 	CONSTRAINT FK_eventtype_matchevents FOREIGN KEY (event_type) REFERENCES fp.dbo.event_type(id),
 	CONSTRAINT FK_player_matchevents FOREIGN KEY (player_id) REFERENCES fp.dbo.player(id)
 ) 
+
+ALTER VIEW dbo.vw_match_results
+AS select CASE WHEN DATEPART(MONTH, played) BETWEEN 8 AND 12 THEN CAST(DATEPART(YEAR, played) AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) + 1 AS VARCHAR(4)) ELSE CAST(DATEPART(YEAR, played) - 1 AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) AS VARCHAR(4)) END AS season,
+m.id, m.played, m.home_teamid, m.away_teamid, c1.name AS home_team, c2.name AS away_team, COUNT(ms1.match_id) AS home_goals_scored, COUNT(ms2.match_id) AS away_goals_scored
+from match m
+inner join club c1 ON m.home_teamid = c1.id
+inner join club c2 on m.away_teamid = c2.id
+left join match_events me1 ON m.id = me1.match_id and event_type = 1
+left join match_squads ms1 ON me1.player_id = ms1.player_id AND ms1.match_id = m.id AND ms1.club_type = 1
+left join match_squads ms2 ON me1.player_id = ms2.player_id AND ms2.match_id = m.id AND ms2.club_type = 2
+group by CASE WHEN DATEPART(MONTH, played) BETWEEN 8 AND 12 THEN CAST(DATEPART(YEAR, played) AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) + 1 AS VARCHAR(4)) ELSE CAST(DATEPART(YEAR, played) - 1 AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) AS VARCHAR(4)) END, 
+m.id, m.played, m.home_teamid, m.away_teamid, c1.name, c2.name;
 
 GO
 

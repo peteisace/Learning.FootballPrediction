@@ -8,12 +8,13 @@ namespace Learning.FootballPrediction.Api.Models
         private string _position;
 
         private DateTime _dob;
-        private byte _height;
-        private byte _weight;
+        private byte? _height;
+        private byte? _weight;
         private MeasurementType _heightType;
         private MeasurementType _weightType;
 
         private MatchEventRequest[] _activeEvents = new MatchEventRequest[0];
+        private MatchRatings _ratings;
 
         public string Name
         {
@@ -33,7 +34,7 @@ namespace Learning.FootballPrediction.Api.Models
             set => this._position = value;
         }        
 
-        public byte Height
+        public byte? Height
         {
             get => this._height;
             set => this._height = value;
@@ -45,7 +46,7 @@ namespace Learning.FootballPrediction.Api.Models
             set => this._heightType = value;
         }
 
-        public byte Weight 
+        public byte? Weight 
         {
             get => this._weight;
             set => this._weight = value;
@@ -63,6 +64,12 @@ namespace Learning.FootballPrediction.Api.Models
             set => this._activeEvents = value;
         }
 
-        public int NameHash => this._name?.GetHashCode() ?? -1;
+        public MatchRatings Rating
+        {
+            get => this._ratings;
+            set => this._ratings = value;
+        }
+
+        public int NameHash => string.Concat(this._name, this.DateOfBirth.ToShortDateString()).GetHashCode();
     }
 }

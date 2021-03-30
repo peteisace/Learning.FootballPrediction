@@ -58,7 +58,7 @@ namespace Learning.FootballPrediction.Api.Repositories
 
         public async Task<Player> GetPlayerByName(PlayerRequest player)
         {
-            var nameHash = player?.Name?.GetHashCode() ?? -1;
+            var nameHash = string.Concat(player.Name, player.DateOfBirth.ToShortDateString()).GetHashCode(); 
             var result = await this._squadRepo.Get(nameHash);
 
             if(result != null)

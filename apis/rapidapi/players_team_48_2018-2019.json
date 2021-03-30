@@ -1,0 +1,6090 @@
+{
+    "api": {
+        "results": 79,
+        "players": [
+            {
+                "player_id": 18818,
+                "player_name": "P. Zabaleta",
+                "firstname": "Pablo Javier",
+                "lastname": "Zabaleta Girod",
+                "number": null,
+                "position": "Defender",
+                "age": 35,
+                "birth_date": "16\/01\/1985",
+                "birth_place": "Buenos Aires",
+                "birth_country": "Argentina",
+                "nationality": "Argentina",
+                "height": "176 cm",
+                "weight": "74 kg",
+                "injured": null,
+                "rating": "6.676923",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 4,
+                "shots": {
+                    "total": 7,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 660,
+                    "key": 7,
+                    "accuracy": 74
+                },
+                "tackles": {
+                    "total": 47,
+                    "blocks": 15,
+                    "interceptions": 48
+                },
+                "duels": {
+                    "total": 252,
+                    "won": 137
+                },
+                "dribbles": {
+                    "attempts": 22,
+                    "success": 14
+                },
+                "fouls": {
+                    "drawn": 30,
+                    "committed": 17
+                },
+                "cards": {
+                    "yellow": 4,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 26,
+                    "minutes_played": 2092,
+                    "lineups": 23
+                },
+                "substitutes": {
+                    "in": 3,
+                    "out": 3,
+                    "bench": 10
+                }
+            },
+            {
+                "player_id": 18818,
+                "player_name": "P. Zabaleta",
+                "firstname": "Pablo Javier",
+                "lastname": "Zabaleta Girod",
+                "number": null,
+                "position": "Defender",
+                "age": 35,
+                "birth_date": "16\/01\/1985",
+                "birth_place": "Buenos Aires",
+                "birth_country": "Argentina",
+                "nationality": "Argentina",
+                "height": "176 cm",
+                "weight": "74 kg",
+                "injured": null,
+                "rating": "8.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 54,
+                    "key": 4,
+                    "accuracy": 93
+                },
+                "tackles": {
+                    "total": 6,
+                    "blocks": 0,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 11,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 87077,
+                "player_name": "Patrice Evra",
+                "firstname": "Patrice",
+                "lastname": "Evra",
+                "number": null,
+                "position": "Defender",
+                "age": 37,
+                "birth_date": "15\/05\/1981",
+                "birth_place": "Dakar",
+                "birth_country": "Senegal",
+                "nationality": "France",
+                "height": "174 cm",
+                "weight": "75 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2886,
+                "player_name": "Javier Hern\u00e1ndez Balc\u00e1zar",
+                "firstname": "Javier",
+                "lastname": "Hern\u00e1ndez Balc\u00e1zar",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "01\/06\/1988",
+                "birth_place": "Guadalajara",
+                "birth_country": "Mexico",
+                "nationality": "Mexico",
+                "height": "175 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "6.848000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 37,
+                    "on": 18
+                },
+                "goals": {
+                    "total": 7,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 229,
+                    "key": 5,
+                    "accuracy": 71
+                },
+                "tackles": {
+                    "total": 3,
+                    "blocks": 1,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 122,
+                    "won": 62
+                },
+                "dribbles": {
+                    "attempts": 23,
+                    "success": 13
+                },
+                "fouls": {
+                    "drawn": 34,
+                    "committed": 9
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 2,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 25,
+                    "minutes_played": 1335,
+                    "lineups": 14
+                },
+                "substitutes": {
+                    "in": 11,
+                    "out": 12,
+                    "bench": 15
+                }
+            },
+            {
+                "player_id": 2886,
+                "player_name": "Javier Hern\u00e1ndez Balc\u00e1zar",
+                "firstname": "Javier",
+                "lastname": "Hern\u00e1ndez Balc\u00e1zar",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "01\/06\/1988",
+                "birth_place": "Guadalajara",
+                "birth_country": "Mexico",
+                "nationality": "Mexico",
+                "height": "175 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "7.500000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 6,
+                    "on": 4
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 33,
+                    "key": 4,
+                    "accuracy": 90
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 9,
+                    "won": 3
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 148,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2886,
+                "player_name": "Javier Hern\u00e1ndez Balc\u00e1zar",
+                "firstname": "Javier",
+                "lastname": "Hern\u00e1ndez Balc\u00e1zar",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "01\/06\/1988",
+                "birth_place": "Guadalajara",
+                "birth_country": "Mexico",
+                "nationality": "Mexico",
+                "height": "175 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "6.700000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 4,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 16,
+                    "key": 0,
+                    "accuracy": 84
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 2,
+                    "won": 2
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18830,
+                "player_name": "Marko Arnautovi\u0107",
+                "firstname": "Marko",
+                "lastname": "Arnautovi\u0107",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "19\/04\/1989",
+                "birth_place": "Wien",
+                "birth_country": "Austria",
+                "nationality": "Austria",
+                "height": "192 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": "7.050000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 2,
+                "shots": {
+                    "total": 62,
+                    "on": 32
+                },
+                "goals": {
+                    "total": 10,
+                    "conceded": 0,
+                    "assists": 4,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 478,
+                    "key": 36,
+                    "accuracy": 74
+                },
+                "tackles": {
+                    "total": 9,
+                    "blocks": 2,
+                    "interceptions": 3
+                },
+                "duels": {
+                    "total": 171,
+                    "won": 63
+                },
+                "dribbles": {
+                    "attempts": 36,
+                    "success": 20
+                },
+                "fouls": {
+                    "drawn": 12,
+                    "committed": 30
+                },
+                "cards": {
+                    "yellow": 3,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 1,
+                    "success": 1,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 28,
+                    "minutes_played": 2000,
+                    "lineups": 24
+                },
+                "substitutes": {
+                    "in": 4,
+                    "out": 14,
+                    "bench": 4
+                }
+            },
+            {
+                "player_id": 18830,
+                "player_name": "Marko Arnautovi\u0107",
+                "firstname": "Marko",
+                "lastname": "Arnautovi\u0107",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "19\/04\/1989",
+                "birth_place": "Wien",
+                "birth_country": "Austria",
+                "nationality": "Austria",
+                "height": "192 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": "7.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 14,
+                    "key": 0,
+                    "accuracy": 87
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 3,
+                    "won": 2
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 20,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18830,
+                "player_name": "Marko Arnautovi\u0107",
+                "firstname": "Marko",
+                "lastname": "Arnautovi\u0107",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "19\/04\/1989",
+                "birth_place": "Wien",
+                "birth_country": "Austria",
+                "nationality": "Austria",
+                "height": "192 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": "6.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 3,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 6,
+                    "key": 1,
+                    "accuracy": 85
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 3,
+                    "won": 1
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 32,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18827,
+                "player_name": "C. S\u00e1nchez",
+                "firstname": "Carlos Alberto",
+                "lastname": "S\u00e1nchez Moreno",
+                "number": null,
+                "position": "Midfielder",
+                "age": 35,
+                "birth_date": "06\/02\/1986",
+                "birth_place": "Quibd\u00f3",
+                "birth_country": "Colombia",
+                "nationality": "Colombia",
+                "height": "182 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.400000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 3,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 127,
+                    "key": 2,
+                    "accuracy": 80
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 21,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 5,
+                    "success": 3
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 3
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 7,
+                    "minutes_played": 240,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 5,
+                    "out": 0,
+                    "bench": 5
+                }
+            },
+            {
+                "player_id": 18827,
+                "player_name": "C. S\u00e1nchez",
+                "firstname": "Carlos Alberto",
+                "lastname": "S\u00e1nchez Moreno",
+                "number": null,
+                "position": "Midfielder",
+                "age": 35,
+                "birth_date": "06\/02\/1986",
+                "birth_place": "Quibd\u00f3",
+                "birth_country": "Colombia",
+                "nationality": "Colombia",
+                "height": "182 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.700000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 9,
+                    "key": 0,
+                    "accuracy": 100
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 10,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18833,
+                "player_name": "Lucas P\u00e9rez",
+                "firstname": "Lucas",
+                "lastname": "P\u00e9rez Mart\u00ednez",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "10\/09\/1988",
+                "birth_place": "A Coru\u00f1a",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.733333",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 9,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 3,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 101,
+                    "key": 8,
+                    "accuracy": 69
+                },
+                "tackles": {
+                    "total": 6,
+                    "blocks": 0,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 48,
+                    "won": 17
+                },
+                "dribbles": {
+                    "attempts": 8,
+                    "success": 5
+                },
+                "fouls": {
+                    "drawn": 3,
+                    "committed": 5
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 15,
+                    "minutes_played": 468,
+                    "lineups": 4
+                },
+                "substitutes": {
+                    "in": 11,
+                    "out": 4,
+                    "bench": 20
+                }
+            },
+            {
+                "player_id": 18833,
+                "player_name": "Lucas P\u00e9rez",
+                "firstname": "Lucas",
+                "lastname": "P\u00e9rez Mart\u00ednez",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "10\/09\/1988",
+                "birth_place": "A Coru\u00f1a",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "7.233333",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 5,
+                    "on": 2
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 59,
+                    "key": 3,
+                    "accuracy": 85
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 8,
+                    "won": 5
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 203,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 1,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18833,
+                "player_name": "Lucas P\u00e9rez",
+                "firstname": "Lucas",
+                "lastname": "P\u00e9rez Mart\u00ednez",
+                "number": null,
+                "position": "Attacker",
+                "age": 33,
+                "birth_date": "10\/09\/1988",
+                "birth_place": "A Coru\u00f1a",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "7.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 11,
+                    "key": 1,
+                    "accuracy": 91
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 1,
+                    "won": 1
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 44,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18832,
+                "player_name": "Alexandre Nascimento Costa Silva",
+                "firstname": "Alexandre",
+                "lastname": "Nascimento Costa Silva",
+                "number": null,
+                "position": "Attacker",
+                "age": 24,
+                "birth_date": "16\/03\/1997",
+                "birth_place": "Lisboa",
+                "birth_country": "Portugal",
+                "nationality": "Portugal",
+                "height": "177 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": "6.700000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 3,
+                    "key": 1,
+                    "accuracy": 75
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 3,
+                    "won": 1
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 17,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 5
+                }
+            },
+            {
+                "player_id": 18832,
+                "player_name": "Alexandre Nascimento Costa Silva",
+                "firstname": "Alexandre",
+                "lastname": "Nascimento Costa Silva",
+                "number": null,
+                "position": "Attacker",
+                "age": 24,
+                "birth_date": "16\/03\/1997",
+                "birth_place": "Lisboa",
+                "birth_country": "Portugal",
+                "nationality": "Portugal",
+                "height": "177 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": "7.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 24,
+                    "key": 0,
+                    "accuracy": 88
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 13,
+                    "won": 10
+                },
+                "dribbles": {
+                    "attempts": 6,
+                    "success": 6
+                },
+                "fouls": {
+                    "drawn": 3,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 79,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18829,
+                "player_name": "J. Wilshere",
+                "firstname": "Jack",
+                "lastname": "Wilshere",
+                "number": null,
+                "position": "Midfielder",
+                "age": 29,
+                "birth_date": "01\/01\/1992",
+                "birth_place": "Stevenage",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "172 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": "7.000000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 194,
+                    "key": 5,
+                    "accuracy": 92
+                },
+                "tackles": {
+                    "total": 7,
+                    "blocks": 1,
+                    "interceptions": 7
+                },
+                "duels": {
+                    "total": 56,
+                    "won": 37
+                },
+                "dribbles": {
+                    "attempts": 16,
+                    "success": 15
+                },
+                "fouls": {
+                    "drawn": 12,
+                    "committed": 7
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 8,
+                    "minutes_played": 389,
+                    "lineups": 4
+                },
+                "substitutes": {
+                    "in": 4,
+                    "out": 1,
+                    "bench": 5
+                }
+            },
+            {
+                "player_id": 18829,
+                "player_name": "J. Wilshere",
+                "firstname": "Jack",
+                "lastname": "Wilshere",
+                "number": null,
+                "position": "Midfielder",
+                "age": 29,
+                "birth_date": "01\/01\/1992",
+                "birth_place": "Stevenage",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "172 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2412,
+                "player_name": "Felipe Anderson",
+                "firstname": "Felipe",
+                "lastname": "Anderson Pereira Gomes",
+                "number": null,
+                "position": "Attacker",
+                "age": 28,
+                "birth_date": "15\/04\/1993",
+                "birth_place": "Bras\u00edlia",
+                "birth_country": "Brazil",
+                "nationality": "Brazil",
+                "height": "175 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "7.105555",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 58,
+                    "on": 25
+                },
+                "goals": {
+                    "total": 9,
+                    "conceded": 0,
+                    "assists": 4,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 1267,
+                    "key": 66,
+                    "accuracy": 75
+                },
+                "tackles": {
+                    "total": 89,
+                    "blocks": 0,
+                    "interceptions": 41
+                },
+                "duels": {
+                    "total": 483,
+                    "won": 226
+                },
+                "dribbles": {
+                    "attempts": 156,
+                    "success": 76
+                },
+                "fouls": {
+                    "drawn": 52,
+                    "committed": 27
+                },
+                "cards": {
+                    "yellow": 3,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 1,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 36,
+                    "minutes_played": 3054,
+                    "lineups": 36
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 11,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2412,
+                "player_name": "Felipe Anderson",
+                "firstname": "Felipe",
+                "lastname": "Anderson Pereira Gomes",
+                "number": null,
+                "position": "Attacker",
+                "age": 28,
+                "birth_date": "15\/04\/1993",
+                "birth_place": "Bras\u00edlia",
+                "birth_country": "Brazil",
+                "nationality": "Brazil",
+                "height": "175 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "7.550000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 3,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 63,
+                    "key": 4,
+                    "accuracy": 90
+                },
+                "tackles": {
+                    "total": 3,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 9,
+                    "won": 7
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 2
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 1,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 2412,
+                "player_name": "Felipe Anderson",
+                "firstname": "Felipe",
+                "lastname": "Anderson Pereira Gomes",
+                "number": null,
+                "position": "Attacker",
+                "age": 28,
+                "birth_date": "15\/04\/1993",
+                "birth_place": "Bras\u00edlia",
+                "birth_country": "Brazil",
+                "nationality": "Brazil",
+                "height": "175 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.650000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 27,
+                    "key": 1,
+                    "accuracy": 78
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 11,
+                    "won": 3
+                },
+                "dribbles": {
+                    "attempts": 5,
+                    "success": 2
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 55,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 2,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18813,
+                "player_name": "A. Cresswell",
+                "firstname": "Aaron",
+                "lastname": "Cresswell",
+                "number": null,
+                "position": "Defender",
+                "age": 32,
+                "birth_date": "15\/12\/1989",
+                "birth_place": "Liverpool",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "170 cm",
+                "weight": "66 kg",
+                "injured": null,
+                "rating": "6.780000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 2,
+                "shots": {
+                    "total": 11,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 661,
+                    "key": 17,
+                    "accuracy": 75
+                },
+                "tackles": {
+                    "total": 29,
+                    "blocks": 7,
+                    "interceptions": 23
+                },
+                "duels": {
+                    "total": 117,
+                    "won": 72
+                },
+                "dribbles": {
+                    "attempts": 13,
+                    "success": 6
+                },
+                "fouls": {
+                    "drawn": 12,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 1,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 20,
+                    "minutes_played": 1589,
+                    "lineups": 18
+                },
+                "substitutes": {
+                    "in": 2,
+                    "out": 2,
+                    "bench": 9
+                }
+            },
+            {
+                "player_id": 18813,
+                "player_name": "A. Cresswell",
+                "firstname": "Aaron",
+                "lastname": "Cresswell",
+                "number": null,
+                "position": "Defender",
+                "age": 32,
+                "birth_date": "15\/12\/1989",
+                "birth_place": "Liverpool",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "170 cm",
+                "weight": "66 kg",
+                "injured": null,
+                "rating": "7.250000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 5,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 188,
+                    "key": 3,
+                    "accuracy": 89
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 15,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 6,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18813,
+                "player_name": "A. Cresswell",
+                "firstname": "Aaron",
+                "lastname": "Cresswell",
+                "number": null,
+                "position": "Defender",
+                "age": 32,
+                "birth_date": "15\/12\/1989",
+                "birth_place": "Liverpool",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "170 cm",
+                "weight": "66 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18817,
+                "player_name": "A. Ogbonna",
+                "firstname": "Angelo",
+                "lastname": "Obinze Ogbonna",
+                "number": null,
+                "position": "Defender",
+                "age": 33,
+                "birth_date": "23\/05\/1988",
+                "birth_place": "Cassino",
+                "birth_country": "Italy",
+                "nationality": "Italy",
+                "height": "191 cm",
+                "weight": "86 kg",
+                "injured": null,
+                "rating": "6.882608",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 14,
+                    "on": 5
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 664,
+                    "key": 4,
+                    "accuracy": 76
+                },
+                "tackles": {
+                    "total": 31,
+                    "blocks": 19,
+                    "interceptions": 35
+                },
+                "duels": {
+                    "total": 182,
+                    "won": 118
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 7,
+                    "committed": 15
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 24,
+                    "minutes_played": 1870,
+                    "lineups": 20
+                },
+                "substitutes": {
+                    "in": 4,
+                    "out": 0,
+                    "bench": 16
+                }
+            },
+            {
+                "player_id": 18817,
+                "player_name": "A. Ogbonna",
+                "firstname": "Angelo",
+                "lastname": "Obinze Ogbonna",
+                "number": null,
+                "position": "Defender",
+                "age": 33,
+                "birth_date": "23\/05\/1988",
+                "birth_place": "Cassino",
+                "birth_country": "Italy",
+                "nationality": "Italy",
+                "height": "191 cm",
+                "weight": "86 kg",
+                "injured": null,
+                "rating": "7.500000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 5,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 206,
+                    "key": 0,
+                    "accuracy": 89
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 4
+                },
+                "duels": {
+                    "total": 34,
+                    "won": 22
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 270,
+                    "lineups": 3
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18817,
+                "player_name": "A. Ogbonna",
+                "firstname": "Angelo",
+                "lastname": "Obinze Ogbonna",
+                "number": null,
+                "position": "Defender",
+                "age": 33,
+                "birth_date": "23\/05\/1988",
+                "birth_place": "Cassino",
+                "birth_country": "Italy",
+                "nationality": "Italy",
+                "height": "191 cm",
+                "weight": "86 kg",
+                "injured": null,
+                "rating": "7.000000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 101,
+                    "key": 0,
+                    "accuracy": 84
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 1,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 16,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18814,
+                "player_name": "I. Diop",
+                "firstname": "Issa",
+                "lastname": "Diop",
+                "number": null,
+                "position": "Defender",
+                "age": 24,
+                "birth_date": "09\/01\/1997",
+                "birth_place": "Toulouse",
+                "birth_country": "France",
+                "nationality": "France",
+                "height": "194 cm",
+                "weight": "92 kg",
+                "injured": null,
+                "rating": "7.039393",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 12,
+                    "on": 5
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 974,
+                    "key": 4,
+                    "accuracy": 84
+                },
+                "tackles": {
+                    "total": 68,
+                    "blocks": 36,
+                    "interceptions": 64
+                },
+                "duels": {
+                    "total": 255,
+                    "won": 165
+                },
+                "dribbles": {
+                    "attempts": 9,
+                    "success": 6
+                },
+                "fouls": {
+                    "drawn": 16,
+                    "committed": 18
+                },
+                "cards": {
+                    "yellow": 4,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 33,
+                    "minutes_played": 2970,
+                    "lineups": 33
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 5
+                }
+            },
+            {
+                "player_id": 18814,
+                "player_name": "I. Diop",
+                "firstname": "Issa",
+                "lastname": "Diop",
+                "number": null,
+                "position": "Defender",
+                "age": 24,
+                "birth_date": "09\/01\/1997",
+                "birth_place": "Toulouse",
+                "birth_country": "France",
+                "nationality": "France",
+                "height": "194 cm",
+                "weight": "92 kg",
+                "injured": null,
+                "rating": "7.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 3,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 183,
+                    "key": 1,
+                    "accuracy": 91
+                },
+                "tackles": {
+                    "total": 6,
+                    "blocks": 1,
+                    "interceptions": 5
+                },
+                "duels": {
+                    "total": 27,
+                    "won": 16
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 4
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 270,
+                    "lineups": 3
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18814,
+                "player_name": "I. Diop",
+                "firstname": "Issa",
+                "lastname": "Diop",
+                "number": null,
+                "position": "Defender",
+                "age": 24,
+                "birth_date": "09\/01\/1997",
+                "birth_place": "Toulouse",
+                "birth_country": "France",
+                "nationality": "France",
+                "height": "194 cm",
+                "weight": "92 kg",
+                "injured": null,
+                "rating": "6.950000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 126,
+                    "key": 0,
+                    "accuracy": 87
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 3,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 14,
+                    "won": 8
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 1,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18815,
+                "player_name": "R. Fredericks",
+                "firstname": "Ryan",
+                "lastname": "Fredericks",
+                "number": null,
+                "position": "Defender",
+                "age": 29,
+                "birth_date": "10\/10\/1992",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "181 cm",
+                "weight": "74 kg",
+                "injured": null,
+                "rating": "6.686666",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 5,
+                    "on": 2
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 309,
+                    "key": 3,
+                    "accuracy": 71
+                },
+                "tackles": {
+                    "total": 38,
+                    "blocks": 5,
+                    "interceptions": 13
+                },
+                "duels": {
+                    "total": 123,
+                    "won": 80
+                },
+                "dribbles": {
+                    "attempts": 21,
+                    "success": 12
+                },
+                "fouls": {
+                    "drawn": 10,
+                    "committed": 9
+                },
+                "cards": {
+                    "yellow": 5,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 1,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 15,
+                    "minutes_played": 1085,
+                    "lineups": 12
+                },
+                "substitutes": {
+                    "in": 3,
+                    "out": 2,
+                    "bench": 11
+                }
+            },
+            {
+                "player_id": 18815,
+                "player_name": "R. Fredericks",
+                "firstname": "Ryan",
+                "lastname": "Fredericks",
+                "number": null,
+                "position": "Defender",
+                "age": 29,
+                "birth_date": "10\/10\/1992",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "181 cm",
+                "weight": "74 kg",
+                "injured": null,
+                "rating": "7.250000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 79,
+                    "key": 2,
+                    "accuracy": 81
+                },
+                "tackles": {
+                    "total": 2,
+                    "blocks": 1,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 9,
+                    "won": 5
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 3,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18815,
+                "player_name": "R. Fredericks",
+                "firstname": "Ryan",
+                "lastname": "Fredericks",
+                "number": null,
+                "position": "Defender",
+                "age": 29,
+                "birth_date": "10\/10\/1992",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "181 cm",
+                "weight": "74 kg",
+                "injured": null,
+                "rating": "6.000000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 23,
+                    "key": 3,
+                    "accuracy": 85
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 6,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 1,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 44,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 2473,
+                "player_name": "M. Lanzini",
+                "firstname": "Manuel",
+                "lastname": "Lanzini",
+                "number": null,
+                "position": "Midfielder",
+                "age": 28,
+                "birth_date": "15\/02\/1993",
+                "birth_place": "Ituzaing\u00f3",
+                "birth_country": "Argentina",
+                "nationality": "Argentina",
+                "height": "167 cm",
+                "weight": "59 kg",
+                "injured": null,
+                "rating": "6.710000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 11,
+                    "on": 4
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 405,
+                    "key": 5,
+                    "accuracy": 89
+                },
+                "tackles": {
+                    "total": 12,
+                    "blocks": 1,
+                    "interceptions": 9
+                },
+                "duels": {
+                    "total": 80,
+                    "won": 35
+                },
+                "dribbles": {
+                    "attempts": 18,
+                    "success": 13
+                },
+                "fouls": {
+                    "drawn": 7,
+                    "committed": 5
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 1,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 10,
+                    "minutes_played": 688,
+                    "lineups": 8
+                },
+                "substitutes": {
+                    "in": 2,
+                    "out": 4,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 2473,
+                "player_name": "M. Lanzini",
+                "firstname": "Manuel",
+                "lastname": "Lanzini",
+                "number": null,
+                "position": "Midfielder",
+                "age": 28,
+                "birth_date": "15\/02\/1993",
+                "birth_place": "Ituzaing\u00f3",
+                "birth_country": "Argentina",
+                "nationality": "Argentina",
+                "height": "167 cm",
+                "weight": "59 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18826,
+                "player_name": "M. Noble",
+                "firstname": "Mark",
+                "lastname": "Noble",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "08\/05\/1987",
+                "birth_place": "Canning Town",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.829032",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 29,
+                "shots": {
+                    "total": 17,
+                    "on": 8
+                },
+                "goals": {
+                    "total": 5,
+                    "conceded": 0,
+                    "assists": 5,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 1286,
+                    "key": 22,
+                    "accuracy": 83
+                },
+                "tackles": {
+                    "total": 47,
+                    "blocks": 2,
+                    "interceptions": 21
+                },
+                "duels": {
+                    "total": 218,
+                    "won": 107
+                },
+                "dribbles": {
+                    "attempts": 26,
+                    "success": 14
+                },
+                "fouls": {
+                    "drawn": 38,
+                    "committed": 23
+                },
+                "cards": {
+                    "yellow": 6,
+                    "yellowred": 0,
+                    "red": 1
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 4,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 31,
+                    "minutes_played": 2308,
+                    "lineups": 29
+                },
+                "substitutes": {
+                    "in": 2,
+                    "out": 18,
+                    "bench": 6
+                }
+            },
+            {
+                "player_id": 18826,
+                "player_name": "M. Noble",
+                "firstname": "Mark",
+                "lastname": "Noble",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "08\/05\/1987",
+                "birth_place": "Canning Town",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18826,
+                "player_name": "M. Noble",
+                "firstname": "Mark",
+                "lastname": "Noble",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "08\/05\/1987",
+                "birth_place": "Canning Town",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.800000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 1,
+                "shots": {
+                    "total": 1,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 71,
+                    "key": 0,
+                    "accuracy": 88
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 4,
+                    "won": 3
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18819,
+                "player_name": "M. Antonio",
+                "firstname": "Michail",
+                "lastname": "Antonio",
+                "number": null,
+                "position": "Midfielder",
+                "age": 31,
+                "birth_date": "28\/03\/1990",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.803030",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 65,
+                    "on": 25
+                },
+                "goals": {
+                    "total": 6,
+                    "conceded": 0,
+                    "assists": 4,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 455,
+                    "key": 24,
+                    "accuracy": 65
+                },
+                "tackles": {
+                    "total": 23,
+                    "blocks": 3,
+                    "interceptions": 18
+                },
+                "duels": {
+                    "total": 455,
+                    "won": 204
+                },
+                "dribbles": {
+                    "attempts": 104,
+                    "success": 58
+                },
+                "fouls": {
+                    "drawn": 44,
+                    "committed": 34
+                },
+                "cards": {
+                    "yellow": 3,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 2,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 33,
+                    "minutes_played": 2099,
+                    "lineups": 22
+                },
+                "substitutes": {
+                    "in": 11,
+                    "out": 7,
+                    "bench": 13
+                }
+            },
+            {
+                "player_id": 18819,
+                "player_name": "M. Antonio",
+                "firstname": "Michail",
+                "lastname": "Antonio",
+                "number": null,
+                "position": "Midfielder",
+                "age": 31,
+                "birth_date": "28\/03\/1990",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.900000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 10,
+                    "on": 6
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 58,
+                    "key": 2,
+                    "accuracy": 70
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 25,
+                    "won": 10
+                },
+                "dribbles": {
+                    "attempts": 8,
+                    "success": 4
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 3
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 161,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 1,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18819,
+                "player_name": "M. Antonio",
+                "firstname": "Michail",
+                "lastname": "Antonio",
+                "number": null,
+                "position": "Midfielder",
+                "age": 31,
+                "birth_date": "28\/03\/1990",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.950000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 6,
+                    "on": 2
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 83,
+                    "key": 2,
+                    "accuracy": 80
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 1,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 27,
+                    "won": 13
+                },
+                "dribbles": {
+                    "attempts": 13,
+                    "success": 7
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18812,
+                "player_name": "Adri\u00e1n",
+                "firstname": "Adri\u00e1n",
+                "lastname": "San Miguel del Castillo",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 34,
+                "birth_date": "03\/01\/1987",
+                "birth_place": "Sevilla",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "190 cm",
+                "weight": "80 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 38
+                }
+            },
+            {
+                "player_id": 18812,
+                "player_name": "Adri\u00e1n",
+                "firstname": "Adri\u00e1n",
+                "lastname": "San Miguel del Castillo",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 34,
+                "birth_date": "03\/01\/1987",
+                "birth_place": "Sevilla",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "190 cm",
+                "weight": "80 kg",
+                "injured": null,
+                "rating": "6.400000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 3,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 4,
+                    "assists": 0,
+                    "saves": 4
+                },
+                "passes": {
+                    "total": 50,
+                    "key": 0,
+                    "accuracy": 80
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 270,
+                    "lineups": 3
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18812,
+                "player_name": "Adri\u00e1n",
+                "firstname": "Adri\u00e1n",
+                "lastname": "San Miguel del Castillo",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 34,
+                "birth_date": "03\/01\/1987",
+                "birth_place": "Sevilla",
+                "birth_country": "Spain",
+                "nationality": "Spain",
+                "height": "190 cm",
+                "weight": "80 kg",
+                "injured": null,
+                "rating": "6.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 1,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 4,
+                    "assists": 0,
+                    "saves": 5
+                },
+                "passes": {
+                    "total": 59,
+                    "key": 0,
+                    "accuracy": 74
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 2,
+                    "won": 2
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18831,
+                "player_name": "A. Carroll",
+                "firstname": "Andy",
+                "lastname": "Carroll",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "06\/01\/1989",
+                "birth_place": "Gateshead",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "193 cm",
+                "weight": "79 kg",
+                "injured": null,
+                "rating": "6.625000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 1,
+                "shots": {
+                    "total": 14,
+                    "on": 6
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 83,
+                    "key": 4,
+                    "accuracy": 58
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 2,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 126,
+                    "won": 61
+                },
+                "dribbles": {
+                    "attempts": 6,
+                    "success": 3
+                },
+                "fouls": {
+                    "drawn": 8,
+                    "committed": 11
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 12,
+                    "minutes_played": 454,
+                    "lineups": 3
+                },
+                "substitutes": {
+                    "in": 9,
+                    "out": 2,
+                    "bench": 13
+                }
+            },
+            {
+                "player_id": 18831,
+                "player_name": "A. Carroll",
+                "firstname": "Andy",
+                "lastname": "Carroll",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "06\/01\/1989",
+                "birth_place": "Gateshead",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "193 cm",
+                "weight": "79 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18831,
+                "player_name": "A. Carroll",
+                "firstname": "Andy",
+                "lastname": "Carroll",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "06\/01\/1989",
+                "birth_place": "Gateshead",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "193 cm",
+                "weight": "79 kg",
+                "injured": null,
+                "rating": "7.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 5,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 14,
+                    "key": 1,
+                    "accuracy": 58
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 1,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 17,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 116,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 1,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18828,
+                "player_name": "R. Snodgrass",
+                "firstname": "Robert",
+                "lastname": "Snodgrass",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "07\/09\/1987",
+                "birth_place": "Glasgow",
+                "birth_country": "Scotland",
+                "nationality": "Scotland",
+                "height": "182 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.857575",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 30,
+                    "on": 7
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 5,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 796,
+                    "key": 59,
+                    "accuracy": 81
+                },
+                "tackles": {
+                    "total": 44,
+                    "blocks": 4,
+                    "interceptions": 11
+                },
+                "duels": {
+                    "total": 327,
+                    "won": 151
+                },
+                "dribbles": {
+                    "attempts": 61,
+                    "success": 33
+                },
+                "fouls": {
+                    "drawn": 49,
+                    "committed": 36
+                },
+                "cards": {
+                    "yellow": 10,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 1,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 33,
+                    "minutes_played": 2222,
+                    "lineups": 25
+                },
+                "substitutes": {
+                    "in": 8,
+                    "out": 10,
+                    "bench": 11
+                }
+            },
+            {
+                "player_id": 18828,
+                "player_name": "R. Snodgrass",
+                "firstname": "Robert",
+                "lastname": "Snodgrass",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "07\/09\/1987",
+                "birth_place": "Glasgow",
+                "birth_country": "Scotland",
+                "nationality": "Scotland",
+                "height": "182 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "8.433333",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 6,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 4,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 184,
+                    "key": 14,
+                    "accuracy": 88
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 24,
+                    "won": 10
+                },
+                "dribbles": {
+                    "attempts": 4,
+                    "success": 2
+                },
+                "fouls": {
+                    "drawn": 3,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 224,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18828,
+                "player_name": "R. Snodgrass",
+                "firstname": "Robert",
+                "lastname": "Snodgrass",
+                "number": null,
+                "position": "Midfielder",
+                "age": 34,
+                "birth_date": "07\/09\/1987",
+                "birth_place": "Glasgow",
+                "birth_country": "Scotland",
+                "nationality": "Scotland",
+                "height": "182 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.900000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 66,
+                    "key": 8,
+                    "accuracy": 80
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 17,
+                    "won": 9
+                },
+                "dribbles": {
+                    "attempts": 4,
+                    "success": 3
+                },
+                "fouls": {
+                    "drawn": 3,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 122,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18823,
+                "player_name": "B. Johnson",
+                "firstname": "Benjamin",
+                "lastname": "Johnson",
+                "number": null,
+                "position": "Defender",
+                "age": 21,
+                "birth_date": "24\/01\/2000",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "175 cm",
+                "weight": "67 kg",
+                "injured": null,
+                "rating": "6.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 11,
+                    "key": 0,
+                    "accuracy": 78
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 4,
+                    "won": 1
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 63,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18816,
+                "player_name": "A. Masuaku",
+                "firstname": "Arthur",
+                "lastname": "Masuaku",
+                "number": null,
+                "position": "Defender",
+                "age": 28,
+                "birth_date": "07\/11\/1993",
+                "birth_place": "Lille",
+                "birth_country": "France",
+                "nationality": "Congo DR",
+                "height": "179 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.814285",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 4,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 733,
+                    "key": 14,
+                    "accuracy": 77
+                },
+                "tackles": {
+                    "total": 57,
+                    "blocks": 6,
+                    "interceptions": 36
+                },
+                "duels": {
+                    "total": 221,
+                    "won": 119
+                },
+                "dribbles": {
+                    "attempts": 50,
+                    "success": 36
+                },
+                "fouls": {
+                    "drawn": 5,
+                    "committed": 16
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 23,
+                    "minutes_played": 1756,
+                    "lineups": 19
+                },
+                "substitutes": {
+                    "in": 4,
+                    "out": 1,
+                    "bench": 16
+                }
+            },
+            {
+                "player_id": 18816,
+                "player_name": "A. Masuaku",
+                "firstname": "Arthur",
+                "lastname": "Masuaku",
+                "number": null,
+                "position": "Defender",
+                "age": 28,
+                "birth_date": "07\/11\/1993",
+                "birth_place": "Lille",
+                "birth_country": "France",
+                "nationality": "Congo DR",
+                "height": "179 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.200000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 42,
+                    "key": 3,
+                    "accuracy": 89
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 0,
+                    "interceptions": 3
+                },
+                "duels": {
+                    "total": 12,
+                    "won": 8
+                },
+                "dribbles": {
+                    "attempts": 4,
+                    "success": 3
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18816,
+                "player_name": "A. Masuaku",
+                "firstname": "Arthur",
+                "lastname": "Masuaku",
+                "number": null,
+                "position": "Defender",
+                "age": 28,
+                "birth_date": "07\/11\/1993",
+                "birth_place": "Lille",
+                "birth_country": "France",
+                "nationality": "Congo DR",
+                "height": "179 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": "6.750000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 81,
+                    "key": 3,
+                    "accuracy": 85
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 1,
+                    "interceptions": 3
+                },
+                "duels": {
+                    "total": 29,
+                    "won": 15
+                },
+                "dribbles": {
+                    "attempts": 10,
+                    "success": 8
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 1,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18822,
+                "player_name": "N. Holland",
+                "firstname": "Nathan",
+                "lastname": "Holland",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/06\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18822,
+                "player_name": "N. Holland",
+                "firstname": "Nathan",
+                "lastname": "Holland",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/06\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18822,
+                "player_name": "N. Holland",
+                "firstname": "Nathan",
+                "lastname": "Holland",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/06\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 18821,
+                "player_name": "G. Diangana",
+                "firstname": "Grady",
+                "lastname": "Diangana",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/04\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "6.606250",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 10,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 190,
+                    "key": 12,
+                    "accuracy": 78
+                },
+                "tackles": {
+                    "total": 20,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 127,
+                    "won": 58
+                },
+                "dribbles": {
+                    "attempts": 38,
+                    "success": 21
+                },
+                "fouls": {
+                    "drawn": 10,
+                    "committed": 4
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 17,
+                    "minutes_played": 604,
+                    "lineups": 6
+                },
+                "substitutes": {
+                    "in": 11,
+                    "out": 6,
+                    "bench": 17
+                }
+            },
+            {
+                "player_id": 18821,
+                "player_name": "G. Diangana",
+                "firstname": "Grady",
+                "lastname": "Diangana",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/04\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "8.100000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 7,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 69,
+                    "key": 1,
+                    "accuracy": 77
+                },
+                "tackles": {
+                    "total": 3,
+                    "blocks": 0,
+                    "interceptions": 5
+                },
+                "duels": {
+                    "total": 30,
+                    "won": 21
+                },
+                "dribbles": {
+                    "attempts": 12,
+                    "success": 8
+                },
+                "fouls": {
+                    "drawn": 6,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 180,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18821,
+                "player_name": "G. Diangana",
+                "firstname": "Grady",
+                "lastname": "Diangana",
+                "number": null,
+                "position": "Midfielder",
+                "age": 23,
+                "birth_date": "19\/04\/1998",
+                "birth_place": null,
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "73 kg",
+                "injured": null,
+                "rating": "6.600000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 31,
+                    "key": 1,
+                    "accuracy": 61
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 21,
+                    "won": 10
+                },
+                "dribbles": {
+                    "attempts": 10,
+                    "success": 4
+                },
+                "fouls": {
+                    "drawn": 2,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 136,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2500,
+                "player_name": "F. Balbuena",
+                "firstname": "Fabi\u00e1n Cornelio",
+                "lastname": "Balbuena Gonz\u00e1lez",
+                "number": null,
+                "position": "Defender",
+                "age": 30,
+                "birth_date": "23\/08\/1991",
+                "birth_place": "Ciudad del Este",
+                "birth_country": "Paraguay",
+                "nationality": "Paraguay",
+                "height": "188 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": "6.856521",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 19,
+                    "on": 2
+                },
+                "goals": {
+                    "total": 1,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 661,
+                    "key": 3,
+                    "accuracy": 77
+                },
+                "tackles": {
+                    "total": 40,
+                    "blocks": 15,
+                    "interceptions": 53
+                },
+                "duels": {
+                    "total": 221,
+                    "won": 115
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 4,
+                    "committed": 19
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 1,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 23,
+                    "minutes_played": 2014,
+                    "lineups": 23
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 4
+                }
+            },
+            {
+                "player_id": 2500,
+                "player_name": "F. Balbuena",
+                "firstname": "Fabi\u00e1n Cornelio",
+                "lastname": "Balbuena Gonz\u00e1lez",
+                "number": null,
+                "position": "Defender",
+                "age": 30,
+                "birth_date": "23\/08\/1991",
+                "birth_place": "Ciudad del Este",
+                "birth_country": "Paraguay",
+                "nationality": "Paraguay",
+                "height": "188 cm",
+                "weight": "82 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 3
+                }
+            },
+            {
+                "player_id": 17794,
+                "player_name": "Joe Powell",
+                "firstname": "Joe",
+                "lastname": "Powell",
+                "number": null,
+                "position": "Attacker",
+                "age": 23,
+                "birth_date": "30\/10\/1998",
+                "birth_place": "Newham",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 17794,
+                "player_name": "Joe Powell",
+                "firstname": "Joe",
+                "lastname": "Powell",
+                "number": null,
+                "position": "Attacker",
+                "age": 23,
+                "birth_date": "30\/10\/1998",
+                "birth_place": "Newham",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": "7.700000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 2,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 28,
+                    "key": 2,
+                    "accuracy": 90
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 28,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18824,
+                "player_name": "Pedro Obiang",
+                "firstname": "Pedro",
+                "lastname": "Mba Obiang Avomo",
+                "number": null,
+                "position": "Midfielder",
+                "age": 29,
+                "birth_date": "27\/03\/1992",
+                "birth_place": "Alcal\u00e0 de Henares",
+                "birth_country": "Spain",
+                "nationality": "Equatorial Guinea",
+                "height": "185 cm",
+                "weight": "75 kg",
+                "injured": null,
+                "rating": "6.779166",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 15,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 429,
+                    "key": 7,
+                    "accuracy": 75
+                },
+                "tackles": {
+                    "total": 41,
+                    "blocks": 9,
+                    "interceptions": 12
+                },
+                "duels": {
+                    "total": 139,
+                    "won": 74
+                },
+                "dribbles": {
+                    "attempts": 9,
+                    "success": 7
+                },
+                "fouls": {
+                    "drawn": 11,
+                    "committed": 13
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 24,
+                    "minutes_played": 1121,
+                    "lineups": 12
+                },
+                "substitutes": {
+                    "in": 12,
+                    "out": 5,
+                    "bench": 22
+                }
+            },
+            {
+                "player_id": 18824,
+                "player_name": "Pedro Obiang",
+                "firstname": "Pedro",
+                "lastname": "Mba Obiang Avomo",
+                "number": null,
+                "position": "Midfielder",
+                "age": 29,
+                "birth_date": "27\/03\/1992",
+                "birth_place": "Alcal\u00e0 de Henares",
+                "birth_country": "Spain",
+                "nationality": "Equatorial Guinea",
+                "height": "185 cm",
+                "weight": "75 kg",
+                "injured": null,
+                "rating": "6.733333",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 2,
+                    "on": 1
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 90,
+                    "key": 2,
+                    "accuracy": 90
+                },
+                "tackles": {
+                    "total": 2,
+                    "blocks": 1,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 17,
+                    "won": 8
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 2
+                },
+                "cards": {
+                    "yellow": 1,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 150,
+                    "lineups": 3
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 3,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18824,
+                "player_name": "Pedro Obiang",
+                "firstname": "Pedro",
+                "lastname": "Mba Obiang Avomo",
+                "number": null,
+                "position": "Midfielder",
+                "age": 29,
+                "birth_date": "27\/03\/1992",
+                "birth_place": "Alcal\u00e0 de Henares",
+                "birth_country": "Spain",
+                "nationality": "Equatorial Guinea",
+                "height": "185 cm",
+                "weight": "75 kg",
+                "injured": null,
+                "rating": "6.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 75,
+                    "key": 0,
+                    "accuracy": 87
+                },
+                "tackles": {
+                    "total": 3,
+                    "blocks": 1,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 25,
+                    "won": 10
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 7
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 2,
+                    "minutes_played": 136,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 18834,
+                "player_name": "A. Yarmolenko",
+                "firstname": "Andrii",
+                "lastname": "Yarmolenko",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "23\/10\/1989",
+                "birth_place": "Sankt-Peterburg",
+                "birth_country": "Russia",
+                "nationality": "Ukraine",
+                "height": "189 cm",
+                "weight": "81 kg",
+                "injured": null,
+                "rating": "6.722222",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 9,
+                    "on": 3
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 167,
+                    "key": 5,
+                    "accuracy": 83
+                },
+                "tackles": {
+                    "total": 4,
+                    "blocks": 1,
+                    "interceptions": 2
+                },
+                "duels": {
+                    "total": 42,
+                    "won": 17
+                },
+                "dribbles": {
+                    "attempts": 3,
+                    "success": 2
+                },
+                "fouls": {
+                    "drawn": 8,
+                    "committed": 8
+                },
+                "cards": {
+                    "yellow": 2,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 9,
+                    "minutes_played": 459,
+                    "lineups": 5
+                },
+                "substitutes": {
+                    "in": 4,
+                    "out": 4,
+                    "bench": 4
+                }
+            },
+            {
+                "player_id": 18834,
+                "player_name": "A. Yarmolenko",
+                "firstname": "Andrii",
+                "lastname": "Yarmolenko",
+                "number": null,
+                "position": "Attacker",
+                "age": 32,
+                "birth_date": "23\/10\/1989",
+                "birth_place": "Sankt-Peterburg",
+                "birth_country": "Russia",
+                "nationality": "Ukraine",
+                "height": "189 cm",
+                "weight": "81 kg",
+                "injured": null,
+                "rating": "7.900000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 6,
+                    "on": 2
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 49,
+                    "key": 2,
+                    "accuracy": 74
+                },
+                "tackles": {
+                    "total": 2,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 8,
+                    "won": 7
+                },
+                "dribbles": {
+                    "attempts": 4,
+                    "success": 4
+                },
+                "fouls": {
+                    "drawn": 1,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 1,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 2937,
+                "player_name": "D. Rice",
+                "firstname": "Declan",
+                "lastname": "Rice",
+                "number": null,
+                "position": "Midfielder",
+                "age": 22,
+                "birth_date": "14\/01\/1999",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "185 cm",
+                "weight": "76 kg",
+                "injured": null,
+                "rating": "6.947058",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 22,
+                    "on": 5
+                },
+                "goals": {
+                    "total": 2,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 1312,
+                    "key": 9,
+                    "accuracy": 85
+                },
+                "tackles": {
+                    "total": 98,
+                    "blocks": 12,
+                    "interceptions": 52
+                },
+                "duels": {
+                    "total": 321,
+                    "won": 185
+                },
+                "dribbles": {
+                    "attempts": 34,
+                    "success": 26
+                },
+                "fouls": {
+                    "drawn": 7,
+                    "committed": 17
+                },
+                "cards": {
+                    "yellow": 4,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 34,
+                    "minutes_played": 3005,
+                    "lineups": 34
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 2,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 2937,
+                "player_name": "D. Rice",
+                "firstname": "Declan",
+                "lastname": "Rice",
+                "number": null,
+                "position": "Midfielder",
+                "age": 22,
+                "birth_date": "14\/01\/1999",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "185 cm",
+                "weight": "76 kg",
+                "injured": null,
+                "rating": "7.633333",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 1,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 1,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 202,
+                    "key": 7,
+                    "accuracy": 92
+                },
+                "tackles": {
+                    "total": 8,
+                    "blocks": 0,
+                    "interceptions": 6
+                },
+                "duels": {
+                    "total": 24,
+                    "won": 20
+                },
+                "dribbles": {
+                    "attempts": 3,
+                    "success": 3
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 1
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 3,
+                    "minutes_played": 260,
+                    "lineups": 2
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 2937,
+                "player_name": "D. Rice",
+                "firstname": "Declan",
+                "lastname": "Rice",
+                "number": null,
+                "position": "Midfielder",
+                "age": 22,
+                "birth_date": "14\/01\/1999",
+                "birth_place": "London",
+                "birth_country": "England",
+                "nationality": "England",
+                "height": "185 cm",
+                "weight": "76 kg",
+                "injured": null,
+                "rating": "7.300000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 56,
+                    "key": 0,
+                    "accuracy": 82
+                },
+                "tackles": {
+                    "total": 2,
+                    "blocks": 0,
+                    "interceptions": 4
+                },
+                "duels": {
+                    "total": 7,
+                    "won": 4
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 90,
+                    "lineups": 1
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            },
+            {
+                "player_id": 2997,
+                "player_name": "\u0141. Fabia\u0144ski",
+                "firstname": "\u0141ukasz",
+                "lastname": "Fabia\u0144ski",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 36,
+                "birth_date": "18\/04\/1985",
+                "birth_place": "Kostrzyn nad Odr\u0105",
+                "birth_country": "Poland",
+                "nationality": "Poland",
+                "height": "190 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": "6.952631",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 55,
+                    "assists": 0,
+                    "saves": 148
+                },
+                "passes": {
+                    "total": 532,
+                    "key": 2,
+                    "accuracy": 50
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 1
+                },
+                "duels": {
+                    "total": 22,
+                    "won": 18
+                },
+                "dribbles": {
+                    "attempts": 2,
+                    "success": 2
+                },
+                "fouls": {
+                    "drawn": 6,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 1
+                },
+                "games": {
+                    "appearences": 38,
+                    "minutes_played": 3420,
+                    "lineups": 38
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 2997,
+                "player_name": "\u0141. Fabia\u0144ski",
+                "firstname": "\u0141ukasz",
+                "lastname": "Fabia\u0144ski",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 36,
+                "birth_date": "18\/04\/1985",
+                "birth_place": "Kostrzyn nad Odr\u0105",
+                "birth_country": "Poland",
+                "nationality": "Poland",
+                "height": "190 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 3
+                }
+            },
+            {
+                "player_id": 2997,
+                "player_name": "\u0141. Fabia\u0144ski",
+                "firstname": "\u0141ukasz",
+                "lastname": "Fabia\u0144ski",
+                "number": null,
+                "position": "Goalkeeper",
+                "age": 36,
+                "birth_date": "18\/04\/1985",
+                "birth_place": "Kostrzyn nad Odr\u0105",
+                "birth_country": "Poland",
+                "nationality": "Poland",
+                "height": "190 cm",
+                "weight": "83 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18820,
+                "player_name": "C. Coventry",
+                "firstname": "Conor",
+                "lastname": "Coventry",
+                "number": null,
+                "position": "Midfielder",
+                "age": 21,
+                "birth_date": "25\/03\/2000",
+                "birth_place": "Waltham Forest",
+                "birth_country": "England",
+                "nationality": "Republic of Ireland",
+                "height": null,
+                "weight": null,
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2,
+                "league": "Premier League",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 4
+                }
+            },
+            {
+                "player_id": 18820,
+                "player_name": "C. Coventry",
+                "firstname": "Conor",
+                "lastname": "Coventry",
+                "number": null,
+                "position": "Midfielder",
+                "age": 21,
+                "birth_date": "25\/03\/2000",
+                "birth_place": "Waltham Forest",
+                "birth_country": "England",
+                "nationality": "Republic of Ireland",
+                "height": null,
+                "weight": null,
+                "injured": null,
+                "rating": "6.900000",
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 38,
+                    "key": 0,
+                    "accuracy": 92
+                },
+                "tackles": {
+                    "total": 1,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 2,
+                    "won": 2
+                },
+                "dribbles": {
+                    "attempts": 1,
+                    "success": 1
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 1,
+                    "minutes_played": 44,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 1,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 18820,
+                "player_name": "C. Coventry",
+                "firstname": "Conor",
+                "lastname": "Coventry",
+                "number": null,
+                "position": "Midfielder",
+                "age": 21,
+                "birth_date": "25\/03\/2000",
+                "birth_place": "Waltham Forest",
+                "birth_country": "England",
+                "nationality": "Republic of Ireland",
+                "height": null,
+                "weight": null,
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 758,
+                "league": "FA Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 2
+                }
+            },
+            {
+                "player_id": 19827,
+                "player_name": "J. Cullen",
+                "firstname": "Joshua Jon",
+                "lastname": "Cullen",
+                "number": null,
+                "position": "Midfielder",
+                "age": 25,
+                "birth_date": "07\/04\/1996",
+                "birth_place": "Westcliff-on-Sea",
+                "birth_country": "England",
+                "nationality": "Republic of Ireland",
+                "height": "175 cm",
+                "weight": "70 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 48,
+                "team_name": "West Ham",
+                "league_id": 2084,
+                "league": "League Cup",
+                "season": "2018-2019",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0,
+                    "saves": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 1
+                }
+            }
+        ]
+    }
+}
