@@ -15,10 +15,10 @@ namespace Learning.FootballPrediction.Api.Repositories
         {
             foreach(var p in squad)
             {
-                await this.SaveSquadMember(squad.ParentID, squad.Role, p.Player.ID, p.Position.ID);
+                await this.SaveSquadMember(squad.ParentID, squad.Role, p);
             }
         }
-        private async Task SaveSquadMember(int matchId, MatchRole matchRole, int playerId, byte positionId)
+        private async Task SaveSquadMember(int matchId, MatchRole matchRole, SquadMember p)
         {
             // model is unaffected.
             await DBExecutor.ExecuteNonQuery(
@@ -26,8 +26,23 @@ namespace Learning.FootballPrediction.Api.Repositories
                 "dbo.squadMember_insert",
                 matchId,
                 (byte)matchRole,
-                playerId,
-                positionId);
+                p.Player.ID,
+                p.Position.ID,
+                p.Ratings.MinutesPlayed,
+                p.Ratings.Rating,
+                p.Ratings.Passes,
+                p.Ratings.Key,
+                p.Ratings.Accuracy,
+                p.Ratings.Shots,
+                p.Ratings.OnTarget,
+                p.Ratings.Tackles,
+                p.Ratings.Blocks,
+                p.Ratings.Interceptions,
+                p.Ratings.Dribbles,
+                p.Ratings.Success,
+                p.Ratings.Past,
+                p.Ratings.FoulsCommitted,
+                p.Ratings.FoulsDrawn);
         }
 
         protected async override Task<Player> FetchFromStore(int key)
@@ -40,7 +55,11 @@ namespace Learning.FootballPrediction.Api.Repositories
                     p = new Player(
                         reader.GetInt32("id"),
                         reader.GetString("full_name"),
-                        reader.GetDateTime("date_of_birth")
+                        reader.GetDateTime("date_of_birth"),
+                        0,
+                        MeasurementType.cm,
+                        0,
+                        MeasurementType.kg
                     );
                 }
             }, key);
@@ -57,9 +76,13 @@ namespace Learning.FootballPrediction.Api.Repositories
                 "dbo.player_insert", 
                 model.Name, 
                 model.DateOfBirth, 
-                model.NameHash);
+                model.NameHash,
+                model.Height,
+                model.HeightType,
+                model.Weight,
+                model.WeightType);
             
-            p = new Player(newId, model.Name, model.DateOfBirth);
+            p = new Player(newId, model.Name, model.DateOfBirth, model.Height, model.HeightType, model.Weight, model.WeightType);
             return p;
         }
     }

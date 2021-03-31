@@ -26,7 +26,10 @@ namespace Learning.FootballPrediction.DataFetch.Repositories
             // Go through the response.
             foreach(var player in response.Api.Players)
             {
-                ratings.Add(player.PlayerId, player);
+                if(player.PlayerId.HasValue)
+                {
+                    ratings.Add(player.PlayerId.Value, player);
+                }
             }
 
             return ratings;

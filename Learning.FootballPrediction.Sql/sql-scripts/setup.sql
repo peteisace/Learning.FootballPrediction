@@ -69,6 +69,11 @@ BEGIN
     DROP VIEW dbo.vw_match_results
 END
 
+IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.VIEWS v WHERE v.TABLE_NAME = 'vw_matchdays_results')
+BEGIN
+    DROP VIEW dbo.vw_matchdays_results
+END
+
 CREATE TABLE fp.dbo.measurement_type (
     id tinyint NOT NULL,
     abbreviation varchar(4) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -135,12 +140,26 @@ CREATE TABLE fp.dbo.[match] (
 	CONSTRAINT FK_club_matchhome FOREIGN KEY (home_teamid) REFERENCES fp.dbo.club(id)
 ) 
 
-CREATE TABLE fp.dbo.match_squads (
-	match_id int NOT NULL,
-	player_id int NOT NULL,
-	club_type tinyint NOT NULL,
-	start_positionid tinyint NOT NULL,
-    minutes_played tinyint NULL,
+CREATE TABLE [dbo].[match_squads](
+	[match_id] [int] NOT NULL,
+	[player_id] [int] NOT NULL,
+	[club_type] [tinyint] NOT NULL,
+	[start_positionid] [tinyint] NOT NULL,
+	[minutes_played] [tinyint] NULL,
+    [rating] [float] NOT NULL,
+    [total_passes] [int] NOT NULL,
+    [key_passes] [int] NOT NULL,
+    [pass_accuracy] [int] NOT NULL,
+    [total_shots] [int] NOT NULL,
+    [on_target] [int] NOT NULL,
+    [total_tackles] [int] NOT NULL,
+    [blocks] [int] NOT NULL,
+    [interceptions] [int] NOT NULL,
+    [dribbles] [int] NOT NULL,
+    [successful_dribbles] [int] NOT NULL,
+    [past_dribbles] [int] NOT NULL,
+    [fouls_committed] [int] NOT NULL,
+    [fouls_drawn][int] NOT NULL,
 	CONSTRAINT PK_match_squads PRIMARY KEY (match_id,player_id),
 	CONSTRAINT FK_matchsquads_match FOREIGN KEY (match_id) REFERENCES fp.dbo.[match](id),
 	CONSTRAINT FK_matchsquads_matchorg FOREIGN KEY (club_type) REFERENCES fp.dbo.match_org(id),
@@ -159,8 +178,9 @@ CREATE TABLE fp.dbo.match_events (
 	CONSTRAINT FK_eventtype_matchevents FOREIGN KEY (event_type) REFERENCES fp.dbo.event_type(id),
 	CONSTRAINT FK_player_matchevents FOREIGN KEY (player_id) REFERENCES fp.dbo.player(id)
 ) 
+GO
 
-ALTER VIEW dbo.vw_match_results
+CREATE VIEW dbo.vw_match_results
 AS select CASE WHEN DATEPART(MONTH, played) BETWEEN 8 AND 12 THEN CAST(DATEPART(YEAR, played) AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) + 1 AS VARCHAR(4)) ELSE CAST(DATEPART(YEAR, played) - 1 AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) AS VARCHAR(4)) END AS season,
 m.id, m.played, m.home_teamid, m.away_teamid, c1.name AS home_team, c2.name AS away_team, COUNT(ms1.match_id) AS home_goals_scored, COUNT(ms2.match_id) AS away_goals_scored
 from match m
@@ -171,8 +191,29 @@ left join match_squads ms1 ON me1.player_id = ms1.player_id AND ms1.match_id = m
 left join match_squads ms2 ON me1.player_id = ms2.player_id AND ms2.match_id = m.id AND ms2.club_type = 2
 group by CASE WHEN DATEPART(MONTH, played) BETWEEN 8 AND 12 THEN CAST(DATEPART(YEAR, played) AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) + 1 AS VARCHAR(4)) ELSE CAST(DATEPART(YEAR, played) - 1 AS VARCHAR(4)) + '-' + CAST(DATEPART(YEAR, played) AS VARCHAR(4)) END, 
 m.id, m.played, m.home_teamid, m.away_teamid, c1.name, c2.name;
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+
+CREATE VIEW [dbo].[vw_matchdays_results]
+AS 
+    SELECT DISTINCT  c.id AS target_club_id
+            , c.name AS target_club_name
+            , v1.*
+            , ROW_NUMBER() over (
+                PARTITION BY    c.id 
+                ORDER BY        c.id
+                                , v1.played) AS mday
+    FROM        dbo.club c
+    INNER JOIN  vw_match_results v1 
+        ON (c.id = v1.home_teamid OR c.id = v1.away_teamid);
+   
 
 GO
+
 
 insert into dbo.match_org VALUES(1, 'Home Team')
 GO
@@ -227,6 +268,21 @@ CREATE PROCEDURE [dbo].[squadMember_insert]
     , @MatchRole TINYINT
     , @PlayerId INT
     , @PositionId TINYINT
+    , @Minutes TINYINT = 0
+    , @Rating FLOAT = 0
+    , @TotalPasses INT = 0
+    , @KeyPasses INT = 0
+    , @Accuracy INT = 0
+    , @TotalShots INT = 0
+    , @OnTarget INT = 0
+    , @TotalTackles INT = 0
+    , @Blocks INT = 0
+    , @Interceptions INT = 0
+    , @Dribbles INT = 0
+    , @SuccessfulDribbles INT = 0
+    , @PastDribbles INT = 0
+    , @FoulsCommitted INT = 0
+    , @FoulsDrawn INT = 0
 )
 AS
 BEGIN
@@ -236,6 +292,21 @@ BEGIN
         , club_type
         , player_id
         , start_positionid
+        , minutes_played
+        , rating
+        , total_passes
+        , key_passes
+        , pass_accuracy
+        , total_shots
+        , on_target
+        , total_tackles
+        , blocks
+        , interceptions
+        , dribbles
+        , successful_dribbles
+        , past_dribbles
+        , fouls_committed
+        , fouls_drawn
     )
     VALUES
     (
@@ -243,6 +314,21 @@ BEGIN
         , @MatchRole
         , @PlayerId
         , @PositionId
+        , @Minutes
+        , @Rating
+        , @TotalPasses
+        , @KeyPasses
+        , @Accuracy
+        , @TotalShots
+        , @OnTarget
+        , @TotalTackles
+        , @Blocks
+        , @Interceptions
+        , @Dribbles
+        , @SuccessfulDribbles
+        , @PastDribbles
+        , @FoulsCommitted
+        , @FoulsDrawn
     )
 
     SELECT CAST(SCOPE_IDENTITY() AS INT) AS match_squad_id
@@ -259,6 +345,10 @@ CREATE PROCEDURE [dbo].[player_insert]
     @FullName VARCHAR(100)
     , @DateOfBirth DATETIME
     , @NameHash INT
+    , @Height INT = NULL
+    , @HeightType TINYINT
+    , @Weight INT = NULL
+    , @WeightType TINYINT
 )
 AS
 BEGIN
@@ -267,12 +357,20 @@ BEGIN
         full_name
         , date_of_birth
         , name_hash
+        , height
+        , height_measurement_type
+        , weight
+        , weight_measurement_type
     )
     VALUES
     (
         @FullName
         , @DateOfBirth
         , @NameHash
+        , @Height
+        , @HeightType
+        , @Weight
+        , @WeightType
     )
 
     SELECT CAST(SCOPE_IDENTITY() AS INT) AS player_id

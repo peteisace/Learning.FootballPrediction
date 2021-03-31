@@ -18,9 +18,9 @@ namespace Learning.FootballPrediction.Api.Models
         public int ParentID => this._parentId;
         public MatchRole Role => this._role;
 
-        public SquadMember AddNew(Player player, Position position)
+        public SquadMember AddNew(Player player, Position position, MatchRatings ratings)
         {
-            var squadMember = new SquadMember(player, position);            
+            var squadMember = new SquadMember(player, position, ratings);            
             return this.AddNew(squadMember);
         }
 

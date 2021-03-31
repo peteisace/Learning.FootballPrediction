@@ -4,8 +4,17 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
 {
     public class PlayerRatingInfo
     {
+        public PlayerRatingInfo()
+        {
+            this.Passes = new PassingInfo();
+            this.Shots = new ShootingInfo();
+            this.Tackles = new TacklingInfo();
+            this.Dribbles = new DribblingInfo();
+            this.Fouls = new FoulingInfo();
+        }
+        
         [JsonPropertyName("player_id")]
-        public int PlayerId
+        public int? PlayerId
         {
             get;
             set;

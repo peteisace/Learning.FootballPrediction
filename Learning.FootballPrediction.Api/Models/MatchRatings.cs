@@ -2,6 +2,12 @@ namespace Learning.FootballPrediction.Api.Models
 {
     public class MatchRatings
     {
+        public int MinutesPlayed
+        {
+            get;
+            set;
+        }
+        
         public double Rating
         {
             get;
@@ -34,7 +40,7 @@ namespace Learning.FootballPrediction.Api.Models
 
         public int OnTarget
         {
-            get;
+            get; 
             set;
         }
 

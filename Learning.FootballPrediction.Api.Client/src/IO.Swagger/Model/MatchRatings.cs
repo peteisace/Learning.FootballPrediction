@@ -46,8 +46,9 @@ namespace IO.Swagger.Model
         /// <param name="past">past.</param>
         /// <param name="foulsCommitted">foulsCommitted.</param>
         /// <param name="foulsDrawn">foulsDrawn.</param>
-        public MatchRatings(double? rating = default(double?), int? passes = default(int?), int? key = default(int?), int? accuracy = default(int?), int? shots = default(int?), int? onTarget = default(int?), int? tackles = default(int?), int? blocks = default(int?), int? interceptions = default(int?), int? dribbles = default(int?), int? success = default(int?), int? past = default(int?), int? foulsCommitted = default(int?), int? foulsDrawn = default(int?))
+        public MatchRatings(int? minutesPlayed = default(int?), double? rating = default(double?), int? passes = default(int?), int? key = default(int?), int? accuracy = default(int?), int? shots = default(int?), int? onTarget = default(int?), int? tackles = default(int?), int? blocks = default(int?), int? interceptions = default(int?), int? dribbles = default(int?), int? success = default(int?), int? past = default(int?), int? foulsCommitted = default(int?), int? foulsDrawn = default(int?))
         {
+            this.MinutesPlayed = minutesPlayed;
             this.Rating = rating;
             this.Passes = passes;
             this.Key = key;
@@ -63,6 +64,9 @@ namespace IO.Swagger.Model
             this.FoulsCommitted = foulsCommitted;
             this.FoulsDrawn = foulsDrawn;
         }
+
+        [DataMember(Name="minutesPlayed", EmitDefaultValue=false)]
+        public int? MinutesPlayed { get; set; }
         
         /// <summary>
         /// Gets or Sets Rating
@@ -156,6 +160,7 @@ namespace IO.Swagger.Model
         {
             var sb = new StringBuilder();
             sb.Append("class MatchRatings {\n");
+            sb.Append("  MinutesPlayed: ").Append(MinutesPlayed).Append("\n");
             sb.Append("  Rating: ").Append(Rating).Append("\n");
             sb.Append("  Passes: ").Append(Passes).Append("\n");
             sb.Append("  Key: ").Append(Key).Append("\n");
@@ -209,6 +214,11 @@ namespace IO.Swagger.Model
                     (this.Rating != null &&
                     this.Rating.Equals(input.Rating))
                 ) && 
+                (
+                    this.MinutesPlayed == input.MinutesPlayed ||
+                    (this.MinutesPlayed != null && 
+                    this.MinutesPlayed.Equals(input.MinutesPlayed))
+                ) &&
                 (
                     this.Passes == input.Passes ||
                     (this.Passes != null &&
@@ -286,6 +296,8 @@ namespace IO.Swagger.Model
             {
                 int hashCode = 41;
                 if (this.Rating != null)
+                    hashCode = hashCode * 59 + this.Rating.GetHashCode();
+                if (this.MinutesPlayed != null)
                     hashCode = hashCode * 59 + this.Rating.GetHashCode();
                 if (this.Passes != null)
                     hashCode = hashCode * 59 + this.Passes.GetHashCode();

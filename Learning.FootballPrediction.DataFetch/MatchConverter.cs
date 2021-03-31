@@ -72,6 +72,11 @@ namespace Learning.FootballPrediction.DataFetch
 
         private static int RemoveMeasurement(string measurement)
         {
+            if(string.IsNullOrEmpty(measurement))
+            {
+                return 0;
+            }
+
             var parts = measurement.Split(' ');
             if(parts.Length == 2)
             {
@@ -90,6 +95,7 @@ namespace Learning.FootballPrediction.DataFetch
         {
             List<PlayerRequest> players = new List<PlayerRequest>();
             Dictionary<int, PlayerRequest> requestPlayers = new Dictionary<int, PlayerRequest>();
+            double ratingAmount = 0;
             
             foreach(var p in squad.StartXi)
             {
@@ -100,11 +106,12 @@ namespace Learning.FootballPrediction.DataFetch
 
                 // Get from playercache.
                 var detailsResponse = await PlayerCache.Instance.Lookup(p, team.TeamId, leagueId);
-                var pRatings = ratings[p.PlayerId];
+                var pRatings = ratings.GetValueOrDefault(p.PlayerId) ?? new PlayerRatingInfo();
 
                 if(detailsResponse != null && detailsResponse.Response != null)
                 {
                      var pDetails = detailsResponse.Response;
+                     var validRating = double.TryParse(pRatings.Rating, out ratingAmount);
 
                     // Create player request
                     var player = new PlayerRequest() { 
@@ -117,7 +124,8 @@ namespace Learning.FootballPrediction.DataFetch
                         Weight = RemoveMeasurement(pDetails.Weight),
                         WeightType = MeasurementType.Kg,                        
                         Rating = new MatchRatings(
-                            double.Parse(pRatings.Rating),
+                            pRatings.MinutesPlayed,
+                            validRating ? ratingAmount : 0,
                             pRatings.Passes.Total,
                             pRatings.Passes.Key,
                             pRatings.Passes.Accuracy,
@@ -141,13 +149,35 @@ namespace Learning.FootballPrediction.DataFetch
                 else
                 {
                     Console.WriteLine("FOUND NULL!");
+                    var validRating = double.TryParse(pRatings.Rating, out ratingAmount);
 
                     // Try to create from TeamInfo
                     var player = new PlayerRequest() {
                         Name = p.Player,
                         DateOfBirth = new DateTime(1900, 1, 1),
                         Position = GetPositionFromShortcut(p.Position),
-                        ActiveInEvents = new List<MatchEventRequest>()
+                        ActiveInEvents = new List<MatchEventRequest>(),
+                        Height = null,
+                        HeightType = MeasurementType.Cm,
+                        Weight = null,
+                        WeightType = MeasurementType.Kg,
+                        Rating = pRatings == null ? new MatchRatings() : new MatchRatings(
+                            pRatings.MinutesPlayed,
+                            validRating ? ratingAmount : 0,
+                            pRatings.Passes.Total,
+                            pRatings.Passes.Key,
+                            pRatings.Passes.Accuracy,
+                            pRatings.Shots.Total,
+                            pRatings.Shots.OnTarget,
+                            pRatings.Tackles.Total,
+                            pRatings.Tackles.Blocks,
+                            pRatings.Tackles.Interceptions,
+                            pRatings.Dribbles.Attempts,
+                            pRatings.Dribbles.Success,
+                            pRatings.Dribbles.Past,
+                            pRatings.Fouls.Committed,
+                            pRatings.Fouls.Drawn
+                        )
                     };
 
                     // Store it
@@ -166,7 +196,8 @@ namespace Learning.FootballPrediction.DataFetch
 
                 // Get from playercache.
                 var detailsResponse = await PlayerCache.Instance.Lookup(p, team.TeamId, leagueId);
-                var pRatings = ratings.GetValueOrDefault(p.PlayerId);
+                var pRatings = ratings.GetValueOrDefault(p.PlayerId) ?? new PlayerRatingInfo();
+                var validRating = pRatings == null ? false : double.TryParse(pRatings.Rating, out ratingAmount);
 
                 if(detailsResponse != null && detailsResponse.Response != null)
                 {
@@ -178,12 +209,13 @@ namespace Learning.FootballPrediction.DataFetch
                         DateOfBirth = ConvertIsoDatetime(pDetails.BirthDate),
                         Position = pDetails.Position,
                         ActiveInEvents = new List<MatchEventRequest>(),
-                        Height = pRatings == null ? null : RemoveMeasurement(pDetails.Height),
+                        Height = RemoveMeasurement(pDetails.Height),
                         HeightType = MeasurementType.Cm,
-                        Weight = pRatings == null ? null : RemoveMeasurement(pDetails.Weight),
+                        Weight = RemoveMeasurement(pDetails.Weight),
                         WeightType = MeasurementType.Kg,        
-                        Rating = pRatings == null ? null : new MatchRatings(
-                            double.Parse(pRatings.Rating),
+                        Rating = new MatchRatings(
+                            pRatings.MinutesPlayed,
+                            validRating ? ratingAmount : 0,
                             pRatings.Passes.Total,
                             pRatings.Passes.Key,
                             pRatings.Passes.Accuracy,
@@ -206,7 +238,7 @@ namespace Learning.FootballPrediction.DataFetch
                 }
                 else
                 {
-                    Console.WriteLine("FOUND NULL!");
+                    Console.WriteLine("FOUND NULL! {0} ({1}) {2}", team.TeamId, team.Name, p.Player);                   
 
                     // Try to create from TeamInfo
                     var player = new PlayerRequest() {
@@ -218,8 +250,9 @@ namespace Learning.FootballPrediction.DataFetch
                         HeightType = MeasurementType.Cm,
                         Weight = null,
                         WeightType = MeasurementType.Kg,        
-                        Rating = pRatings == null ? null : new MatchRatings(
-                            double.Parse(pRatings.Rating),
+                        Rating = new MatchRatings(
+                            pRatings.MinutesPlayed,
+                            validRating ? ratingAmount : 0,
                             pRatings.Passes.Total,
                             pRatings.Passes.Key,
                             pRatings.Passes.Accuracy,

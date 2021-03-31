@@ -43,7 +43,7 @@ namespace Learning.FootballPrediction.Api.Models
         public MeasurementType HeightType
         {
             get => this._heightType;
-            set => this._heightType = value;
+            set => this._heightType = value; 
         }
 
         public byte? Weight 

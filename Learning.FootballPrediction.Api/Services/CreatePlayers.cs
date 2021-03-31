@@ -41,7 +41,7 @@ namespace Learning.FootballPrediction.Api.Services
             var position = await this._playerRepository.GetPositionByName(p.Position) ?? await this._playerRepository.SavePosition(p.Position);
             var player = await this._playerRepository.GetPlayerByName(p) ?? await this._playerRepository.SavePlayer(p);
 
-            return new SquadMember(player, position);
+            return new SquadMember(player, position, p.Rating ?? new MatchRatings());
         }
     }
 }
