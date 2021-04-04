@@ -204,7 +204,7 @@ AS
             , c.name AS target_club_name
             , v1.*
             , ROW_NUMBER() over (
-                PARTITION BY    c.id 
+                PARTITION BY    c.id, v1.season
                 ORDER BY        c.id
                                 , v1.played) AS mday
     FROM        dbo.club c
@@ -212,6 +212,150 @@ AS
         ON (c.id = v1.home_teamid OR c.id = v1.away_teamid);
    
 
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE VIEW [dbo].[vw_matches_with_history]
+AS
+    WITH some_results
+    AS
+    (
+    SELECT      m.id AS match_id
+                , [current].season
+                , m.played
+                , m.home_teamid
+                , [current].home_team
+                , m.away_teamid
+                , [current].away_team
+                , [current].mday AS match_day
+                , [current].home_goals_scored
+                , [current].away_goals_scored
+                , r.target_club_id
+                , prev.name AS prev_target_clubname
+                , r.home_teamid AS prev_home_teamid
+                , c1.name AS prev_home
+                , r.away_teamid AS prev_away_teamid
+                , c2.name AS prev_away
+                , r.home_goals_scored AS prev_home_goals
+                , r.away_goals_scored AS prev_away_goals      
+                , r.mday AS prev_match_day      
+                , CASE
+                    WHEN r.target_club_id = r.home_teamid AND r.home_goals_scored > r.away_goals_scored THEN 'W'
+                    WHEN r.target_club_id = r.away_teamid AND r.away_goals_scored > r.home_goals_scored THEN 'W'
+                    WHEN r.home_goals_scored = r.away_goals_scored THEN 'D'
+                    WHEN r.home_goals_scored IS NULL THEN NULL
+                    ELSE 'L'
+                END AS results    
+                , CASE
+                    WHEN r.target_club_id = r.home_teamid AND r.home_goals_scored > r.away_goals_scored THEN 3
+                    WHEN r.target_club_id = r.away_teamid AND r.away_goals_scored > r.home_goals_scored THEN 3
+                    WHEN r.home_goals_scored = r.away_goals_scored THEN 1
+                    WHEN r.home_goals_scored IS NULL THEN NULL
+                    ELSE 0
+                END AS prev_points
+                , r2.target_club_id AS prev2_target_clubid
+                , prev2.name AS prev2_target_clubname
+                , r2.home_teamid AS prev2_home_teamid
+                , c2_1.name AS prev2_home
+                , r2.away_teamid AS prev2_away_teamid
+                , c2_2.name AS prev2_away
+                , r2.home_goals_scored AS prev2_home_goals
+                , r2.away_goals_scored AS prev2_away_goals      
+                , r2.mday AS prev2_match_day      
+                , CASE
+                    WHEN r2.target_club_id = r2.home_teamid AND r2.home_goals_scored > r2.away_goals_scored THEN 'W'
+                    WHEN r2.target_club_id = r2.away_teamid AND r2.away_goals_scored > r2.home_goals_scored THEN 'W'
+                    WHEN r2.home_goals_scored = r2.away_goals_scored THEN 'D'
+                    WHEN r2.home_goals_scored IS NULL THEN NULL
+                    ELSE 'L'
+                END AS results2    
+                , CASE
+                    WHEN r2.target_club_id = r2.home_teamid AND r2.home_goals_scored > r2.away_goals_scored THEN 3
+                    WHEN r2.target_club_id = r2.away_teamid AND r2.away_goals_scored > r2.home_goals_scored THEN 3
+                    WHEN r2.home_goals_scored = r2.away_goals_scored THEN 1
+                    WHEN r2.home_goals_scored IS NULL THEN NULL
+                    ELSE 0 
+                END AS prev2_points 
+                , CASE WHEN r.target_club_id = r.home_teamid THEN r.home_goals_scored ELSE r.away_goals_scored END AS prev_goals_scored
+                , CASE WHEN r2.target_club_id = r2.home_teamid THEN r2.home_goals_scored ELSE r2.away_goals_scored END AS prev2_goals_scored
+                , CASE WHEN r.target_club_id = r.home_teamid THEN r.away_goals_Scored ELSE r.home_goals_scored END AS prev_goals_conceded
+                , CASE WHEN r2.target_club_id = r2.home_teamid THEN r2.away_goals_scored ELSE r2.home_goals_scored END AS prev2_goals_conceded                                                
+    FROM        match m
+    INNER JOIN  vw_matchdays_results [current]
+        ON          m.id = [current].id
+        AND         m.home_teamid = [current].target_club_id    
+    LEFT JOIN  vw_matchdays_results r
+        ON          r.target_club_id = m.home_teamid    
+        AND         r.mday < [current].mday
+        AND         r.season = [current].season
+    LEFT JOIN   club c1 
+        ON          r.home_teamid = c1.id
+    LEFT JOIN   club c2 
+        ON          r.away_teamid = c2.id
+    LEFT JOIN   vw_matchdays_results r2
+        ON          r2.target_club_id = m.away_teamid
+        AND         r.mday = r2.mday
+        AND         r.season = r2.season
+    LEFT JOIN   club c2_1 
+        ON          r2.home_teamid = c2_1.id
+    LEFT JOIN   club c2_2
+        ON          r2.away_teamid = c2_2.id
+    LEFT JOIN   club prev
+        ON          r.target_club_id = prev.id
+    LEFT JOIN   club prev2
+        ON          r2.target_club_id = prev2.id
+    )
+    SELECT      m.match_id
+                , m.season
+                , m.played
+                , m.home_teamid
+                , m.home_team
+                , m.away_teamid
+                , m.away_team
+                , m.home_goals_scored
+                , m.away_goals_scored
+                , SUM(CASE 
+                    WHEN m.results = 'W' THEN 1 ELSE 0 
+                END) AS home_wins
+                , SUM(CASE
+                    WHEN m.results = 'L' THEN 1 ELSE 0
+                END) AS home_losses
+                , SUM(CASE
+                    WHEN m.results = 'D' THEN 1 ELSE 0
+                END) AS home_draws
+                , SUM(CASE 
+                    WHEN m.results2 = 'W' THEN 1 ELSE 0 
+                END) AS away_wins
+                , SUM(CASE
+                    WHEN m.results2 = 'L' THEN 1 ELSE 0
+                END) AS away_losses
+                , SUM(CASE
+                    WHEN m.results2 = 'D' THEN 1 ELSE 0
+                END) AS away_draws
+                , SUM(m.prev_goals_scored) AS home_goals
+                , SUM(m.prev2_goals_scored) AS away_goals
+                , SUM(m.prev_goals_conceded) AS home_conceded
+                , SUM(m.prev2_goals_conceded) AS away_conceded     
+                , MAX(m.prev_match_day) + 1 AS home_matchday
+                , MAX(m.prev2_match_day) + 1 AS away_matchday
+                , SUM(m.prev_points) AS home_points
+                , SUM(m.prev2_points) AS away_points  
+                , STRING_AGG(m.results, '') AS home_form
+                , STRING_AGG(m.results2, '') AS away_form
+    FROM        some_results m        
+    GROUP BY
+                m.match_id
+                , m.season
+                , m.played
+                , m.home_teamid
+                , m.home_team
+                , m.away_teamid
+                , m.away_team
+                , m.home_goals_scored
+                , m.away_goals_scored;                    
 GO
 
 
