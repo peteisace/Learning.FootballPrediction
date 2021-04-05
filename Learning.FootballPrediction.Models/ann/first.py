@@ -3,50 +3,63 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 import tensorflow as tf
 import keras
 from keras.models import Sequential
 from keras.layers import Dense
 
-df = pd.read_csv('../matches_played.csv')
-X = df.iloc[:, 0:21].values
-Y = df.iloc[:, 21:23].values
-
-# encode home-team, away-team and form
-labelEncoder_X_1 = LabelEncoder()
-X[:, 1] = labelEncoder_X_1.fit_transform(X[:, 1])
-
-labelEncoder_X_2 = LabelEncoder()
-X[:, 2] = labelEncoder_X_2.fit_transform(X[:, 2])
-
-labelEncoder_X_4 = LabelEncoder()
-X[:, 4] = labelEncoder_X_4.fit_transform(X[:, 4])
-
-labelEncoder_X_6 = LabelEncoder()
-X[:, 6] = labelEncoder_X_6.fit_transform(X[:, 6])
-
-labelEncoder_X_19 = LabelEncoder()
-X[:, 19] = labelEncoder_X_19.fit_transform(X[:, 19])
-
-labelEncoder_X_20 = LabelEncoder()
-X[:, 20] = labelEncoder_X_20.fit_transform(X[:, 20])
-
-# mess around
-sc = StandardScaler()
-X = sc.fit_transform(X)
-X = sc.transform(X)
-
-# Initialize
-classifier = Sequential()
-
-classifier.add(Dense(units = 8, kernel_initializer = 'uniform', activation = 'relu', input_dim = [None, 21]))
-classifier.add(Dense(units = 8, kernel_initializer = 'uniform', activation = 'relu'))
-classifier.add(Dense(units = 2, kernel_initializer = 'uniform', activation = 'sigmoid'))
-
-classifier.compile(optimizer = 'adam', loss = 'absolute_difference', metrics = ['accuracy'])
-
-classifier.fit(X, Y, batch_size = 10)
+# read file
+dataset = pd.read_csv('../matches_played.csv')
 
 
+def format_output(data):
+    y1 = data.pop('home_goals_scored')
+    y1 = np.array(y1)
+    y2 = data.pop('away_goals_scored')
+    y2 = np.array(y2)
+
+    return y1, y2
 
 
+# drop columns
+X = dataset.drop(labels = ['season', 'home_teamid', 'away_teamid'], axis = 1)
+Y = dataset[['home_goals_scored', 'away_goals_scored']]
+
+print(Y)
+
+# label encoding
+label1 = LabelEncoder()
+X['played'] = label1.fit_transform(X['played'])
+
+label2 = LabelEncoder()
+X['home_team'] = label2.fit_transform(X['home_team'])
+
+label3 = LabelEncoder()
+X['away_team'] = label3.fit_transform(X['away_team'])
+
+label4 = LabelEncoder()
+X['home_form'] = label4.fit_transform(X['home_form'])
+
+label5 = LabelEncoder()
+X['away_form'] = label5.fit_transform(X['away_form'])
+
+# Feature standardization
+scaler = StandardScaler()
+
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Build the model
+model = Sequential()
+model.add(Dense(X.shape[1], activation = 'relu', input_dim = X.shape[1]))
+model.add(Dense(32, activation = 'relu'))
+model.add(Dense(2, activation = 'softmax'))
+
+model.compile(optimizer = 'adam', loss = 'mean_absolute_error', metrics = ['accuracy'])
+model.fit(X_train, Y_train, batch_size = 10, epochs = 30, verbose = 1)
+
+y_pred = np.argmax(model.predict(X_test), axis = 1)
+print(Y_train)
+print(y_pred)
