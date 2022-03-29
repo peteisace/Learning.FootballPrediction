@@ -41,5 +41,6 @@ namespace Learning.FootballPrediction.DataFetch
             get;
         }
         string Ratings { get; set; }
+        string PlayerFixture { get; set; }
     }
 }

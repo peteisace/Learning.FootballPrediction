@@ -15,7 +15,10 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
         Card = 2,
 
         [EnumMember(Value = "subst")]
-        Susbtitution = 3
+        Susbtitution = 3,
+
+        [EnumMember(Value = "Var")]
+        Var = 4        
     }
 
     public class EnumMemberConverter<T> : JsonConverter<T> where T : struct, Enum
@@ -43,7 +46,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
                     }
                }
             }
-
+            
             throw new InvalidOperationException();
         }
 

@@ -1,12 +1,18 @@
+
+
 namespace Learning.FootballPrediction.DataFetch
-{
+{    
     public class MatchConfig : IMatchConfiguration
     {
+        public MatchConfig()
+        {
+        }
+
         public string League
         {
             get;    
             set;
-        }
+        }      
         
         public string Competition
         {
@@ -26,18 +32,28 @@ namespace Learning.FootballPrediction.DataFetch
             set;
         }
 
+        ///
+
         public string Ratings
         {
             get;
             set;
         }
 
+        ///
+
+        public string PlayerFixture
+        {
+            get;
+            set;
+        }
+        
         public string ApiKey
         {
             get;
             private set;
         }
-
+                
         public string BaseUrl
         {
             get;
@@ -68,6 +84,10 @@ namespace Learning.FootballPrediction.DataFetch
         {
             this.DestinationBase = destinationBase;
         }
-        
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
     }
 }

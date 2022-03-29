@@ -40,23 +40,17 @@ namespace Learning.FootballPrediction.DataFetch
                         var list = await target.Invoke(incoming.PlayerId, teamId);
                         // Process the list.
                         foreach(var p in list.Api.Players)
-                        {
-                            Console.Write("Found {0}({2}), with league ID {1}. ",
-                                p.PlayerName,
-                                p.LeagueId,
-                                p.PlayerId);
+                        {                    
+                            Console.WriteLine("player leagueId.hasValue = {0} and leagueId = {1} and player leagueId = {2}",
+                                p.LeagueId.HasValue,
+                                leagueId,
+                                p?.LeagueId);
 
-                            if(p.LeagueId.HasValue && p.LeagueId.Value == leagueId && !this._cache.ContainsKey(p.PlayerId))
+                            if(!this._cache.ContainsKey(p.PlayerId))
                             {
                                 // Add it to the cache.  
-                                this._cache.Add(p.PlayerId, p);
-                                Console.WriteLine("And saved him in cache.");
-                            }
-                            else
-                            {
-                                Console.WriteLine("And ignored him, cache.ContainsKey == {0}",
-                                    this._cache.ContainsKey(p.PlayerId));
-                            }
+                                this._cache.Add(p.PlayerId, p);                                
+                            }                            
                         }
 
                         // Returned

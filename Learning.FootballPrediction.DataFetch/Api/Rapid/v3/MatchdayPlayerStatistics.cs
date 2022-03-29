@@ -1,48 +1,40 @@
 using System.Text.Json.Serialization;
 
-namespace Learning.FootballPrediction.DataFetch.Api.Rapid
+namespace Learning.FootballPrediction.DataFetch.Api.Rapid.v3
 {
-    public class PlayerRatingInfo
-    {
-        public PlayerRatingInfo()
-        {
-            this.Passes = new PassingInfo();
-            this.Shots = new ShootingInfo();
-            this.Tackles = new TacklingInfo();
-            this.Dribbles = new DribblingInfo();
-            this.Fouls = new FoulingInfo();
-        }
-        
-        [JsonPropertyName("player_id")]
+    public class MatchdayPlayerStatistics
+    {                
         public int? PlayerId
         {
             get;
-            set;
+            internal set;                        
         }
-
-        [JsonPropertyName("player_name")]
+        
         public string Name
         {
             get;
-            set;
+            internal set;
         }
-
-        [JsonPropertyName("number")]
-        public int Number
+        
+        public int? Number
         {
-            get;
-            set;
+            get => this.Game?.Number ?? 0;
         }
 
-        [JsonPropertyName("rating")]
         public string Rating
         {
-            get;
-            set;
+            get => this.Game?.Rating ?? string.Empty;
+        }
+        
+        public int? MinutesPlayed
+        {
+            get {                
+                return this.Game?.Minutes;
+            }
         }
 
-        [JsonPropertyName("minutes_played")]
-        public int? MinutesPlayed
+        [JsonPropertyName("games")]
+        public GameInfo Game
         {
             get;
             set;
@@ -73,7 +65,7 @@ namespace Learning.FootballPrediction.DataFetch.Api.Rapid
         public DribblingInfo Dribbles
         {
             get;
-            set;
+            set;            
         }
 
         [JsonPropertyName("fouls")]

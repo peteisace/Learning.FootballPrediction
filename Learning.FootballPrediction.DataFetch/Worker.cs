@@ -31,7 +31,7 @@ namespace Learning.FootballPrediction.DataFetch
             this._leagueRepository = leagueRepository;
         }
         public async Task StartAsync(CancellationToken cancellationToken)
-        {
+        {            
             // Get the list of leagues we need to deal with.
             var listOfLeagues = await this._leagueRepository.GetEnglishLeaguesAsync();
 
@@ -65,7 +65,7 @@ namespace Learning.FootballPrediction.DataFetch
                     //var newtonsoft = mApi.Configuration.ApiClient.Serialize(mr);
                     //Console.WriteLine(newtonsoft);
 
-                    //mApi.Configuration.AddDefaultHeader("Content-Type", "application/json");
+                    //mApi.Configuration.AddDefaultHeader("Content-Type", "application/json");                    
                     var result = await mApi.MatchSavePostAsync(mr);
                 }
             }
